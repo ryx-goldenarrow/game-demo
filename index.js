@@ -13341,16 +13341,16 @@ class Preloader extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
             //init game assets----------------------------------------------------------
             pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.addBundle("images", {
                 //load spritesheet
-                plinko: "../../game/media/images/plinko/plinko.json", // prettier-ignore
+                plinko: "../game-demo/game/media/images/plinko/plinko.json", // prettier-ignore
             });
             pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.addBundle("fonts", [
                 {
                     alias: "KatahdinRound",
-                    src: "../../game/media/fonts/KatahdinRound.otf",
+                    src: "../game-demo/game/media/fonts/KatahdinRound.otf",
                 },
                 {
                     alias: "centurygothic_bold",
-                    src: "../../game/media/fonts/centurygothic_bold.ttf",
+                    src: "../game-demo/game/media/fonts/centurygothic_bold.ttf",
                 },
             ]);
         }))();

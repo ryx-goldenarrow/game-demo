@@ -13341,7 +13341,7 @@ class Preloader extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
             //init game assets----------------------------------------------------------
             pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.addBundle("images", {
                 //load spritesheet
-                plinko: "/game/media/images/plinko/plinko.json", // prettier-ignore
+                plinko: "../game/media/images/plinko/plinko.json", // prettier-ignore
             });
             pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.addBundle("fonts", [
                 {

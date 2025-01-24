@@ -1,0 +1,114 @@
+﻿{"frames": {
+
+"bet_bg0000":
+{
+	"frame": {"x":0,"y":0,"w":912,"h":457},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":912,"h":457},
+	"sourceSize": {"w":912,"h":457}
+},
+"btn_blue0000":
+{
+	"frame": {"x":0,"y":457,"w":153,"h":164},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":153,"h":164},
+	"sourceSize": {"w":153,"h":164}
+},
+"btn_close0000":
+{
+	"frame": {"x":153,"y":457,"w":145,"h":145},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":145,"h":145},
+	"sourceSize": {"w":145,"h":145}
+},
+"btn_green0000":
+{
+	"frame": {"x":298,"y":457,"w":151,"h":160},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":151,"h":160},
+	"sourceSize": {"w":151,"h":160}
+},
+"btn_home0000":
+{
+	"frame": {"x":449,"y":457,"w":155,"h":157},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":155,"h":157},
+	"sourceSize": {"w":155,"h":157}
+},
+"btn_info0000":
+{
+	"frame": {"x":604,"y":457,"w":155,"h":157},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":155,"h":157},
+	"sourceSize": {"w":155,"h":157}
+},
+"btn_play0000":
+{
+	"frame": {"x":0,"y":621,"w":499,"h":157},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":499,"h":157},
+	"sourceSize": {"w":499,"h":157}
+},
+"btn_purple0000":
+{
+	"frame": {"x":499,"y":621,"w":150,"h":163},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":150,"h":163},
+	"sourceSize": {"w":150,"h":163}
+},
+"btn_red0000":
+{
+	"frame": {"x":649,"y":621,"w":144,"h":153},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":144,"h":153},
+	"sourceSize": {"w":144,"h":153}
+},
+"btn_white0000":
+{
+	"frame": {"x":793,"y":621,"w":161,"h":174},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":161,"h":174},
+	"sourceSize": {"w":161,"h":174}
+},
+"btn_yellow0000":
+{
+	"frame": {"x":0,"y":795,"w":156,"h":168},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":156,"h":168},
+	"sourceSize": {"w":156,"h":168}
+},
+"coin0000":
+{
+	"frame": {"x":156,"y":795,"w":105,"h":110},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":105,"h":110},
+	"sourceSize": {"w":105,"h":110}
+}},
+
+"animations": {
+	"img": [
+			"coin0000"
+	]
+},
+
+"meta": {
+	"app": "Adobe Animate",
+	"version": "22.0.3.179",
+	"image": "dice_bet2.png",
+	"format": "RGBA8888",
+	"size": {"w":1024,"h":1024},
+	"scale": "1.5"
+}
+}

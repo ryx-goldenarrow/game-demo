@@ -5260,10 +5260,10 @@ exports.ParseError = ParseError;
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./game/core/template/css/game.css":
-/*!*******************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./game/core/template/css/game.css ***!
-  \*******************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./game/template/css/game.css":
+/*!**************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./game/template/css/game.css ***!
+  \**************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -5271,19 +5271,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ "./node_modules/css-loader/dist/runtime/noSourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ "./node_modules/css-loader/dist/runtime/noSourceMaps.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
 // Imports
 
 
 
-var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../media/fonts/roboto-c.ttf */ "./game/media/fonts/roboto-c.ttf"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../../../media/fonts/KatahdinRound.otf */ "./game/media/fonts/KatahdinRound.otf"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ../../../media/fonts/centurygothic_bold.ttf */ "./game/media/fonts/centurygothic_bold.ttf"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../media/fonts/roboto-c.ttf */ "./game/media/fonts/roboto-c.ttf"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../../media/fonts/KatahdinRound.otf */ "./game/media/fonts/KatahdinRound.otf"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ../../media/fonts/centurygothic_bold.ttf */ "./game/media/fonts/centurygothic_bold.ttf"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
@@ -12930,10 +12930,10 @@ if (true) {
 
 /***/ }),
 
-/***/ "./game/core/template/css/game.css":
-/*!*****************************************!*\
-  !*** ./game/core/template/css/game.css ***!
-  \*****************************************/
+/***/ "./game/template/css/game.css":
+/*!************************************!*\
+  !*** ./game/template/css/game.css ***!
+  \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -12941,19 +12941,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_game_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../../node_modules/css-loader/dist/cjs.js!./game.css */ "./node_modules/css-loader/dist/cjs.js!./game/core/template/css/game.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_game_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!./game.css */ "./node_modules/css-loader/dist/cjs.js!./game/template/css/game.css");
 
       
       
@@ -13272,7 +13272,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _enums__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./enums */ "./game/enums.ts");
 
 const GAMESETTINGS = {
-    soundEnabled: false,
+    theme: "theme_1",
     textstyle1: {
         text: "",
         style: {
@@ -13291,6 +13291,7 @@ const GAMESETTINGS = {
             fill: _enums__WEBPACK_IMPORTED_MODULE_0__.COLORS.ORANGE,
         },
     },
+    sound_enabled: false,
 };
 
 
@@ -13341,16 +13342,43 @@ class Preloader extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
             //init game assets----------------------------------------------------------
             pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.addBundle("images", {
                 //load spritesheet
-                plinko: "../game-demo/game/media/images/plinko/plinko.json", // prettier-ignore
+                dice_a: "/game/media/images/color-game/dice_a.json",
+                dice_b: "/game/media/images/color-game/dice_b.json",
+                dice_1v: "/game/media/images/color-game/dice_1v.json",
+                dice_2v: "/game/media/images/color-game/dice_2v.json",
+                //
+                dice_bet: "/game/media/images/color-game/dice_bet2.json",
+                //btn: "/game/media/images/color-game/btn.json", // prettier-ignore
+                //animation
+                launcher: "/game/media/images/color-game/launcher2.json",
+                //images
+                color_game_bg: "/game/media/images/color-game/color-game-bg.avif",
+                olympus_bg: "/game/media/images/color-game/bg@2x.png",
+                base: "/game/media/images/color-game/base-metal.png",
+                color_list_bg: "/game/media/images/color-game/color_list_bg.png",
+                zeus: "/game/media/images/color-game/zeus.png",
+                //assets
+                base_game: "/game/media/images/color-game-2/base-game.json",
+                theme_1: "/game/media/images/color-game-2/theme-1.json",
+                theme_2: "/game/media/images/color-game-2/theme-2.json",
+                //sound
+                sfx_dice_drop: "/game/media/sounds/m4a/sfx-dice-sound-triple.m4a",
+                sfx_open: "/game/media/sounds/m4a/sfx-open.m4a",
+                sfx_reveal: "/game/media/sounds/m4a/sfx-reveal.m4a",
+                sfx_heroic_win: "/game/media/sounds/m4a/sfx-heroic-win.m4a",
+                sfx_click: "/game/media/sounds/m4a/sfx-click.m4a",
+                sfx_click_short: "/game/media/sounds/m4a/sfx-click-short.m4a",
+                sfx_3_swoosh: "/game/media/sounds/m4a/sfx-3-swoosh.m4a",
+                bgm_casino2: "/game/media/sounds/m4a/bgm-casino2.m4a", // prettier-ignore
             });
             pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.addBundle("fonts", [
                 {
                     alias: "KatahdinRound",
-                    src: "../game-demo/game/media/fonts/KatahdinRound.otf",
+                    src: "../game/media/fonts/KatahdinRound.otf",
                 },
                 {
                     alias: "centurygothic_bold",
-                    src: "../game-demo/game/media/fonts/centurygothic_bold.ttf",
+                    src: "../game/media/fonts/centurygothic_bold.ttf",
                 },
             ]);
         }))();
@@ -13401,7 +13429,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ API)
 /* harmony export */ });
-/* harmony import */ var _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SLOTDATA */ "./game/api/SLOTDATA.ts");
+/* harmony import */ var _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./COLORGAMEDATA */ "./game/api/COLORGAMEDATA.ts");
 /* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
 /* harmony import */ var _enums__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../enums */ "./game/enums.ts");
 
@@ -13447,12 +13475,12 @@ class API {
     //TEMPLATE REQUEST
     send(url, method, body, action) {
         fetch(url, {
-            method: method,
+            method: _enums__WEBPACK_IMPORTED_MODULE_2__.Method.POST,
             body: JSON.stringify(body),
             headers: {
                 accept: "application/json",
                 "Content-type": "application/json; charset=UTF-8",
-                Authorization: _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.getToken(),
+                //Authorization: COLORGAMEDATA,
             },
         }).then((response) => {
             action(response);
@@ -13493,7 +13521,7 @@ class API {
     infoRequest() {
         this.send(this.INFO_URL, "POST", this.sendInfoRequestData(), (response) => {
             response.json().then((resData) => {
-                this.saveInfoData(resData);
+                //this.saveInfoData(resData);
                 this.event.emit(_enums__WEBPACK_IMPORTED_MODULE_2__.Event.INFO_RECEIVE_EVENT);
             });
         });
@@ -13502,8 +13530,8 @@ class API {
     acquireRequest(action) {
         this.send(this.SPIN_REQUEST_URL, "POST", this.sendAcquireData(), (response) => {
             response.json().then((resData) => {
-                this.saveAcquireData(resData); //resData//dummyResponse
-                this.extractFreeGames(resData);
+                //this.saveAcquireData(resData); //resData//dummyResponse
+                //this.extractFreeGames(resData);
                 this.event.emit(_enums__WEBPACK_IMPORTED_MODULE_2__.Event.ACQUIRE_RECEIVE_EVENT);
                 action(resData);
             });
@@ -13521,197 +13549,102 @@ class API {
     buyfreeGame(action) {
         this.send(this.BUY_FREE_GAME_REQUEST_URL, "POST", this.sendBuyFreeGameRequestData(), (response) => {
             response.json().then((resData) => {
-                this.saveAcquireData(resData); //resData//dummyResponse
-                this.extractFreeGames(resData);
+                //this.saveAcquireData(resData); //resData//dummyResponse
+                //this.extractFreeGames(resData);
                 this.event.emit(_enums__WEBPACK_IMPORTED_MODULE_2__.Event.ACQUIRE_RECEIVE_EVENT);
                 action(resData);
             });
         });
     }
-    //STEP REQUEST
-    stepRequest(action) {
-        this.saveStepData(_SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.FREE_GAME_STEPS[_SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.STEP]);
-        this.event.emit(_enums__WEBPACK_IMPORTED_MODULE_2__.Event.STEP_RECEIVE_EVENT);
-        action();
-    }
     // data management //-----------------------------------------------------------------------------------
     sendAcquireData() {
         return {
-            bet: (_SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.BET = _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.BETS_IDR[0]),
-            category: _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.CATEGORY,
-            coinType: _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.COINT_TYPE,
-            machineId: _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.MACHINE_ID,
-            userId: _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.USER_ID,
+            bet: (_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.BET = _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.BETS_IDR[0]),
+            category: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.CATEGORY,
+            coinType: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.COINT_TYPE,
+            machineId: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.MACHINE_ID,
+            userId: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.USER_ID,
         };
     }
     sendLaunchData() {
         return {
-            /*amount: SLOTDATA.AMOUNT,
-            category: SLOTDATA.CATEGORY,
-            currency: SLOTDATA.CURRENCY,
-            gameId: SLOTDATA.GAME_ID,
-            langx: SLOTDATA.LANGUAGE,
-            username: SLOTDATA.USER_NAME,*/
+            /*amount: COLORGAMEDATA.AMOUNT,
+            category: COLORGAMEDATA.CATEGORY,
+            currency: COLORGAMEDATA.CURRENCY,
+            gameId: COLORGAMEDATA.GAME_ID,
+            langx: COLORGAMEDATA.LANGUAGE,
+            username: COLORGAMEDATA.USER_NAME,*/
             category: 0,
             coinType: 0,
         };
     }
     sendTokenLoginData() {
         return {
-            token: _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.TOKEN,
+            token: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.TOKEN,
         };
     }
     sendInfoRequestData() {
         return {
-            bet: _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.BET,
-            category: _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.CATEGORY,
-            coinType: _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.COINT_TYPE,
-            userId: _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.USER_ID,
+            bet: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.BET,
+            category: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.CATEGORY,
+            coinType: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.COINT_TYPE,
+            userId: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.USER_ID,
         };
     }
     sendSettleRequestData() {
         return {
-            category: _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.CATEGORY,
-            coinType: _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.COINT_TYPE,
-            userId: _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.USER_ID,
-            machineId: _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.MACHINE_ID,
-            bet: _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.BET,
+            category: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.CATEGORY,
+            coinType: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.COINT_TYPE,
+            userId: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.USER_ID,
+            machineId: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.MACHINE_ID,
+            bet: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.BET,
         };
     }
     sendBuyFreeGameRequestData() {
         return {
-            bet: _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.BET,
-            buyFreeGame: _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.BUY_FREE_GAME,
-            category: _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.CATEGORY,
-            coinType: _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.COINT_TYPE,
-            machineId: _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.MACHINE_ID,
-            userId: _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.USER_ID,
+            bet: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.BET,
+            buyFreeGame: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.BUY_FREE_GAME,
+            category: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.CATEGORY,
+            coinType: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.COINT_TYPE,
+            machineId: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.MACHINE_ID,
+            userId: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.USER_ID,
         };
     }
-    sendStepRequestData() {
-        return {
-            category: parseInt(_SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.CATEGORY),
-            coinType: _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.COINT_TYPE,
-            machineId: parseInt(_SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.MACHINE_ID),
-            userId: parseInt(_SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.USER_ID),
-            step: _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.STEP,
-            score: _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.SCORE,
-            timestamp: parseInt(_SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.TIME_STAMP),
-            gameSerial: _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.GAME_SERIAL,
-        };
-    }
-    //save data to SLOTDATA----------------------------------------------
+    //save data to COLORGAMEDATA----------------------------------------------
     saveLoginData(LoginToken) {
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.TOKEN = LoginToken.jwtToken;
+        _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.TOKEN = LoginToken.jwtToken;
     }
     saveLoginByTokenData(LoginToken) {
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.TOKEN = LoginToken.jwtToken;
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.USER_ID = LoginToken.userId;
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.USER_NAME = LoginToken.name;
-    }
-    saveInfoData(InfoData) {
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.CREDIT = InfoData.credit;
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.BUY_FREE_GAME_ENABLE = InfoData.buyFreeGameEnable;
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.BUY_FREE_GAME = InfoData.buyFreeGame;
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.GOLD = InfoData.gold;
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.SILVER = InfoData.silver;
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.PLATINUM = InfoData.platinum;
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.BETS_IDR = InfoData.betsIdr;
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.BETS_INR = InfoData.betsInr;
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.BETS_MYR = InfoData.betsMyr;
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.BETS_PHP = InfoData.betsPhp;
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.BETS_THB = InfoData.betsThb;
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.BETS_TWD = InfoData.betsTwd;
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.BETS_USD = InfoData.betsUsd;
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.BETS_VND = InfoData.betsVnd;
-    }
-    saveAcquireData(acquireData) {
-        if (acquireData.resultCode == _enums__WEBPACK_IMPORTED_MODULE_2__.RESULTCODE.BADREQUEST) {
-            console.log("Bad Request");
-            return;
-        }
-        //SLOTDATA.REEL_STOP = [5, 5, 4, 2, 8, 1, 5, 4, 1, 0, 0, 3, 7, 1, 7]; //acquireData.board.totems;
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.CREDIT = acquireData.credit;
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.JP = acquireData.jp;
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.JP_PRIZE = acquireData.jpPrize;
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.TOTAL_WIN = acquireData.totalWin;
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.FREE_GAME_INFO = acquireData.freegameInfo;
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.BOARD = acquireData.board;
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.REEL_STOP = _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.BOARD.totems;
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.WIN_LINES = _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.BOARD.winLines;
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.GAME_SERIAL = _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.BOARD.gameSerial;
-    }
-    extractFreeGames(freeGame) {
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.CREDIT = freeGame.credit;
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.JP = freeGame.jp;
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.JP_PRIZE = freeGame.jpPrize;
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.TOTAL_WIN = freeGame.totalWin;
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.FREE_GAME_INFO = freeGame.freegameInfo;
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.BOARD = freeGame.board;
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.REEL_STOP = _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.BOARD.totems;
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.WIN_LINES = _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.BOARD.winLines;
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.GAME_SERIAL = _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.BOARD.gameSerial;
-        this.extractFreeGameResults();
-    }
-    extractFreeGameResults() {
-        //clear free game steps
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.FREE_GAME_STEPS = [];
-        let freeResult = _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.FREE_GAME_INFO.results;
-        let i = 0;
-        let k = 0;
-        for (i = 0; i < freeResult.length; i++) {
-            for (k = 0; k < freeResult[i].gameResult.length; k++) {
-                _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.FREE_GAME_STEPS.push(freeResult[i].gameResult[k]);
-            }
-        }
-        this.updateFreeSpins();
-    }
-    updateFreeSpins() {
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.FREESPINS = _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.FREE_GAME_STEPS.length;
-    }
-    saveStepData(stepData) {
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.STEP = stepData.step;
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.BOARD = stepData.board;
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.REEL_STOP = _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.BOARD.totems;
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.WIN_LINES = _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.BOARD.winLines;
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.GAME_SERIAL = _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.BOARD.gameSerial;
-        console.log("step data", stepData, _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.STEP);
-    }
-    //TODO
-    validateResponse() {
-        //------------
-    }
-    resetData() {
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.REEL_STOP = [];
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.WIN_LINES = [];
-        _SLOTDATA__WEBPACK_IMPORTED_MODULE_0__.SLOTDATA.TOTAL_WIN = 0;
+        _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.TOKEN = LoginToken.jwtToken;
+        _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.USER_ID = LoginToken.userId;
+        _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.USER_NAME = LoginToken.name;
     }
 }
 
 
 /***/ }),
 
-/***/ "./game/api/SLOTDATA.ts":
-/*!******************************!*\
-  !*** ./game/api/SLOTDATA.ts ***!
-  \******************************/
+/***/ "./game/api/COLORGAMEDATA.ts":
+/*!***********************************!*\
+  !*** ./game/api/COLORGAMEDATA.ts ***!
+  \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   SLOTDATA: () => (/* binding */ SLOTDATA)
+/* harmony export */   COLORGAMEDATA: () => (/* binding */ COLORGAMEDATA)
 /* harmony export */ });
 /* harmony import */ var _enums__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../enums */ "./game/enums.ts");
 
-const SLOTDATA = {
+const COLORGAMEDATA = {
     USERLOGIN: {
         name: "test01",
         password: "1234567890",
     },
-    BET: 500,
+    WIN: 0,
+    BET: -1,
     TOKEN: "",
-    REEL_STOP: [],
     CATEGORY: "6",
     COINT_TYPE: 1,
     USER_ID: "0",
@@ -13724,6 +13657,7 @@ const SLOTDATA = {
     CREDIT: 0,
     BUY_FREE_GAME: 0,
     BUY_FREE_GAME_ENABLE: false,
+    RESULT: [0, 1, 2],
     BETS_IDR: [],
     BETS_INR: [],
     BETS_MYR: [],
@@ -13732,60 +13666,692 @@ const SLOTDATA = {
     BETS_TWD: [],
     BETS_USD: [],
     BETS_VND: [],
-    GOLD: "0",
-    PLATINUM: "0",
-    SILVER: "0",
-    JP: -1,
-    JP_PRIZE: -1,
-    TOTAL_WIN: 0,
-    WIN_LINES_POS: [0],
-    WIN_LINES: [],
-    GAME_SERIAL: "",
-    FREE_GAME_INFO: {
-        bet: 0,
-        bonusGameRounds: 0,
-        category: 0,
-        coinType: 0,
-        gameSerial: "",
-        machineId: 0,
-        maxTotalWinScore: 0,
-        results: [],
-        type: 0,
-        userId: 0,
-    },
-    BOARD: {
-        gameSerial: "",
-        scatterPos: [],
-        totems: [],
-        winLines: [],
-    },
-    STEP: 0,
-    SCORE: 0,
-    TIME_STAMP: "",
-    AUTOSPINS: 0,
-    FREESPINS: 0,
-    FREE_GAME_STEPS: [],
-    FREE_SPIN_START: false,
-    //-------------------------------
-    getToken() {
-        return this.TOKEN;
-    },
-    setToken(token) {
-        this.TOKEN = token;
-    },
-    initSLOTDATA() {
-        this.BET = this.BETS_IDR[0];
-    },
-    deductFreeSpins() {
-        if (SLOTDATA.FREESPINS > 0) {
-            SLOTDATA.FREESPINS -= 1;
-        }
-    },
-    freeSpinInit() {
-        SLOTDATA.FREE_SPIN_START = true;
-        SLOTDATA.STEP = 0;
-    },
+    PRIZES: ["FREEBET", "IPHONE", "IDR 50k", "IDR 25k", "IDR 15k", "IDR 5k"],
 };
+
+
+/***/ }),
+
+/***/ "./game/color-game/BetInformationPage.ts":
+/*!***********************************************!*\
+  !*** ./game/color-game/BetInformationPage.ts ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ BetInformationPage)
+/* harmony export */ });
+/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
+/* harmony import */ var _GAMESETTINGS__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../GAMESETTINGS */ "./game/GAMESETTINGS.ts");
+/* harmony import */ var _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../template/components/SpriteV2 */ "./game/template/components/SpriteV2.ts");
+/* harmony import */ var _utils_PixiUtils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/PixiUtils */ "./game/utils/PixiUtils.ts");
+/* harmony import */ var _api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../api/COLORGAMEDATA */ "./game/api/COLORGAMEDATA.ts");
+
+
+
+
+
+class BetInformationPage extends _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_2__["default"] {
+    constructor() {
+        super();
+        this.betButtons = [];
+        this.prizeLabel = [];
+        this.blackBg = this.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_2__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_3__.TP)("base_game", "modal_bg.png")));
+        this.blackBg.scale.set(2.5);
+        this.bg = this.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_2__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_3__.TP)("base_game", "color_list.png")));
+        this.bg.scale.set(2.5);
+        const betListbtn = [
+            "color_4.png",
+            "color_1.png",
+            "color_5.png",
+            "color_3.png",
+            "color_2.png",
+            "color_6.png", //"purple",
+        ];
+        let i = 0;
+        for (i = 0; i < 6; i++) {
+            this.betButtons[i] = this.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_2__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_3__.TP)("base_game", betListbtn[i])));
+            this.betButtons[i].scale.set(1.25);
+            this.betButtons[i].position.set(-200, -300 + i * 150);
+            //
+            this.prizeLabel[i] = this.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_1__.GAMESETTINGS.textstyle1));
+            this.prizeLabel[i].text = _api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_4__.COLORGAMEDATA.PRIZES[i];
+            this.prizeLabel[i].style.fontSize = 50;
+            this.prizeLabel[i].style.align = "left";
+            this.prizeLabel[i].anchor.set(0.5);
+            this.prizeLabel[i].position.set(-0, -300 + i * 150);
+        }
+        this.btnClose = this.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_2__["default"](pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.get("dice_bet").textures["btn_close0000"]));
+        this.btnClose.scale.set(1.25);
+        this.btnClose.position.set(0, 620);
+        this.btnClose.tint = 0xff3333;
+        //
+    }
+    close() {
+        this.visible = false;
+    }
+    show() {
+        this.visible = true;
+    }
+    updatePrizes() {
+        //
+    }
+}
+
+
+/***/ }),
+
+/***/ "./game/color-game/BetTable.ts":
+/*!*************************************!*\
+  !*** ./game/color-game/BetTable.ts ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ BetTable)
+/* harmony export */ });
+/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
+/* harmony import */ var _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../template/components/SpriteV2 */ "./game/template/components/SpriteV2.ts");
+/* harmony import */ var _utils_PixiUtils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/PixiUtils */ "./game/utils/PixiUtils.ts");
+/* harmony import */ var _enums__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../enums */ "./game/enums.ts");
+
+
+
+
+class BetTable extends _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"] {
+    constructor() {
+        super();
+        this.betButtons = [];
+        this.container = this.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"]());
+        this.bg = this.container.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_2__.TP)("base_game", "color_board.png")));
+        this.bg.scale.set(2, 1.5);
+        const betListbtn = [
+            "color_4.png",
+            "color_1.png",
+            "color_5.png",
+            "color_3.png",
+            "color_2.png",
+            "color_6.png", //"purple",
+        ];
+        let i = 0;
+        let x = 0;
+        let y = -80;
+        this.whitebg = this.container.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Graphics());
+        this.whitebg.roundRect(-65, -65, 130, 130, 15);
+        this.whitebg.fill(_enums__WEBPACK_IMPORTED_MODULE_3__.COLORS.WHITE);
+        this.whitebg.visible = false;
+        for (i = 0; i < 6; i++) {
+            //
+            this.betButtons[i] = this.container.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_2__.TP)("base_game", betListbtn[i])));
+            x = -180 + 180 * (i % 3);
+            if (i >= 3) {
+                y = 70;
+            }
+            this.betButtons[i].position.set(x, y);
+            this.betButtons[i].scale.set(1.25);
+        }
+        this.whitebg.position.set(this.betButtons[0].x, this.betButtons[0].y);
+        //
+        this.btnHome = this.container.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_2__.TP)("base_game", "home.png")));
+        this.btnHome.scale.set(2);
+        this.btnHome.position.set(-250, -220);
+        this.btnPlay = this.container.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_2__.TP)("base_game", "btn_active.png")));
+        this.btnPlay.scale.set(2);
+        this.btnPlay.position.set(0, -220);
+        this.btnInfo = this.container.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_2__.TP)("base_game", "ask.png")));
+        this.btnInfo.scale.set(2);
+        this.btnInfo.position.set(250, -220);
+        this.coin = this.container.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"](pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.get("dice_bet").textures["coin0000"]));
+        this.coin.position.set(-250, -220);
+        this.coin.visible = false;
+        //
+    }
+    moveCoin(btn) {
+        this.coin.visible = true;
+        this.whitebg.visible = true;
+        this.coin.position.set(btn.x, btn.y - 5);
+        this.whitebg.position.set(btn.x, btn.y);
+    }
+}
+
+
+/***/ }),
+
+/***/ "./game/color-game/ColorGameMachine.ts":
+/*!*********************************************!*\
+  !*** ./game/color-game/ColorGameMachine.ts ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ ColorGameMachine)
+/* harmony export */ });
+/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
+/* harmony import */ var _template_components_AnimatedObject__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../template/components/AnimatedObject */ "./game/template/components/AnimatedObject.ts");
+/* harmony import */ var _Dice__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Dice */ "./game/color-game/Dice.ts");
+/* harmony import */ var _utils_PixiUtils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/PixiUtils */ "./game/utils/PixiUtils.ts");
+/* harmony import */ var _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../template/components/SpriteV2 */ "./game/template/components/SpriteV2.ts");
+
+
+
+
+
+class ColorGameMachine extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
+    constructor(app) {
+        super();
+        this.dice = [];
+        this.app = app;
+        const bg = this.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_4__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_3__.TP)("base_game", "color_box.png")));
+        bg.anchor.set(0.5);
+        bg.scale.set(3.25, 3.5);
+        bg.position.set(0, 100);
+        let i = 0;
+        for (i = 0; i < 3; i++) {
+            this.dice[i] = this.addChild(new _Dice__WEBPACK_IMPORTED_MODULE_2__["default"]());
+            this.dice[i].scale.set(0.9);
+            this.dice[i].position.set(-150 + i * 150, -0);
+        }
+        this.bglauncher = this.addChild(new _template_components_AnimatedObject__WEBPACK_IMPORTED_MODULE_1__["default"]("launcher", "launcher"));
+        this.bglauncher.scale.set(1.55, 1.2);
+        this.bglauncher.position.set(0, -420);
+        this.bglauncher.tint = 0x884400;
+    }
+    reset() {
+        let i = 0;
+        for (i = 0; i < 3; i++) {
+            this.dice[i].reset(i);
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./game/color-game/Dice.ts":
+/*!*********************************!*\
+  !*** ./game/color-game/Dice.ts ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Dice)
+/* harmony export */ });
+/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
+/* harmony import */ var _template_components_AnimatedObject__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../template/components/AnimatedObject */ "./game/template/components/AnimatedObject.ts");
+/* harmony import */ var _utils_Utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/Utils */ "./game/utils/Utils.ts");
+/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
+/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/gsap-core.js");
+/* harmony import */ var _api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../api/COLORGAMEDATA */ "./game/api/COLORGAMEDATA.ts");
+/* harmony import */ var _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../template/components/SpriteV2 */ "./game/template/components/SpriteV2.ts");
+
+
+
+
+
+
+class Dice extends _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_4__["default"] {
+    constructor() {
+        super();
+        this.resultId = 5;
+        this.rdm = 7;
+        this._delay = 0;
+        this.resultDiceTexture = [
+            //
+            { reveal: "dice_b", texture: "dice_b", id: 12 },
+            { reveal: "dice_a", texture: "dice_a", id: 12 },
+            { reveal: "dice_a", texture: "dice_a", id: 6 },
+            { reveal: "dice_b", texture: "dice_b", id: 0 },
+            { reveal: "dice_a", texture: "dice_a", id: 0 },
+            { reveal: "dice_a", texture: "dice_a", id: 18 },
+            //
+            { reveal: "dice_1v", texture: "dice_1v", id: 0 },
+            { reveal: "dice_1v", texture: "dice_1v", id: 6 },
+            { reveal: "dice_1v", texture: "dice_1v", id: 12 },
+            { reveal: "dice_2v", texture: "dice_2v", id: 0 },
+            { reveal: "dice_2v", texture: "dice_2v", id: 6 },
+            { reveal: "dice_2v", texture: "dice_2v", id: 12 }, //purple 5
+        ];
+        this.diceId = this.resultDiceTexture[this.resultId].texture;
+        this.diceIdReveal = this.resultDiceTexture[this.resultId].reveal;
+        this.diceContainer = this.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Container());
+        this.diceContainer.position.set(0, -420);
+        this.diceShadow = this.diceContainer.addChild(new _template_components_AnimatedObject__WEBPACK_IMPORTED_MODULE_1__["default"](this.diceId, this.diceId));
+        this.diceShadow.tint = 0x0;
+        this.diceShadow.y = 50;
+        this.diceShadow.alpha = 0.25;
+        this.dice = this.diceContainer.addChild(new _template_components_AnimatedObject__WEBPACK_IMPORTED_MODULE_1__["default"](this.diceId, this.diceId));
+        this.dice.anchor.set(0.5);
+        this.resetDiceImage();
+    }
+    getRandomNumberFromArray(arr) {
+        return arr[Math.floor(Math.random() * arr.length)];
+    }
+    animate(id = 0) {
+        const face = (0,_utils_Utils__WEBPACK_IMPORTED_MODULE_2__.generateRandom)(2);
+        this.diceShadow.y = 80;
+        this.rdm = id;
+        if (face == 1) {
+            this.dice.scale.x = -1;
+            this.diceShadow.scale.x = -1;
+        }
+        else {
+            this.dice.scale.x = 1;
+            this.diceShadow.scale.x = 1;
+        }
+        gsap__WEBPACK_IMPORTED_MODULE_5__.gsap.to(this.diceContainer, 0.5, {
+            startAt: { y: -420, x: 0 },
+            delay: this._delay,
+            y: 0,
+            x: 0,
+            ease: gsap__WEBPACK_IMPORTED_MODULE_6__.Sine.easeIn,
+            onStart: () => {
+                this.dice.play(this.diceId, this.diceId, this.rdm);
+                this.diceShadow.play(this.diceId, this.diceId, this.rdm);
+            },
+        });
+        gsap__WEBPACK_IMPORTED_MODULE_5__.gsap.to(this.diceShadow, 0.75, {
+            delay: 0.5 + this._delay,
+            startAt: { y: 120 },
+            y: 10,
+        });
+        gsap__WEBPACK_IMPORTED_MODULE_5__.gsap.to(this.diceContainer, 0.75, {
+            delay: 0.5 + this._delay,
+            y: 270 + (0,_utils_Utils__WEBPACK_IMPORTED_MODULE_2__.generateRandom)(150, 0),
+            x: -40 + (0,_utils_Utils__WEBPACK_IMPORTED_MODULE_2__.generateRandom)(40, 0),
+            ease: gsap__WEBPACK_IMPORTED_MODULE_6__.Sine.easeInOut,
+            onStart: () => {
+                this.dice.play(this.diceIdReveal, this.diceIdReveal, this.resultDiceTexture[this.resultId].id);
+                this.diceShadow.play(this.diceIdReveal, this.diceIdReveal, this.resultDiceTexture[this.resultId].id);
+            },
+        });
+        gsap__WEBPACK_IMPORTED_MODULE_5__.gsap.to(this.diceContainer.scale, 0.25, {
+            delay: 2 + this._delay,
+            y: 1.25,
+            x: 1.25,
+            ease: gsap__WEBPACK_IMPORTED_MODULE_6__.Sine.easeInOut,
+            repeat: 1,
+            yoyo: true,
+        });
+    }
+    play(id) {
+        id = _api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_3__.COLORGAMEDATA.RESULT[id];
+        gsap__WEBPACK_IMPORTED_MODULE_5__.gsap.delayedCall(2, () => {
+            this.resultId = id + ((0,_utils_Utils__WEBPACK_IMPORTED_MODULE_2__.generateRandom)(2) == 1 ? 0 : 6);
+            this.animate(id);
+            this.diceIdReveal = this.resultDiceTexture[this.resultId].reveal;
+        });
+    }
+    resetDice(dice) {
+        dice.updateFrames(this.resultDiceTexture[0].texture, this.resultDiceTexture[0].texture, this.rdm);
+    }
+    resetDiceImage() {
+        this.diceId = this.resultDiceTexture[(0,_utils_Utils__WEBPACK_IMPORTED_MODULE_2__.generateRandom)(6)].texture;
+        this.rdm = this.getRandomNumberFromArray([0, 6, 12]);
+        this.resultId = (0,_utils_Utils__WEBPACK_IMPORTED_MODULE_2__.generateRandom)(6);
+        this.diceIdReveal = this.resultDiceTexture[this.resultId].reveal;
+        this.resetDice(this.dice);
+        this.resetDice(this.diceShadow);
+    }
+    reset(id) {
+        gsap__WEBPACK_IMPORTED_MODULE_5__.gsap.to(this.diceContainer, 0.5, {
+            delay: id * 0.1,
+            y: -420,
+            x: 0,
+            ease: gsap__WEBPACK_IMPORTED_MODULE_6__.Back.easeIn,
+            onComplete: () => {
+                this.resetDiceImage();
+            },
+        });
+    }
+}
+
+
+/***/ }),
+
+/***/ "./game/color-game/MainGame.ts":
+/*!*************************************!*\
+  !*** ./game/color-game/MainGame.ts ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ MainGame)
+/* harmony export */ });
+/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
+/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
+/* harmony import */ var _utils_Utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/Utils */ "./game/utils/Utils.ts");
+/* harmony import */ var _ColorGameMachine__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ColorGameMachine */ "./game/color-game/ColorGameMachine.ts");
+/* harmony import */ var _BetTable__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./BetTable */ "./game/color-game/BetTable.ts");
+/* harmony import */ var _BetInformationPage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./BetInformationPage */ "./game/color-game/BetInformationPage.ts");
+/* harmony import */ var _RevealResult__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./RevealResult */ "./game/color-game/RevealResult.ts");
+/* harmony import */ var _utils_PixiUtils__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utils/PixiUtils */ "./game/utils/PixiUtils.ts");
+/* harmony import */ var _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../template/components/SpriteV2 */ "./game/template/components/SpriteV2.ts");
+/* harmony import */ var _GAMESETTINGS__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../GAMESETTINGS */ "./game/GAMESETTINGS.ts");
+/* harmony import */ var _WinningFlyer__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./WinningFlyer */ "./game/color-game/WinningFlyer.ts");
+
+
+
+
+
+
+
+
+
+
+
+class MainGame extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
+    constructor(app) {
+        super();
+        this.app = app;
+        this.bg = this.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_7__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_6__.TP)(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_8__.GAMESETTINGS.theme, "color_game_bg.png")));
+        this.bg.scale.set(2.25);
+        this.bg.tint = 0xccccff;
+        this.colorGameMachine = this.addChild(new _ColorGameMachine__WEBPACK_IMPORTED_MODULE_2__["default"](app));
+        this.colorGameMachine.position.set(0, -110);
+        this.colorGameMachine.scale.set(0.75);
+        this.character = this.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_7__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_6__.TP)(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_8__.GAMESETTINGS.theme, "character_1.png")));
+        this.character.scale.set(2);
+        this.character.position.set(250, -0);
+        this.betTable = this.addChild(new _BetTable__WEBPACK_IMPORTED_MODULE_3__["default"]());
+        this.betTable.position.set(0, 560);
+        this.revealResult = this.addChild(new _RevealResult__WEBPACK_IMPORTED_MODULE_5__["default"]());
+        this.revealResult.position.set(0, -250);
+        this.betInfoPage = this.addChild(new _BetInformationPage__WEBPACK_IMPORTED_MODULE_4__["default"]());
+        this.betInfoPage.position.set(0, 0);
+        this.betInfoPage.visible = false;
+        this.winningFlyer = this.addChild(new _WinningFlyer__WEBPACK_IMPORTED_MODULE_9__["default"]());
+        this.winningFlyer.position.set(0, -250);
+        gsap__WEBPACK_IMPORTED_MODULE_10__.gsap.to(this.character, {
+            duration: 1,
+            y: -110,
+            startAt: { y: -100 },
+            yoyo: true,
+            ease: "none",
+            repeat: -1,
+        });
+        this.init();
+    }
+    init() {
+        //play ambient sounds
+        //sound.play("sfx_ambient",{loop:true,volume:0.3});
+        this.initSize();
+        //auto detect size based on the device screen
+        this.checkScreenSize();
+        setTimeout(() => {
+            this.resizeScreen();
+        }, 1);
+    }
+    //display settings---------------------------------
+    checkScreenSize() {
+        document.body.onresize = (e) => {
+            this.resizeScreen();
+        };
+        //on load, need some delay to trigger resize event
+        setTimeout(() => {
+            this.resizeScreen();
+        }, 1000);
+    }
+    initSize() {
+        if ((0,_utils_Utils__WEBPACK_IMPORTED_MODULE_1__.isPortrait)()) {
+            //portrait
+            this.width = (this.app.canvas.width / 750) * 0.9;
+            this.height = (this.app.canvas.height / 1334) * 0.9;
+        }
+        else {
+            //landscape
+            this.width = (this.app.canvas.width / 1334) * 0.5;
+            this.height = (this.app.canvas.height / 750) * 0.5;
+        }
+    }
+    resizeScreen() {
+        //setFullscreen(true);
+        if ((0,_utils_Utils__WEBPACK_IMPORTED_MODULE_1__.isPortrait)()) {
+            //portrait
+            console.log("portrait");
+        }
+        else {
+            //landscape
+            console.log("landscape");
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./game/color-game/RevealResult.ts":
+/*!*****************************************!*\
+  !*** ./game/color-game/RevealResult.ts ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ RevealResult)
+/* harmony export */ });
+/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
+/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
+/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/gsap-core.js");
+/* harmony import */ var _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../template/components/SpriteV2 */ "./game/template/components/SpriteV2.ts");
+/* harmony import */ var _GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../GAMESETTINGS */ "./game/GAMESETTINGS.ts");
+/* harmony import */ var _enums__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../enums */ "./game/enums.ts");
+/* harmony import */ var _api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../api/COLORGAMEDATA */ "./game/api/COLORGAMEDATA.ts");
+/* harmony import */ var _utils_PixiUtils__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utils/PixiUtils */ "./game/utils/PixiUtils.ts");
+
+
+
+
+
+
+
+class RevealResult extends _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"] {
+    constructor() {
+        super();
+        this.betButtons = [];
+        this.whitebg = [];
+        this.betListbtn = [
+            "color_4.png",
+            "color_1.png",
+            "color_5.png",
+            "color_3.png",
+            "color_2.png",
+            "color_6.png", //"purple",
+        ];
+        this.bg = this.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_5__.TP)("base_game", "color_board.png")));
+        this.bg.scale.set(2);
+        let i = 0;
+        let x = 0;
+        let y = 0;
+        for (i = 0; i < 3; i++) {
+            this.whitebg[i] = this.bg.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Graphics());
+            this.whitebg[i].roundRect(-31, -10, 62, 70, 15);
+            this.whitebg[i].fill(_enums__WEBPACK_IMPORTED_MODULE_3__.COLORS.WHITE);
+            this.whitebg[i].position.set(67 * i - 67, 0);
+        }
+        for (i = 0; i < 3; i++) {
+            this.betButtons[i] = this.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_5__.TP)("base_game", this.betListbtn[i])));
+            x = -135 + 135 * (i % 3);
+            y = 50;
+            this.betButtons[i].scale.set(1.25);
+            this.betButtons[i].position.set(x, y);
+        }
+        const revealLabel = this.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__.GAMESETTINGS.textstyle1));
+        revealLabel.text = "DICE RESULT";
+        revealLabel.style.fontSize = 80;
+        revealLabel.style.fill = 0x662200;
+        revealLabel.style.fontWeight = "bolder";
+        revealLabel.anchor.set(0.5);
+        revealLabel.position.set(0, -90);
+        this.visible = false;
+    }
+    showResult() {
+        this.visible = true;
+        gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.to(this.scale, 0.5, {
+            x: 1,
+            y: 1,
+            startAt: { x: 0.5, y: 0.5 },
+            ease: gsap__WEBPACK_IMPORTED_MODULE_7__.Back.easeOut,
+        });
+        gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.to(this, 0.5, { alpha: 1, startAt: { alpha: 0 }, ease: gsap__WEBPACK_IMPORTED_MODULE_7__.Back.easeOut });
+        //
+        this.updateImages();
+        this.checkWin();
+        //
+        gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.delayedCall(5, () => {
+            this.hideResult();
+        });
+    }
+    hideResult() {
+        gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.to(this.scale, 0.5, {
+            x: 0.5,
+            y: 0.5,
+            startAt: { x: 1, y: 1 },
+            ease: gsap__WEBPACK_IMPORTED_MODULE_7__.Back.easeIn,
+        });
+        gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.to(this, 0.5, {
+            alpha: 0,
+            startAt: { alpha: 1 },
+            onComplete: () => {
+                this.visible = false;
+            },
+        });
+    }
+    updateImages() {
+        const txtr = _api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_4__.COLORGAMEDATA.RESULT;
+        this.betButtons[0].texture = (0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_5__.TP)("base_game", this.betListbtn[txtr[0]]);
+        this.betButtons[1].texture = (0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_5__.TP)("base_game", this.betListbtn[txtr[1]]);
+        this.betButtons[2].texture = (0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_5__.TP)("base_game", this.betListbtn[txtr[2]]);
+    }
+    checkWin() {
+        let i = 0;
+        const txtr = _api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_4__.COLORGAMEDATA.RESULT;
+        for (i = 0; i < 3; i++) {
+            this.whitebg[i].visible = false;
+            if (txtr[i] == _api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_4__.COLORGAMEDATA.BET) {
+                this.whitebg[i].visible = true;
+                _api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_4__.COLORGAMEDATA.WIN += 1;
+            }
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./game/color-game/WinningFlyer.ts":
+/*!*****************************************!*\
+  !*** ./game/color-game/WinningFlyer.ts ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ WinningFlyer)
+/* harmony export */ });
+/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
+/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
+/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/gsap-core.js");
+/* harmony import */ var _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../template/components/SpriteV2 */ "./game/template/components/SpriteV2.ts");
+/* harmony import */ var _GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../GAMESETTINGS */ "./game/GAMESETTINGS.ts");
+/* harmony import */ var _api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../api/COLORGAMEDATA */ "./game/api/COLORGAMEDATA.ts");
+/* harmony import */ var _utils_PixiUtils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utils/PixiUtils */ "./game/utils/PixiUtils.ts");
+/* harmony import */ var _pixi_sound__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @pixi/sound */ "./node_modules/@pixi/sound/lib/index.mjs");
+
+
+
+
+
+
+
+class WinningFlyer extends _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"] {
+    constructor() {
+        super();
+        this.betButtons = [];
+        this.betListbtn = [
+            "color_4.png",
+            "color_1.png",
+            "color_5.png",
+            "color_3.png",
+            "color_2.png",
+            "color_6.png", //"purple",
+        ];
+        this.prizes = ["iphone"];
+        this.bg = this.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_4__.TP)("base_game", "color_win.png")));
+        this.bg.scale.set(2);
+        /*const whitebg: Graphics = this.bg.addChild(new Graphics());
+        whitebg.roundRect(-100, -10, 200, 70, 15);
+        whitebg.roundRect(-125, -80, 250, 80, 15);
+        whitebg.fill(COLORS.WHITE);*/
+        const congratsLabel = this.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__.GAMESETTINGS.textstyle1));
+        congratsLabel.text = "Congratulations!";
+        congratsLabel.style.fontSize = 50;
+        congratsLabel.style.fill = 0xffcc00; //0xffcc00
+        congratsLabel.style.fontWeight = "bolder";
+        congratsLabel.anchor.set(0.5);
+        congratsLabel.position.set(0, -10);
+        const youwinLabel = this.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__.GAMESETTINGS.textstyle1));
+        youwinLabel.text = "You Win!";
+        youwinLabel.style.fontSize = 50;
+        youwinLabel.style.fill = 0x662200;
+        youwinLabel.style.fontWeight = "bolder";
+        youwinLabel.anchor.set(0.5);
+        youwinLabel.position.set(0, 60);
+        this.prizeLabel = this.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__.GAMESETTINGS.textstyle1));
+        this.prizeLabel.text = "";
+        this.prizeLabel.style.fontSize = 50;
+        this.prizeLabel.style.fill = 0xffffff;
+        this.prizeLabel.style.fontWeight = "bolder";
+        this.prizeLabel.anchor.set(0.5);
+        this.prizeLabel.position.set(0, 150);
+        this.visible = false;
+    }
+    showResult() {
+        this.visible = true;
+        _pixi_sound__WEBPACK_IMPORTED_MODULE_5__.sound.play("sfx_heroic_win");
+        this.updateText();
+        gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.to(this.scale, 0.5, {
+            x: 1,
+            y: 1,
+            startAt: { x: 0.5, y: 0.5 },
+            ease: gsap__WEBPACK_IMPORTED_MODULE_7__.Back.easeOut,
+        });
+        gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.to(this, 0.5, { alpha: 1, startAt: { alpha: 0 }, ease: gsap__WEBPACK_IMPORTED_MODULE_7__.Back.easeOut });
+        gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.delayedCall(3, () => {
+            this.hideResult();
+        });
+    }
+    updateText() {
+        this.prizeLabel.text =
+            _api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_3__.COLORGAMEDATA.PRIZES[_api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_3__.COLORGAMEDATA.BET] + " (" + _api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_3__.COLORGAMEDATA.WIN + "x)";
+    }
+    hideResult() {
+        gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.to(this.scale, 0.5, {
+            x: 0.5,
+            y: 0.5,
+            startAt: { x: 1, y: 1 },
+            ease: gsap__WEBPACK_IMPORTED_MODULE_7__.Back.easeIn,
+        });
+        gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.to(this, 0.5, {
+            alpha: 0,
+            startAt: { alpha: 1 },
+            onComplete: () => {
+                this.visible = false;
+            },
+        });
+    }
+}
 
 
 /***/ }),
@@ -13801,47 +14367,363 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ MainControl)
 /* harmony export */ });
-/* harmony import */ var _core_utils_Utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/utils/Utils */ "./game/core/utils/Utils.ts");
-/* harmony import */ var _api_SLOTDATA__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../api/SLOTDATA */ "./game/api/SLOTDATA.ts");
-/* harmony import */ var _enums__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../enums */ "./game/enums.ts");
+/* harmony import */ var _utils_Utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/Utils */ "./game/utils/Utils.ts");
+/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
+/* harmony import */ var _pixi_sound__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @pixi/sound */ "./node_modules/@pixi/sound/lib/index.mjs");
+/* harmony import */ var _api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../api/COLORGAMEDATA */ "./game/api/COLORGAMEDATA.ts");
+/* harmony import */ var _utils_PixiUtils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/PixiUtils */ "./game/utils/PixiUtils.ts");
+
+
 
 
 
 class MainControl {
     constructor(game, api) {
+        this.gameReady = true;
         this.game = game;
         this.api = api;
-        //login to the server
-        //api.login(SLOTDATA.USERLOGIN);
-        //api load event-------------------------------
-        api.event.on(_enums__WEBPACK_IMPORTED_MODULE_2__.Event.INFO_RECEIVE_EVENT, () => { });
-        //button events--------------------------------
-        (0,_core_utils_Utils__WEBPACK_IMPORTED_MODULE_0__.addButtonEvent)(game, () => {
-            game.machine.animateBall();
-        });
-        //keyboard shortcuts--------------------------
-        (0,_core_utils_Utils__WEBPACK_IMPORTED_MODULE_0__.addKeyboardEvent)(82, () => {
-            //spin - r
-            this.api.infoRequest();
+        this.addControls();
+        _pixi_sound__WEBPACK_IMPORTED_MODULE_1__.sound.play("bgm_casino2", {
+            loop: true,
+            volume: 0.1,
         });
     }
-    checkFreeSpinEnd() {
-        return _api_SLOTDATA__WEBPACK_IMPORTED_MODULE_1__.SLOTDATA.FREESPINS > 0;
+    addControls() {
+        //info close
+        (0,_utils_Utils__WEBPACK_IMPORTED_MODULE_0__.addButtonEvent)(this.game.betInfoPage, () => {
+            this.game.betInfoPage.close();
+        });
+        //info show
+        (0,_utils_Utils__WEBPACK_IMPORTED_MODULE_0__.addButtonEvent)(this.game.betTable.btnInfo, () => {
+            this.game.betInfoPage.show();
+            (0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_3__.buttonClickEffect)(this.game.betTable.btnInfo);
+        });
+        //play
+        (0,_utils_Utils__WEBPACK_IMPORTED_MODULE_0__.addButtonEvent)(this.game.betTable.btnPlay, () => {
+            this.play();
+        });
+        //home
+        (0,_utils_Utils__WEBPACK_IMPORTED_MODULE_0__.addButtonEvent)(this.game.betTable.btnHome, () => {
+            (0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_3__.buttonClickEffect)(this.game.betTable.btnHome);
+        });
+        //
+        let i = 0;
+        for (i = 0; i < 6; i++) {
+            let num = i;
+            (0,_utils_Utils__WEBPACK_IMPORTED_MODULE_0__.addButtonEvent)(this.game.betTable.betButtons[i], () => {
+                (0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_3__.buttonClickEffect)(this.game.betTable.betButtons[num]);
+                this.placeBet(this.game.betTable.betButtons[num], num);
+            });
+        }
+    }
+    //
+    placeBet(btn, id) {
+        if (this.gameReady == false) {
+            return;
+        }
+        _pixi_sound__WEBPACK_IMPORTED_MODULE_1__.sound.play("sfx_click_short");
+        this.game.betTable.moveCoin(btn);
+        _api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_2__.COLORGAMEDATA.BET = id;
+    }
+    play() {
+        //
+        if (this.gameReady == false || _api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_2__.COLORGAMEDATA.BET == -1) {
+            return;
+        }
+        _pixi_sound__WEBPACK_IMPORTED_MODULE_1__.sound.play("sfx_click");
+        _api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_2__.COLORGAMEDATA.WIN = 0;
+        _api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_2__.COLORGAMEDATA.RESULT = [
+            (0,_utils_Utils__WEBPACK_IMPORTED_MODULE_0__.generateRandom)(6),
+            (0,_utils_Utils__WEBPACK_IMPORTED_MODULE_0__.generateRandom)(6),
+            (0,_utils_Utils__WEBPACK_IMPORTED_MODULE_0__.generateRandom)(6),
+        ];
+        this.gameReady = false;
+        this.game.betTable.btnPlay.tint = 0x999999;
+        (0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_3__.buttonClickEffect)(this.game.betTable.btnPlay);
+        gsap__WEBPACK_IMPORTED_MODULE_4__.gsap.delayedCall(2, () => {
+            this.game.colorGameMachine.bglauncher.play();
+            _pixi_sound__WEBPACK_IMPORTED_MODULE_1__.sound.play("sfx_open");
+        });
+        gsap__WEBPACK_IMPORTED_MODULE_4__.gsap.delayedCall(2.2, () => {
+            _pixi_sound__WEBPACK_IMPORTED_MODULE_1__.sound.play("sfx_dice_drop");
+        });
+        gsap__WEBPACK_IMPORTED_MODULE_4__.gsap.delayedCall(4, () => {
+            this.game.revealResult.showResult();
+            _pixi_sound__WEBPACK_IMPORTED_MODULE_1__.sound.play("sfx_reveal");
+        });
+        gsap__WEBPACK_IMPORTED_MODULE_4__.gsap.delayedCall(6, () => {
+            this.game.revealResult.hideResult();
+            this.game.colorGameMachine.reset();
+            _pixi_sound__WEBPACK_IMPORTED_MODULE_1__.sound.play("sfx_3_swoosh", { volume: 0.25 });
+            if (_api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_2__.COLORGAMEDATA.WIN > 0) {
+                this.game.winningFlyer.showResult();
+                gsap__WEBPACK_IMPORTED_MODULE_4__.gsap.delayedCall(3, () => {
+                    this.game.betTable.btnPlay.tint = 0xffffff;
+                    this.gameReady = true;
+                });
+            }
+            else {
+                this.game.betTable.btnPlay.tint = 0xffffff;
+                this.gameReady = true;
+            }
+        });
+        let i = 0;
+        for (i = 0; i < 3; i++) {
+            this.game.colorGameMachine.dice[i].play(i);
+        }
     }
 }
 
 
 /***/ }),
 
-/***/ "./game/core/utils/Utils.ts":
-/*!**********************************!*\
-  !*** ./game/core/utils/Utils.ts ***!
-  \**********************************/
+/***/ "./game/enums.ts":
+/*!***********************!*\
+  !*** ./game/enums.ts ***!
+  \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   COLORS: () => (/* binding */ COLORS),
+/* harmony export */   CURRENCY: () => (/* binding */ CURRENCY),
+/* harmony export */   Event: () => (/* binding */ Event),
+/* harmony export */   Method: () => (/* binding */ Method),
+/* harmony export */   RESULTCODE: () => (/* binding */ RESULTCODE),
+/* harmony export */   STATUS_CODE: () => (/* binding */ STATUS_CODE)
+/* harmony export */ });
+var STATUS_CODE;
+(function (STATUS_CODE) {
+    STATUS_CODE[STATUS_CODE["NotFound"] = 404] = "NotFound";
+    STATUS_CODE[STATUS_CODE["Success"] = 200] = "Success";
+    STATUS_CODE[STATUS_CODE["Accepted"] = 202] = "Accepted";
+    STATUS_CODE[STATUS_CODE["BadRequest"] = 400] = "BadRequest";
+})(STATUS_CODE || (STATUS_CODE = {}));
+var RESULTCODE;
+(function (RESULTCODE) {
+    RESULTCODE["SUCCESS"] = "Success";
+    RESULTCODE["BADREQUEST"] = "BadRequest";
+})(RESULTCODE || (RESULTCODE = {}));
+var CURRENCY;
+(function (CURRENCY) {
+    CURRENCY["IDR"] = "Rp";
+    CURRENCY["USD"] = "$";
+    CURRENCY["INR"] = "\u20B9";
+    CURRENCY["MYR"] = "RM";
+    CURRENCY["PHP"] = "\u20B1";
+    CURRENCY["THB"] = "\u0E3F";
+    CURRENCY["TWD"] = "NT$";
+    CURRENCY["VND"] = "\u20AB";
+    CURRENCY["JPY"] = "\u00A5";
+})(CURRENCY || (CURRENCY = {}));
+var Event;
+(function (Event) {
+    Event["SPIN_END_EVENT"] = "spinEnd";
+    Event["INFO_RECEIVE_EVENT"] = "infoReceive";
+    Event["ACQUIRE_RECEIVE_EVENT"] = "acquireReceive";
+    Event["STEP_RECEIVE_EVENT"] = "stepReceive";
+    Event["PRELOAD_COMPLETE"] = "preloadComplete";
+})(Event || (Event = {}));
+var COLORS;
+(function (COLORS) {
+    COLORS["RED"] = "#FF0000";
+    COLORS["LIGHTRED"] = "#FF6666";
+    COLORS["GREEN"] = "#00FF00";
+    COLORS["BLUE"] = "#0000FF";
+    COLORS["BLACK"] = "#000000";
+    COLORS["WHITE"] = "#FFFFFF";
+    COLORS["ORANGE"] = "#FFCC00";
+    COLORS["DARKGRAY"] = "#666666";
+    COLORS["DARKERGRAY"] = "#333333";
+    COLORS["LIGHTGRAY"] = "#CCCCCC";
+})(COLORS || (COLORS = {}));
+var Method;
+(function (Method) {
+    Method["GET"] = "GET";
+    Method["POST"] = "POST";
+})(Method || (Method = {}));
+
+
+/***/ }),
+
+/***/ "./game/template/components/AnimatedObject.ts":
+/*!****************************************************!*\
+  !*** ./game/template/components/AnimatedObject.ts ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ AnimatedObject)
+/* harmony export */ });
+/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
+/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
+/* harmony import */ var _utils_Utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utils/Utils */ "./game/utils/Utils.ts");
+/* harmony import */ var _SpriteV2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SpriteV2 */ "./game/template/components/SpriteV2.ts");
+
+
+
+
+class AnimatedObject extends _SpriteV2__WEBPACK_IMPORTED_MODULE_2__["default"] {
+    constructor(baseTexture, textureName, playOnce = true) {
+        super();
+        this.textureName = "";
+        this.baseTexture = "";
+        this.totalFrames = 0;
+        this.currentFrame = 0;
+        //private ticker: Ticker;
+        this.tick = 0;
+        this.ctr = 0; //counter for number of played frames
+        this.anchor.set(0.5);
+        this.pivot.set(0.5);
+        this.baseTexture = baseTexture;
+        this.textureName = textureName;
+        this.updateFrames();
+        this.tw = gsap__WEBPACK_IMPORTED_MODULE_3__.gsap.to(this, 2, {
+            repeat: -1,
+            onUpdate: () => {
+                this.tick += 1;
+                if (this.tick > 1) {
+                    this.tick = 0;
+                    this.texture = pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.get(this.baseTexture).textures[this.textureName + (0,_utils_Utils__WEBPACK_IMPORTED_MODULE_1__.NumberZero)(this.currentFrame)];
+                    this.ctr += 1;
+                    this.currentFrame += 1;
+                    if (this.currentFrame >= this.totalFrames) {
+                        this.currentFrame = 0;
+                    }
+                    if (playOnce && this.ctr >= this.totalFrames) {
+                        this.tw.pause();
+                    }
+                }
+            },
+        });
+        this.tw.pause();
+    }
+    updateFrames(baseTexture = "", textureName = "", currentFrame = -1) {
+        if (baseTexture != "" && textureName != "") {
+            this.baseTexture = baseTexture;
+            this.textureName = textureName;
+        }
+        if (currentFrame !== -1) {
+            this.currentFrame = currentFrame;
+        }
+        this.texture = pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.get(this.baseTexture).textures[this.textureName + (0,_utils_Utils__WEBPACK_IMPORTED_MODULE_1__.NumberZero)(this.currentFrame)]; //prettier-ignore
+        this.totalFrames = pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.get(this.baseTexture)._frameKeys.length;
+    }
+    play(baseTexture = "", textureName = "", currentFrame = 0) {
+        if (baseTexture != "") {
+            this.baseTexture = baseTexture;
+        }
+        if (textureName != "") {
+            this.textureName = textureName;
+        }
+        this.ctr = 0;
+        this.tick = 0;
+        this.currentFrame = currentFrame;
+        this.updateFrames();
+        this.tw.restart();
+    }
+}
+
+
+/***/ }),
+
+/***/ "./game/template/components/SpriteV2.ts":
+/*!**********************************************!*\
+  !*** ./game/template/components/SpriteV2.ts ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ SpriteV2)
+/* harmony export */ });
+/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
+
+class SpriteV2 extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
+    constructor(asset) {
+        super();
+        this.anchor.set(0.5);
+        this.pivot.set(0.5);
+        if (asset != undefined) {
+            this.texture = asset;
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./game/utils/PixiUtils.ts":
+/*!*********************************!*\
+  !*** ./game/utils/PixiUtils.ts ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   TP: () => (/* binding */ TP),
+/* harmony export */   addTickerEvent: () => (/* binding */ addTickerEvent),
+/* harmony export */   buttonClickEffect: () => (/* binding */ buttonClickEffect),
+/* harmony export */   changeGraphicsColor: () => (/* binding */ changeGraphicsColor)
+/* harmony export */ });
+/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
+/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
+//change graphics color
+
+
+function changeGraphicsColor(gfx, color, duration = 1) {
+    gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.to(gfx, { duration: duration, pixi: { lineColor: color } });
+}
+function addTickerEvent(action) {
+    const ticker = pixi_js__WEBPACK_IMPORTED_MODULE_0__.Ticker.shared.add((deltaTime) => {
+        action(ticker);
+    });
+    ticker.stop();
+    return ticker;
+}
+function buttonClickEffect(btn) {
+    const _scale = btn.scale.x;
+    gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.to(btn.scale, {
+        duration: 0.05,
+        repeat: 1,
+        yoyo: true,
+        x: _scale - 0.05,
+        y: _scale - 0.05,
+    });
+}
+function TP(base, texture) {
+    //texture packer
+    const arr = pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.get(base)._frames;
+    let i = 0;
+    let id = 0;
+    for (i = 0; i < arr.length; i++) {
+        if (arr[i].filename == texture) {
+            id = i;
+            pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.get(base).textures[id];
+            return pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.get(base).textures[id];
+        }
+    }
+    return pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.get(base).textures[id];
+}
+
+
+/***/ }),
+
+/***/ "./game/utils/Utils.ts":
+/*!*****************************!*\
+  !*** ./game/utils/Utils.ts ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   NumberZero: () => (/* binding */ NumberZero),
 /* harmony export */   addButtonEvent: () => (/* binding */ addButtonEvent),
 /* harmony export */   addKeyboardEvent: () => (/* binding */ addKeyboardEvent),
 /* harmony export */   degToRad: () => (/* binding */ degToRad),
@@ -13943,430 +14825,9 @@ function addButtonEvent(btn, btnUpFnc) {
         btnUpFnc(e);
     });
 }
-
-
-/***/ }),
-
-/***/ "./game/enums.ts":
-/*!***********************!*\
-  !*** ./game/enums.ts ***!
-  \***********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   COLORS: () => (/* binding */ COLORS),
-/* harmony export */   CURRENCY: () => (/* binding */ CURRENCY),
-/* harmony export */   Event: () => (/* binding */ Event),
-/* harmony export */   RESULTCODE: () => (/* binding */ RESULTCODE),
-/* harmony export */   STATUS_CODE: () => (/* binding */ STATUS_CODE)
-/* harmony export */ });
-var STATUS_CODE;
-(function (STATUS_CODE) {
-    STATUS_CODE[STATUS_CODE["NotFound"] = 404] = "NotFound";
-    STATUS_CODE[STATUS_CODE["Success"] = 200] = "Success";
-    STATUS_CODE[STATUS_CODE["Accepted"] = 202] = "Accepted";
-    STATUS_CODE[STATUS_CODE["BadRequest"] = 400] = "BadRequest";
-})(STATUS_CODE || (STATUS_CODE = {}));
-var RESULTCODE;
-(function (RESULTCODE) {
-    RESULTCODE["SUCCESS"] = "Success";
-    RESULTCODE["BADREQUEST"] = "BadRequest";
-})(RESULTCODE || (RESULTCODE = {}));
-var CURRENCY;
-(function (CURRENCY) {
-    CURRENCY["IDR"] = "Rp";
-    CURRENCY["USD"] = "$";
-    CURRENCY["INR"] = "\u20B9";
-    CURRENCY["MYR"] = "RM";
-    CURRENCY["PHP"] = "\u20B1";
-    CURRENCY["THB"] = "\u0E3F";
-    CURRENCY["TWD"] = "NT$";
-    CURRENCY["VND"] = "\u20AB";
-    CURRENCY["JPY"] = "\u00A5";
-})(CURRENCY || (CURRENCY = {}));
-var Event;
-(function (Event) {
-    Event["SPIN_END_EVENT"] = "spinEnd";
-    Event["INFO_RECEIVE_EVENT"] = "infoReceive";
-    Event["ACQUIRE_RECEIVE_EVENT"] = "acquireReceive";
-    Event["STEP_RECEIVE_EVENT"] = "stepReceive";
-    Event["PRELOAD_COMPLETE"] = "preloadComplete";
-})(Event || (Event = {}));
-var COLORS;
-(function (COLORS) {
-    COLORS["RED"] = "#FF0000";
-    COLORS["LIGHTRED"] = "#FF6666";
-    COLORS["GREEN"] = "#00FF00";
-    COLORS["BLUE"] = "#0000FF";
-    COLORS["BLACK"] = "#000000";
-    COLORS["WHITE"] = "#FFFFFF";
-    COLORS["ORANGE"] = "#FFCC00";
-    COLORS["DARKGRAY"] = "#666666";
-    COLORS["DARKERGRAY"] = "#333333";
-    COLORS["LIGHTGRAY"] = "#CCCCCC";
-})(COLORS || (COLORS = {}));
-
-
-/***/ }),
-
-/***/ "./game/pixi-components/SpriteV2.ts":
-/*!******************************************!*\
-  !*** ./game/pixi-components/SpriteV2.ts ***!
-  \******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ SpriteV2)
-/* harmony export */ });
-/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
-
-class SpriteV2 extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
-    constructor(txtr) {
-        super();
-        this.anchor.set(0.5);
-        this.pivot.set(0.5);
-        if (txtr != undefined) {
-            this.texture = txtr;
-        }
-    }
-}
-
-
-/***/ }),
-
-/***/ "./game/slot/view/screens/MainGame.ts":
-/*!********************************************!*\
-  !*** ./game/slot/view/screens/MainGame.ts ***!
-  \********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ MainGame)
-/* harmony export */ });
-/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
-/* harmony import */ var _core_utils_Utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../core/utils/Utils */ "./game/core/utils/Utils.ts");
-/* harmony import */ var _PlinkoMachine__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./PlinkoMachine */ "./game/slot/view/screens/PlinkoMachine.ts");
-
-
-
-class MainGame extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
-    constructor(app) {
-        super();
-        this.gameContainer = new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite();
-        //this.anchor.set(0.5);
-        //this.pivot.set(0.5);
-        this.app = app;
-        this.addChild(this.gameContainer);
-        this.machine = new _PlinkoMachine__WEBPACK_IMPORTED_MODULE_2__["default"](this.app);
-        this.init();
-    }
-    init() {
-        //play ambient sounds
-        //sound.play("sfx_ambient",{loop:true,volume:0.3});
-        this.drawGameElements();
-        this.initSize();
-        //auto detect size based on the device screen
-        this.checkScreenSize();
-        setTimeout(() => {
-            this.resizeScreen();
-        }, 1);
-    }
-    drawGameElements() {
-        //add game background
-        const bg = this.gameContainer.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Graphics());
-        bg.rect(-640, -360, 1280, 720);
-        bg.fill(0x333333);
-        this.gameContainer.addChild(this.machine);
-        this.machine.position.set(0, 0);
-    }
-    //display settings---------------------------------
-    checkScreenSize() {
-        document.body.onresize = (e) => {
-            this.resizeScreen();
-        };
-        //on load, need some delay to trigger resize event
-    }
-    initSize() {
-        if ((0,_core_utils_Utils__WEBPACK_IMPORTED_MODULE_1__.isPortrait)()) {
-            this.width = (this.app.canvas.width / 750) * 0.87;
-            this.height = (this.app.canvas.height / 1334) * 0.87;
-        }
-        else {
-            this.width = (this.app.canvas.width / 1334) * 0.87;
-            this.height = (this.app.canvas.height / 750) * 0.87;
-        }
-    }
-    resizeScreen() {
-        //console.log("sz:", this.width, this.height, isPortrait());
-        //setFullscreen(true);
-        if ((0,_core_utils_Utils__WEBPACK_IMPORTED_MODULE_1__.isPortrait)()) {
-            //portrait
-        }
-        else {
-            //landscape
-        }
-    }
-}
-
-
-/***/ }),
-
-/***/ "./game/slot/view/screens/PlinkoMachine.ts":
-/*!*************************************************!*\
-  !*** ./game/slot/view/screens/PlinkoMachine.ts ***!
-  \*************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ PlinkoMachine)
-/* harmony export */ });
-/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
-/* harmony import */ var _pixi_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../pixi-components/SpriteV2 */ "./game/pixi-components/SpriteV2.ts");
-/* harmony import */ var _GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../GAMESETTINGS */ "./game/GAMESETTINGS.ts");
-/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
-/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/gsap-core.js");
-/* harmony import */ var _core_utils_Utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../core/utils/Utils */ "./game/core/utils/Utils.ts");
-
-
-
-
-
-class PlinkoMachine extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
-    constructor(app) {
-        super();
-        this.container = new _pixi_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"]();
-        this.blockerContainer = new _pixi_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"]();
-        this.blockers = [];
-        this.betblocks = [];
-        this.balls = [];
-        this.buttons = [];
-        this.betLabels = [];
-        this.currentBall = 0;
-        this.floorNum = 8;
-        this.bet_id = 0;
-        this.betListCount = [
-            42, 52, 63, 75, 88, 102, 117, 133, 150, 168, 207,
-        ];
-        this.maxbetlength = 17;
-        this.blockerArrayId = [];
-        this.total_balls = 50;
-        this.app = app;
-        this.addChild(this.container);
-        this.init();
-    }
-    init() {
-        const bg = this.container.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Graphics());
-        bg.rect(-340, -340, 680, 680);
-        bg.fill(0x303030);
-        this.bet_id = 9; //this.betListCount.length - 2; //0
-        this.container.addChild(this.blockerContainer);
-        this.blockerContainer.scale.set(0.85 - 0.05 * this.bet_id);
-        this.blockerContainer.position.set(0, -250);
-        this.drawBlockers(this.betListCount[this.bet_id]);
-        this.createBlockerId();
-        this.drawBalls();
-        this.drawBetBlocks();
-    }
-    drawBlockers(num) {
-        let i = 0;
-        let _totalbetlist = num;
-        let _gap = 80;
-        let _base_x = -_gap;
-        let _x = -_gap;
-        let _xgap = _gap;
-        let _ygap = _gap;
-        let _y = 0;
-        let _cap_lvl = 3;
-        let _temp_lvl = 0;
-        let tints = [0x999999, 0x666666];
-        let tint_id = 0;
-        let tint_ctr = 0;
-        let betlist = this.betListCount;
-        for (i = 0; i < betlist[betlist.length - 1]; i++) {
-            this.blockers[i] = this.blockerContainer.addChild(new _pixi_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"](pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.get("plinko").textures["blocker0000"]));
-            if (_temp_lvl < _cap_lvl) {
-                _x = _base_x + _xgap * _temp_lvl;
-                this.blockers[i].position.set(_x, _y);
-                //update tint
-                _temp_lvl += 1;
-                tint_id = tint_ctr % 2;
-            }
-            else {
-                _base_x -= _xgap * 0.5;
-                _temp_lvl = 0;
-                _cap_lvl += 1;
-                _y += _ygap;
-                _x = _base_x + _xgap * _temp_lvl;
-                this.blockers[i].position.set(_x + _xgap * _temp_lvl, _y);
-                //chanage tint
-                _temp_lvl += 1;
-                tint_ctr += 1;
-                tint_id = tint_ctr % 2;
-            }
-            this.blockers[i].tint = tints[tint_id];
-            if (i >= _totalbetlist) {
-                this.blockers[i].visible = false;
-            }
-        }
-    }
-    drawBalls() {
-        let i = 0;
-        for (i = 0; i < this.total_balls; i++) {
-            this.balls[i] = this.blockerContainer.addChild(new _pixi_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"](pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.get("plinko").textures["ball0000"]));
-            this.balls[i].tint = 0xff0000;
-            this.balls[i].scale.set(1.2);
-            this.balls[i].visible = false;
-        }
-    }
-    createBlockerId() {
-        let i = 0;
-        let k = 0;
-        let temp_max = 3;
-        let temp_arr = [];
-        for (i = 0; i < this.betListCount[this.betListCount.length - 1]; i++) {
-            //
-            if (this.blockerArrayId[k - 3] == undefined) {
-                temp_arr.push(i);
-            }
-            else {
-                temp_arr.push(i);
-            }
-            k += 1;
-            if (k >= temp_max) {
-                this.blockerArrayId[k - 3] = temp_arr;
-                temp_arr = [];
-                k = 0;
-                temp_max += 1;
-            }
-        }
-        //console.log("ss", this.blockerArrayId);
-    }
-    drawBetBlocks() {
-        let i = 0;
-        let _gap = 80;
-        let _x = -_gap;
-        let _xgap = _gap;
-        let _ygap = _gap;
-        let _y = 0;
-        for (i = 0; i < this.maxbetlength; i++) {
-            this.betblocks[i] = this.blockerContainer.addChild(new _pixi_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"](pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.get("plinko").textures["btn30000"]));
-            _y = (this.bet_id + 7) * _ygap;
-            _x = -((this.bet_id + 7) * (_xgap * 0.5)) + _xgap * i;
-            this.betblocks[i].position.set(_x, _y);
-            if (i > this.bet_id + 7) {
-                this.betblocks[i].visible = false;
-            }
-            //add texts
-            this.betLabels[i] = this.betblocks[i].addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__.GAMESETTINGS.textstyle1));
-            this.betLabels[i].text = "x" + (i + 1);
-            this.betLabels[i].anchor.set(0.5);
-            this.betLabels[i].style.fill = 0x0;
-            this.betLabels[i].style.fontSize = 23;
-            this.betLabels[i].y = -3;
-        }
-        this.floorNum = this.bet_id + 8;
-        this.generatePathID();
-    }
-    animateBall() {
-        const path = this.generatePathID();
-        console.log("##path", path);
-        this.floorNum = this.bet_id + 8;
-        const ball = this.balls[this.currentBall];
-        ball.position.set(0, -50);
-        ball.visible = true;
-        this.currentBall += 1;
-        if (this.currentBall >= this.total_balls) {
-            this.currentBall = 0;
-        }
-        const tl = gsap__WEBPACK_IMPORTED_MODULE_4__.gsap.timeline();
-        let _gap = 80;
-        let i = 0;
-        for (i = 1; i < this.floorNum; i++) {
-            const target = this.blockers[path[i]];
-            tl.add([
-                gsap__WEBPACK_IMPORTED_MODULE_4__.gsap.to(ball, {
-                    duration: 0.2,
-                    ease: gsap__WEBPACK_IMPORTED_MODULE_5__.Power1.easeInOut,
-                    x: target.x,
-                    onComplete: () => {
-                        gsap__WEBPACK_IMPORTED_MODULE_4__.gsap.to(target.scale, {
-                            duration: 0.1,
-                            repeat: 3,
-                            yoyo: true,
-                            x: 1.5,
-                            y: 1.5,
-                            startAt: { x: 1, y: 1 },
-                        });
-                    },
-                }),
-                gsap__WEBPACK_IMPORTED_MODULE_4__.gsap.to(ball, {
-                    duration: 0.2,
-                    ease: gsap__WEBPACK_IMPORTED_MODULE_5__.Back.easeIn,
-                    y: ball.x + _gap * i - 25,
-                }),
-            ]);
-        }
-    }
-    generatePath() {
-        let num = (0,_core_utils_Utils__WEBPACK_IMPORTED_MODULE_3__.generateRandom)(this.floorNum) + 1;
-        let path = [];
-        let floor = this.floorNum;
-        let max = floor;
-        let i = 0;
-        //console.log("@@num", num);
-        path[i] = num;
-        if (num >= max) {
-            num = max;
-        }
-        for (i = 1; i < floor; i++) {
-            const rdm = (0,_core_utils_Utils__WEBPACK_IMPORTED_MODULE_3__.generateRandom)(2) == 0 ? -1 : 0;
-            //console.log("rdm", rdm);
-            num += rdm;
-            if (num <= 0) {
-                num = 1;
-            }
-            else if (num >= max) {
-                num = max;
-            }
-            path[i] = num;
-            max -= 1;
-        }
-        path = path.reverse();
-        //this.path = path;
-        return path;
-    }
-    identifyId(floor, id) {
-        //console.log("identify", floor, id);
-        let i = 0;
-        let block_id = this.blockerArrayId[floor][id];
-        //console.log(floor, "blocker_id", floor, id, block_id);
-        return block_id;
-    }
-    generatePathID() {
-        let i = 0;
-        let path = this.generatePath();
-        let blocker_id = 0;
-        let pathID = [];
-        let floor = this.floorNum;
-        /*for (i = 0; i < 150; i++) {
-            //this.blockers[i].tint = 0xffffff;
-        }*/
-        //console.log("path", path, this.blockers.length);
-        for (i = 0; i < floor; i++) {
-            blocker_id = this.identifyId(i, path[i]);
-            //this.blockers[blocker_id].tint = 0xffcc00;
-            pathID.push(blocker_id);
-        }
-        return pathID;
-    }
+//convert number to 4 character string, ex: 0001","0002","0003"...
+function NumberZero(num, pad = 4) {
+    return String(num).padStart(pad, "0");
 }
 
 
@@ -14437,6 +14898,3443 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* export default binding */ __WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__(e,f){var a={white:"#ffffff",bisque:"#ffe4c4",blue:"#0000ff",cadetblue:"#5f9ea0",chartreuse:"#7fff00",chocolate:"#d2691e",coral:"#ff7f50",antiquewhite:"#faebd7",aqua:"#00ffff",azure:"#f0ffff",whitesmoke:"#f5f5f5",papayawhip:"#ffefd5",plum:"#dda0dd",blanchedalmond:"#ffebcd",black:"#000000",gold:"#ffd700",goldenrod:"#daa520",gainsboro:"#dcdcdc",cornsilk:"#fff8dc",cornflowerblue:"#6495ed",burlywood:"#deb887",aquamarine:"#7fffd4",beige:"#f5f5dc",crimson:"#dc143c",cyan:"#00ffff",darkblue:"#00008b",darkcyan:"#008b8b",darkgoldenrod:"#b8860b",darkkhaki:"#bdb76b",darkgray:"#a9a9a9",darkgreen:"#006400",darkgrey:"#a9a9a9",peachpuff:"#ffdab9",darkmagenta:"#8b008b",darkred:"#8b0000",darkorchid:"#9932cc",darkorange:"#ff8c00",darkslateblue:"#483d8b",gray:"#808080",darkslategray:"#2f4f4f",darkslategrey:"#2f4f4f",deeppink:"#ff1493",deepskyblue:"#00bfff",wheat:"#f5deb3",firebrick:"#b22222",floralwhite:"#fffaf0",ghostwhite:"#f8f8ff",darkviolet:"#9400d3",magenta:"#ff00ff",green:"#008000",dodgerblue:"#1e90ff",grey:"#808080",honeydew:"#f0fff0",hotpink:"#ff69b4",blueviolet:"#8a2be2",forestgreen:"#228b22",lawngreen:"#7cfc00",indianred:"#cd5c5c",indigo:"#4b0082",fuchsia:"#ff00ff",brown:"#a52a2a",maroon:"#800000",mediumblue:"#0000cd",lightcoral:"#f08080",darkturquoise:"#00ced1",lightcyan:"#e0ffff",ivory:"#fffff0",lightyellow:"#ffffe0",lightsalmon:"#ffa07a",lightseagreen:"#20b2aa",linen:"#faf0e6",mediumaquamarine:"#66cdaa",lemonchiffon:"#fffacd",lime:"#00ff00",khaki:"#f0e68c",mediumseagreen:"#3cb371",limegreen:"#32cd32",mediumspringgreen:"#00fa9a",lightskyblue:"#87cefa",lightblue:"#add8e6",midnightblue:"#191970",lightpink:"#ffb6c1",mistyrose:"#ffe4e1",moccasin:"#ffe4b5",mintcream:"#f5fffa",lightslategray:"#778899",lightslategrey:"#778899",navajowhite:"#ffdead",navy:"#000080",mediumvioletred:"#c71585",powderblue:"#b0e0e6",palegoldenrod:"#eee8aa",oldlace:"#fdf5e6",paleturquoise:"#afeeee",mediumturquoise:"#48d1cc",mediumorchid:"#ba55d3",rebeccapurple:"#663399",lightsteelblue:"#b0c4de",mediumslateblue:"#7b68ee",thistle:"#d8bfd8",tan:"#d2b48c",orchid:"#da70d6",mediumpurple:"#9370db",purple:"#800080",pink:"#ffc0cb",skyblue:"#87ceeb",springgreen:"#00ff7f",palegreen:"#98fb98",red:"#ff0000",yellow:"#ffff00",slateblue:"#6a5acd",lavenderblush:"#fff0f5",peru:"#cd853f",palevioletred:"#db7093",violet:"#ee82ee",teal:"#008080",slategray:"#708090",slategrey:"#708090",aliceblue:"#f0f8ff",darkseagreen:"#8fbc8f",darkolivegreen:"#556b2f",greenyellow:"#adff2f",seagreen:"#2e8b57",seashell:"#fff5ee",tomato:"#ff6347",silver:"#c0c0c0",sienna:"#a0522d",lavender:"#e6e6fa",lightgreen:"#90ee90",orange:"#ffa500",orangered:"#ff4500",steelblue:"#4682b4",royalblue:"#4169e1",turquoise:"#40e0d0",yellowgreen:"#9acd32",salmon:"#fa8072",saddlebrown:"#8b4513",sandybrown:"#f4a460",rosybrown:"#bc8f8f",darksalmon:"#e9967a",lightgoldenrodyellow:"#fafad2",snow:"#fffafa",lightgrey:"#d3d3d3",lightgray:"#d3d3d3",dimgray:"#696969",dimgrey:"#696969",olivedrab:"#6b8e23",olive:"#808000"},r={};for(var d in a)r[a[d]]=d;var l={};e.prototype.toName=function(f){if(!(this.rgba.a||this.rgba.r||this.rgba.g||this.rgba.b))return"transparent";var d,i,n=r[this.toHex()];if(n)return n;if(null==f?void 0:f.closest){var o=this.toRgb(),t=1/0,b="black";if(!l.length)for(var c in a)l[c]=new e(a[c]).toRgb();for(var g in a){var u=(d=o,i=l[g],Math.pow(d.r-i.r,2)+Math.pow(d.g-i.g,2)+Math.pow(d.b-i.b,2));u<t&&(t=u,b=g)}return b}};f.string.push([function(f){var r=f.toLowerCase(),d="transparent"===r?"#0000":a[r];return d?new e(d).toRgb():null},"name"])}
+
+
+/***/ }),
+
+/***/ "./node_modules/@pixi/sound/lib/Filterable.mjs":
+/*!*****************************************************!*\
+  !*** ./node_modules/@pixi/sound/lib/Filterable.mjs ***!
+  \*****************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Filterable: () => (/* binding */ Filterable)
+/* harmony export */ });
+class Filterable {
+  /**
+   * @param input - The source audio node
+   * @param output - The output audio node
+   */
+  constructor(input, output) {
+    this._output = output;
+    this._input = input;
+  }
+  /** The destination output audio node */
+  get destination() {
+    return this._input;
+  }
+  /** The collection of filters. */
+  get filters() {
+    return this._filters;
+  }
+  set filters(filters) {
+    if (this._filters) {
+      this._filters.forEach((filter) => {
+        if (filter) {
+          filter.disconnect();
+        }
+      });
+      this._filters = null;
+      this._input.connect(this._output);
+    }
+    if (filters && filters.length) {
+      this._filters = filters.slice(0);
+      this._input.disconnect();
+      let prevFilter = null;
+      filters.forEach((filter) => {
+        if (prevFilter === null) {
+          this._input.connect(filter.destination);
+        } else {
+          prevFilter.connect(filter.destination);
+        }
+        prevFilter = filter;
+      });
+      prevFilter.connect(this._output);
+    }
+  }
+  /** Cleans up. */
+  destroy() {
+    this.filters = null;
+    this._input = null;
+    this._output = null;
+  }
+}
+
+
+//# sourceMappingURL=Filterable.mjs.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@pixi/sound/lib/Sound.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/@pixi/sound/lib/Sound.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Sound: () => (/* binding */ Sound)
+/* harmony export */ });
+/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
+/* harmony import */ var _htmlaudio_HTMLAudioMedia_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./htmlaudio/HTMLAudioMedia.mjs */ "./node_modules/@pixi/sound/lib/htmlaudio/HTMLAudioMedia.mjs");
+/* harmony import */ var _instance_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./instance.mjs */ "./node_modules/@pixi/sound/lib/instance.mjs");
+/* harmony import */ var _SoundSprite_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SoundSprite.mjs */ "./node_modules/@pixi/sound/lib/SoundSprite.mjs");
+/* harmony import */ var _utils_supported_mjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./utils/supported.mjs */ "./node_modules/@pixi/sound/lib/utils/supported.mjs");
+/* harmony import */ var _webaudio_WebAudioMedia_mjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./webaudio/WebAudioMedia.mjs */ "./node_modules/@pixi/sound/lib/webaudio/WebAudioMedia.mjs");
+
+
+
+
+
+
+
+const _Sound = class {
+  /**
+   * Create a new sound instance from source.
+   * @param source - Either the path or url to the source file.
+   *        or the object of options to use.
+   * @return Created sound instance.
+   */
+  static from(source) {
+    let options = {};
+    if (typeof source === "string") {
+      options.url = source;
+    } else if (source instanceof ArrayBuffer || source instanceof AudioBuffer || source instanceof HTMLAudioElement) {
+      options.source = source;
+    } else if (Array.isArray(source)) {
+      options.url = source;
+    } else {
+      options = source;
+    }
+    options = {
+      autoPlay: false,
+      singleInstance: false,
+      url: null,
+      source: null,
+      preload: false,
+      volume: 1,
+      speed: 1,
+      complete: null,
+      loaded: null,
+      loop: false,
+      ...options
+    };
+    Object.freeze(options);
+    const media = (0,_instance_mjs__WEBPACK_IMPORTED_MODULE_2__.getInstance)().useLegacy ? new _htmlaudio_HTMLAudioMedia_mjs__WEBPACK_IMPORTED_MODULE_1__.HTMLAudioMedia() : new _webaudio_WebAudioMedia_mjs__WEBPACK_IMPORTED_MODULE_5__.WebAudioMedia();
+    return new _Sound(media, options);
+  }
+  /**
+   * Use `Sound.from`
+   * @ignore
+   */
+  constructor(media, options) {
+    this.media = media;
+    this.options = options;
+    this._instances = [];
+    this._sprites = {};
+    this.media.init(this);
+    const complete = options.complete;
+    this._autoPlayOptions = complete ? { complete } : null;
+    this.isLoaded = false;
+    this._preloadQueue = null;
+    this.isPlaying = false;
+    this.autoPlay = options.autoPlay;
+    this.singleInstance = options.singleInstance;
+    this.preload = options.preload || this.autoPlay;
+    this.url = Array.isArray(options.url) ? this.preferUrl(options.url) : options.url;
+    this.speed = options.speed;
+    this.volume = options.volume;
+    this.loop = options.loop;
+    if (options.sprites) {
+      this.addSprites(options.sprites);
+    }
+    if (this.preload) {
+      this._preload(options.loaded);
+    }
+  }
+  /**
+   * Internal help for resolving which file to use if there are multiple provide
+   * this is especially helpful for working with bundlers (non Assets loading).
+   */
+  preferUrl(urls) {
+    const [file] = urls.map((url) => ({ url, ext: pixi_js__WEBPACK_IMPORTED_MODULE_0__.path.extname(url).slice(1) })).filter(({ ext }) => _utils_supported_mjs__WEBPACK_IMPORTED_MODULE_4__.supported[ext]).sort((a, b) => _utils_supported_mjs__WEBPACK_IMPORTED_MODULE_4__.extensions.indexOf(a.ext) - _utils_supported_mjs__WEBPACK_IMPORTED_MODULE_4__.extensions.indexOf(b.ext));
+    if (!file) {
+      throw new Error("No supported file type found");
+    }
+    return file.url;
+  }
+  /** Instance of the media context. */
+  get context() {
+    return (0,_instance_mjs__WEBPACK_IMPORTED_MODULE_2__.getInstance)().context;
+  }
+  /** Stops all the instances of this sound from playing. */
+  pause() {
+    this.isPlaying = false;
+    this.paused = true;
+    return this;
+  }
+  /** Resuming all the instances of this sound from playing */
+  resume() {
+    this.isPlaying = this._instances.length > 0;
+    this.paused = false;
+    return this;
+  }
+  /** Stops all the instances of this sound from playing. */
+  get paused() {
+    return this._paused;
+  }
+  set paused(paused) {
+    this._paused = paused;
+    this.refreshPaused();
+  }
+  /** The playback rate. */
+  get speed() {
+    return this._speed;
+  }
+  set speed(speed) {
+    this._speed = speed;
+    this.refresh();
+  }
+  /** Set the filters. Only supported with WebAudio. */
+  get filters() {
+    return this.media.filters;
+  }
+  set filters(filters) {
+    this.media.filters = filters;
+  }
+  /**
+   * @ignore
+   */
+  addSprites(source, data) {
+    if (typeof source === "object") {
+      const results = {};
+      for (const alias in source) {
+        results[alias] = this.addSprites(alias, source[alias]);
+      }
+      return results;
+    }
+    console.assert(!this._sprites[source], `Alias ${source} is already taken`);
+    const sprite = new _SoundSprite_mjs__WEBPACK_IMPORTED_MODULE_3__.SoundSprite(this, data);
+    this._sprites[source] = sprite;
+    return sprite;
+  }
+  /** Destructor, safer to use `SoundLibrary.remove(alias)` to remove this sound. */
+  destroy() {
+    this._removeInstances();
+    this.removeSprites();
+    this.media.destroy();
+    this.media = null;
+    this._sprites = null;
+    this._instances = null;
+  }
+  /**
+   * Remove a sound sprite.
+   * @param alias - The unique name of the sound sprite, if alias is omitted, removes all sprites.
+   */
+  removeSprites(alias) {
+    if (!alias) {
+      for (const name in this._sprites) {
+        this.removeSprites(name);
+      }
+    } else {
+      const sprite = this._sprites[alias];
+      if (sprite !== void 0) {
+        sprite.destroy();
+        delete this._sprites[alias];
+      }
+    }
+    return this;
+  }
+  /** If the current sound is playable (loaded). */
+  get isPlayable() {
+    return this.isLoaded && this.media && this.media.isPlayable;
+  }
+  /** Stops all the instances of this sound from playing. */
+  stop() {
+    if (!this.isPlayable) {
+      this.autoPlay = false;
+      this._autoPlayOptions = null;
+      return this;
+    }
+    this.isPlaying = false;
+    for (let i = this._instances.length - 1; i >= 0; i--) {
+      this._instances[i].stop();
+    }
+    return this;
+  }
+  // Overloaded function
+  play(source, complete) {
+    let options;
+    if (typeof source === "string") {
+      const sprite = source;
+      options = { sprite, loop: this.loop, complete };
+    } else if (typeof source === "function") {
+      options = {};
+      options.complete = source;
+    } else {
+      options = source;
+    }
+    options = {
+      complete: null,
+      loaded: null,
+      sprite: null,
+      end: null,
+      start: 0,
+      volume: 1,
+      speed: 1,
+      muted: false,
+      loop: false,
+      ...options || {}
+    };
+    if (options.sprite) {
+      const alias = options.sprite;
+      console.assert(!!this._sprites[alias], `Alias ${alias} is not available`);
+      const sprite = this._sprites[alias];
+      options.start = sprite.start + (options.start || 0);
+      options.end = sprite.end;
+      options.speed = sprite.speed || 1;
+      options.loop = sprite.loop || options.loop;
+      delete options.sprite;
+    }
+    if (options.offset) {
+      options.start = options.offset;
+    }
+    if (!this.isLoaded) {
+      if (this._preloadQueue) {
+        return new Promise((resolve) => {
+          this._preloadQueue.push(() => {
+            resolve(this.play(options));
+          });
+        });
+      }
+      this._preloadQueue = [];
+      this.autoPlay = true;
+      this._autoPlayOptions = options;
+      return new Promise((resolve, reject) => {
+        this._preload((err, sound, media) => {
+          this._preloadQueue.forEach((resolve2) => resolve2());
+          this._preloadQueue = null;
+          if (err) {
+            reject(err);
+          } else {
+            if (options.loaded) {
+              options.loaded(err, sound, media);
+            }
+            resolve(media);
+          }
+        });
+      });
+    }
+    if (this.singleInstance || options.singleInstance) {
+      this._removeInstances();
+    }
+    const instance = this._createInstance();
+    this._instances.push(instance);
+    this.isPlaying = true;
+    instance.once("end", () => {
+      if (options.complete) {
+        options.complete(this);
+      }
+      this._onComplete(instance);
+    });
+    instance.once("stop", () => {
+      this._onComplete(instance);
+    });
+    instance.play(options);
+    return instance;
+  }
+  /** Internal only, speed, loop, volume change occured. */
+  refresh() {
+    const len = this._instances.length;
+    for (let i = 0; i < len; i++) {
+      this._instances[i].refresh();
+    }
+  }
+  /** Handle changes in paused state. Internal only. */
+  refreshPaused() {
+    const len = this._instances.length;
+    for (let i = 0; i < len; i++) {
+      this._instances[i].refreshPaused();
+    }
+  }
+  /** Gets and sets the volume. */
+  get volume() {
+    return this._volume;
+  }
+  set volume(volume) {
+    this._volume = volume;
+    this.refresh();
+  }
+  /** Gets and sets the muted flag. */
+  get muted() {
+    return this._muted;
+  }
+  set muted(muted) {
+    this._muted = muted;
+    this.refresh();
+  }
+  /** Gets and sets the looping. */
+  get loop() {
+    return this._loop;
+  }
+  set loop(loop) {
+    this._loop = loop;
+    this.refresh();
+  }
+  /** Starts the preloading of sound. */
+  _preload(callback) {
+    this.media.load(callback);
+  }
+  /** Gets the list of instances that are currently being played of this sound. */
+  get instances() {
+    return this._instances;
+  }
+  /** Get the map of sprites. */
+  get sprites() {
+    return this._sprites;
+  }
+  /** Get the duration of the audio in seconds. */
+  get duration() {
+    return this.media.duration;
+  }
+  /** Auto play the first instance. */
+  autoPlayStart() {
+    let instance;
+    if (this.autoPlay) {
+      instance = this.play(this._autoPlayOptions);
+    }
+    return instance;
+  }
+  /** Removes all instances. */
+  _removeInstances() {
+    for (let i = this._instances.length - 1; i >= 0; i--) {
+      this._poolInstance(this._instances[i]);
+    }
+    this._instances.length = 0;
+  }
+  /**
+   * Sound instance completed.
+   * @param instance
+   */
+  _onComplete(instance) {
+    if (this._instances) {
+      const index = this._instances.indexOf(instance);
+      if (index > -1) {
+        this._instances.splice(index, 1);
+      }
+      this.isPlaying = this._instances.length > 0;
+    }
+    this._poolInstance(instance);
+  }
+  /** Create a new instance. */
+  _createInstance() {
+    if (_Sound._pool.length > 0) {
+      const instance = _Sound._pool.pop();
+      instance.init(this.media);
+      return instance;
+    }
+    return this.media.create();
+  }
+  /**
+   * Destroy/recycling the instance object.
+   * @param instance - Instance to recycle
+   */
+  _poolInstance(instance) {
+    instance.destroy();
+    if (_Sound._pool.indexOf(instance) < 0) {
+      _Sound._pool.push(instance);
+    }
+  }
+};
+let Sound = _Sound;
+/** Pool of instances */
+Sound._pool = [];
+
+
+//# sourceMappingURL=Sound.mjs.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@pixi/sound/lib/SoundLibrary.mjs":
+/*!*******************************************************!*\
+  !*** ./node_modules/@pixi/sound/lib/SoundLibrary.mjs ***!
+  \*******************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   SoundLibrary: () => (/* binding */ SoundLibrary)
+/* harmony export */ });
+/* harmony import */ var _htmlaudio_HTMLAudioContext_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./htmlaudio/HTMLAudioContext.mjs */ "./node_modules/@pixi/sound/lib/htmlaudio/HTMLAudioContext.mjs");
+/* harmony import */ var _Sound_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Sound.mjs */ "./node_modules/@pixi/sound/lib/Sound.mjs");
+/* harmony import */ var _webaudio_WebAudioContext_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./webaudio/WebAudioContext.mjs */ "./node_modules/@pixi/sound/lib/webaudio/WebAudioContext.mjs");
+
+
+
+
+class SoundLibrary {
+  constructor() {
+    this.init();
+  }
+  /**
+   * Re-initialize the sound library, this will
+   * recreate the AudioContext. If there's a hardware-failure
+   * call `close` and then `init`.
+   * @return Sound instance
+   */
+  init() {
+    if (this.supported) {
+      this._webAudioContext = new _webaudio_WebAudioContext_mjs__WEBPACK_IMPORTED_MODULE_2__.WebAudioContext();
+    }
+    this._htmlAudioContext = new _htmlaudio_HTMLAudioContext_mjs__WEBPACK_IMPORTED_MODULE_0__.HTMLAudioContext();
+    this._sounds = {};
+    this.useLegacy = !this.supported;
+    return this;
+  }
+  /**
+   * The global context to use.
+   * @readonly
+   */
+  get context() {
+    return this._context;
+  }
+  /**
+   * Apply filters to all sounds. Can be useful
+   * for setting global planning or global effects.
+   * **Only supported with WebAudio.**
+   * @example
+   * import { sound, filters } from '@pixi/sound';
+   * // Adds a filter to pan all output left
+   * sound.filtersAll = [
+   *     new filters.StereoFilter(-1)
+   * ];
+   */
+  get filtersAll() {
+    if (!this.useLegacy) {
+      return this._context.filters;
+    }
+    return [];
+  }
+  set filtersAll(filtersAll) {
+    if (!this.useLegacy) {
+      this._context.filters = filtersAll;
+    }
+  }
+  /**
+   * `true` if WebAudio is supported on the current browser.
+   */
+  get supported() {
+    return _webaudio_WebAudioContext_mjs__WEBPACK_IMPORTED_MODULE_2__.WebAudioContext.AudioContext !== null;
+  }
+  /**
+   * @ignore
+   */
+  add(source, sourceOptions) {
+    if (typeof source === "object") {
+      const results = {};
+      for (const alias in source) {
+        const options2 = this._getOptions(
+          source[alias],
+          sourceOptions
+        );
+        results[alias] = this.add(alias, options2);
+      }
+      return results;
+    }
+    console.assert(!this._sounds[source], `Sound with alias ${source} already exists.`);
+    if (sourceOptions instanceof _Sound_mjs__WEBPACK_IMPORTED_MODULE_1__.Sound) {
+      this._sounds[source] = sourceOptions;
+      return sourceOptions;
+    }
+    const options = this._getOptions(sourceOptions);
+    const sound = _Sound_mjs__WEBPACK_IMPORTED_MODULE_1__.Sound.from(options);
+    this._sounds[source] = sound;
+    return sound;
+  }
+  /**
+   * Internal methods for getting the options object
+   * @private
+   * @param source - The source options
+   * @param overrides - Override default options
+   * @return The construction options
+   */
+  _getOptions(source, overrides) {
+    let options;
+    if (typeof source === "string") {
+      options = { url: source };
+    } else if (Array.isArray(source)) {
+      options = { url: source };
+    } else if (source instanceof ArrayBuffer || source instanceof AudioBuffer || source instanceof HTMLAudioElement) {
+      options = { source };
+    } else {
+      options = source;
+    }
+    options = { ...options, ...overrides || {} };
+    return options;
+  }
+  /**
+   * Do not use WebAudio, force the use of legacy. This **must** be called before loading any files.
+   */
+  get useLegacy() {
+    return this._useLegacy;
+  }
+  set useLegacy(legacy) {
+    this._useLegacy = legacy;
+    this._context = !legacy && this.supported ? this._webAudioContext : this._htmlAudioContext;
+  }
+  /**
+   * This disables auto-pause all playback when the window blurs (WebAudio only).
+   * This is helpful to keep from playing sounds when the user switches tabs.
+   * However, if you're running content within an iframe, this may be undesirable
+   * and you should disable (set to `true`) this behavior.
+   * @default false
+   */
+  get disableAutoPause() {
+    return !this._webAudioContext.autoPause;
+  }
+  set disableAutoPause(autoPause) {
+    this._webAudioContext.autoPause = !autoPause;
+  }
+  /**
+   * Removes a sound by alias.
+   * @param alias - The sound alias reference.
+   * @return Instance for chaining.
+   */
+  remove(alias) {
+    this.exists(alias, true);
+    this._sounds[alias].destroy();
+    delete this._sounds[alias];
+    return this;
+  }
+  /**
+   * Set the global volume for all sounds. To set per-sound volume see {@link SoundLibrary#volume}.
+   */
+  get volumeAll() {
+    return this._context.volume;
+  }
+  set volumeAll(volume) {
+    this._context.volume = volume;
+    this._context.refresh();
+  }
+  /**
+   * Set the global speed for all sounds. To set per-sound speed see {@link SoundLibrary#speed}.
+   */
+  get speedAll() {
+    return this._context.speed;
+  }
+  set speedAll(speed) {
+    this._context.speed = speed;
+    this._context.refresh();
+  }
+  /**
+   * Toggle paused property for all sounds.
+   * @return `true` if all sounds are paused.
+   */
+  togglePauseAll() {
+    return this._context.togglePause();
+  }
+  /**
+   * Pauses any playing sounds.
+   * @return Instance for chaining.
+   */
+  pauseAll() {
+    this._context.paused = true;
+    this._context.refreshPaused();
+    return this;
+  }
+  /**
+   * Resumes any sounds.
+   * @return Instance for chaining.
+   */
+  resumeAll() {
+    this._context.paused = false;
+    this._context.refreshPaused();
+    return this;
+  }
+  /**
+   * Toggle muted property for all sounds.
+   * @return `true` if all sounds are muted.
+   */
+  toggleMuteAll() {
+    return this._context.toggleMute();
+  }
+  /**
+   * Mutes all playing sounds.
+   * @return Instance for chaining.
+   */
+  muteAll() {
+    this._context.muted = true;
+    this._context.refresh();
+    return this;
+  }
+  /**
+   * Unmutes all playing sounds.
+   * @return Instance for chaining.
+   */
+  unmuteAll() {
+    this._context.muted = false;
+    this._context.refresh();
+    return this;
+  }
+  /**
+   * Stops and removes all sounds. They cannot be used after this.
+   * @return Instance for chaining.
+   */
+  removeAll() {
+    for (const alias in this._sounds) {
+      this._sounds[alias].destroy();
+      delete this._sounds[alias];
+    }
+    return this;
+  }
+  /**
+   * Stops all sounds.
+   * @return Instance for chaining.
+   */
+  stopAll() {
+    for (const alias in this._sounds) {
+      this._sounds[alias].stop();
+    }
+    return this;
+  }
+  /**
+   * Checks if a sound by alias exists.
+   * @param alias - Check for alias.
+   * @param assert - Whether enable console.assert.
+   * @return true if the sound exists.
+   */
+  exists(alias, assert = false) {
+    const exists = !!this._sounds[alias];
+    if (assert) {
+      console.assert(exists, `No sound matching alias '${alias}'.`);
+    }
+    return exists;
+  }
+  /**
+   * Convenience function to check to see if any sound is playing.
+   * @returns `true` if any sound is currently playing.
+   */
+  isPlaying() {
+    for (const alias in this._sounds) {
+      if (this._sounds[alias].isPlaying) {
+        return true;
+      }
+    }
+    return false;
+  }
+  /**
+   * Find a sound by alias.
+   * @param alias - The sound alias reference.
+   * @return Sound object.
+   */
+  find(alias) {
+    this.exists(alias, true);
+    return this._sounds[alias];
+  }
+  /**
+   * Plays a sound.
+   * @method play
+   * @instance
+   * @param {string} alias - The sound alias reference.
+   * @param {string} sprite - The alias of the sprite to play.
+   * @return {IMediaInstance|null} The sound instance, this cannot be reused
+   *         after it is done playing. Returns `null` if the sound has not yet loaded.
+   */
+  /**
+   * Plays a sound.
+   * @param alias - The sound alias reference.
+   * @param {PlayOptions|Function} options - The options or callback when done.
+   * @return The sound instance,
+   *        this cannot be reused after it is done playing. Returns a Promise if the sound
+   *        has not yet loaded.
+   */
+  play(alias, options) {
+    return this.find(alias).play(options);
+  }
+  /**
+   * Stops a sound.
+   * @param alias - The sound alias reference.
+   * @return Sound object.
+   */
+  stop(alias) {
+    return this.find(alias).stop();
+  }
+  /**
+   * Pauses a sound.
+   * @param alias - The sound alias reference.
+   * @return Sound object.
+   */
+  pause(alias) {
+    return this.find(alias).pause();
+  }
+  /**
+   * Resumes a sound.
+   * @param alias - The sound alias reference.
+   * @return Instance for chaining.
+   */
+  resume(alias) {
+    return this.find(alias).resume();
+  }
+  /**
+   * Get or set the volume for a sound.
+   * @param alias - The sound alias reference.
+   * @param volume - Optional current volume to set.
+   * @return The current volume.
+   */
+  volume(alias, volume) {
+    const sound = this.find(alias);
+    if (volume !== void 0) {
+      sound.volume = volume;
+    }
+    return sound.volume;
+  }
+  /**
+   * Get or set the speed for a sound.
+   * @param alias - The sound alias reference.
+   * @param speed - Optional current speed to set.
+   * @return The current speed.
+   */
+  speed(alias, speed) {
+    const sound = this.find(alias);
+    if (speed !== void 0) {
+      sound.speed = speed;
+    }
+    return sound.speed;
+  }
+  /**
+   * Get the length of a sound in seconds.
+   * @param alias - The sound alias reference.
+   * @return The current duration in seconds.
+   */
+  duration(alias) {
+    return this.find(alias).duration;
+  }
+  /**
+   * Closes the sound library. This will release/destroy
+   * the AudioContext(s). Can be used safely if you want to
+   * initialize the sound library later. Use `init` method.
+   */
+  close() {
+    this.removeAll();
+    this._sounds = null;
+    if (this._webAudioContext) {
+      this._webAudioContext.destroy();
+      this._webAudioContext = null;
+    }
+    if (this._htmlAudioContext) {
+      this._htmlAudioContext.destroy();
+      this._htmlAudioContext = null;
+    }
+    this._context = null;
+    return this;
+  }
+}
+
+
+//# sourceMappingURL=SoundLibrary.mjs.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@pixi/sound/lib/SoundSprite.mjs":
+/*!******************************************************!*\
+  !*** ./node_modules/@pixi/sound/lib/SoundSprite.mjs ***!
+  \******************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   SoundSprite: () => (/* binding */ SoundSprite)
+/* harmony export */ });
+class SoundSprite {
+  /**
+   * @param parent - The parent sound
+   * @param options - Data associated with object.
+   */
+  constructor(parent, options) {
+    this.parent = parent;
+    Object.assign(this, options);
+    this.duration = this.end - this.start;
+    console.assert(this.duration > 0, "End time must be after start time");
+  }
+  /**
+   * Play the sound sprite.
+   * @param {Function} [complete] - Function call when complete
+   * @return Sound instance being played.
+   */
+  play(complete) {
+    return this.parent.play({
+      complete,
+      speed: this.speed || this.parent.speed,
+      end: this.end,
+      start: this.start,
+      loop: this.loop
+    });
+  }
+  /** Destroy and don't use after this */
+  destroy() {
+    this.parent = null;
+  }
+}
+
+
+//# sourceMappingURL=SoundSprite.mjs.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@pixi/sound/lib/filters/DistortionFilter.mjs":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@pixi/sound/lib/filters/DistortionFilter.mjs ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   DistortionFilter: () => (/* binding */ DistortionFilter)
+/* harmony export */ });
+/* harmony import */ var _instance_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../instance.mjs */ "./node_modules/@pixi/sound/lib/instance.mjs");
+/* harmony import */ var _Filter_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Filter.mjs */ "./node_modules/@pixi/sound/lib/filters/Filter.mjs");
+
+
+
+class DistortionFilter extends _Filter_mjs__WEBPACK_IMPORTED_MODULE_1__.Filter {
+  /** @param amount - The amount of distoration from 0 to 1. */
+  constructor(amount = 0) {
+    let distortion;
+    if (!(0,_instance_mjs__WEBPACK_IMPORTED_MODULE_0__.getInstance)().useLegacy) {
+      const { audioContext } = (0,_instance_mjs__WEBPACK_IMPORTED_MODULE_0__.getInstance)().context;
+      distortion = audioContext.createWaveShaper();
+    }
+    super(distortion);
+    this._distortion = distortion;
+    this.amount = amount;
+  }
+  /** The amount of distortion to set. */
+  set amount(value) {
+    this._amount = value;
+    if ((0,_instance_mjs__WEBPACK_IMPORTED_MODULE_0__.getInstance)().useLegacy) {
+      return;
+    }
+    const scaledValue = value * 1e3;
+    const samples = 44100;
+    const curve = new Float32Array(samples);
+    const deg = Math.PI / 180;
+    let i = 0;
+    let x;
+    for (; i < samples; ++i) {
+      x = i * 2 / samples - 1;
+      curve[i] = (3 + scaledValue) * x * 20 * deg / (Math.PI + scaledValue * Math.abs(x));
+    }
+    this._distortion.curve = curve;
+    this._distortion.oversample = "4x";
+  }
+  get amount() {
+    return this._amount;
+  }
+  destroy() {
+    this._distortion = null;
+    super.destroy();
+  }
+}
+
+
+//# sourceMappingURL=DistortionFilter.mjs.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@pixi/sound/lib/filters/EqualizerFilter.mjs":
+/*!******************************************************************!*\
+  !*** ./node_modules/@pixi/sound/lib/filters/EqualizerFilter.mjs ***!
+  \******************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   EqualizerFilter: () => (/* binding */ EqualizerFilter)
+/* harmony export */ });
+/* harmony import */ var _instance_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../instance.mjs */ "./node_modules/@pixi/sound/lib/instance.mjs");
+/* harmony import */ var _webaudio_WebAudioUtils_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../webaudio/WebAudioUtils.mjs */ "./node_modules/@pixi/sound/lib/webaudio/WebAudioUtils.mjs");
+/* harmony import */ var _Filter_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Filter.mjs */ "./node_modules/@pixi/sound/lib/filters/Filter.mjs");
+
+
+
+
+const _EqualizerFilter = class extends _Filter_mjs__WEBPACK_IMPORTED_MODULE_2__.Filter {
+  /**
+   * @param f32 - Default gain for 32 Hz
+   * @param f64 - Default gain for 64 Hz
+   * @param f125 - Default gain for 125 Hz
+   * @param f250 - Default gain for 250 Hz
+   * @param f500 - Default gain for 500 Hz
+   * @param f1k - Default gain for 1000 Hz
+   * @param f2k - Default gain for 2000 Hz
+   * @param f4k - Default gain for 4000 Hz
+   * @param f8k - Default gain for 8000 Hz
+   * @param f16k - Default gain for 16000 Hz
+   */
+  constructor(f32 = 0, f64 = 0, f125 = 0, f250 = 0, f500 = 0, f1k = 0, f2k = 0, f4k = 0, f8k = 0, f16k = 0) {
+    let bands = [];
+    const equalizerBands = [
+      {
+        f: _EqualizerFilter.F32,
+        type: "lowshelf",
+        gain: f32
+      },
+      {
+        f: _EqualizerFilter.F64,
+        type: "peaking",
+        gain: f64
+      },
+      {
+        f: _EqualizerFilter.F125,
+        type: "peaking",
+        gain: f125
+      },
+      {
+        f: _EqualizerFilter.F250,
+        type: "peaking",
+        gain: f250
+      },
+      {
+        f: _EqualizerFilter.F500,
+        type: "peaking",
+        gain: f500
+      },
+      {
+        f: _EqualizerFilter.F1K,
+        type: "peaking",
+        gain: f1k
+      },
+      {
+        f: _EqualizerFilter.F2K,
+        type: "peaking",
+        gain: f2k
+      },
+      {
+        f: _EqualizerFilter.F4K,
+        type: "peaking",
+        gain: f4k
+      },
+      {
+        f: _EqualizerFilter.F8K,
+        type: "peaking",
+        gain: f8k
+      },
+      {
+        f: _EqualizerFilter.F16K,
+        type: "highshelf",
+        gain: f16k
+      }
+    ];
+    if (!(0,_instance_mjs__WEBPACK_IMPORTED_MODULE_0__.getInstance)().useLegacy) {
+      bands = equalizerBands.map((band) => {
+        const node = (0,_instance_mjs__WEBPACK_IMPORTED_MODULE_0__.getInstance)().context.audioContext.createBiquadFilter();
+        node.type = band.type;
+        _webaudio_WebAudioUtils_mjs__WEBPACK_IMPORTED_MODULE_1__.WebAudioUtils.setParamValue(node.Q, 1);
+        node.frequency.value = band.f;
+        _webaudio_WebAudioUtils_mjs__WEBPACK_IMPORTED_MODULE_1__.WebAudioUtils.setParamValue(node.gain, band.gain);
+        return node;
+      });
+    }
+    super(bands[0], bands[bands.length - 1]);
+    this.bands = bands;
+    this.bandsMap = {};
+    for (let i = 0; i < this.bands.length; i++) {
+      const node = this.bands[i];
+      if (i > 0) {
+        this.bands[i - 1].connect(node);
+      }
+      this.bandsMap[node.frequency.value] = node;
+    }
+  }
+  /**
+   * Set gain on a specific frequency.
+   * @param frequency - The frequency, see EqualizerFilter.F* for bands
+   * @param gain - Recommended -40 to 40.
+   */
+  setGain(frequency, gain = 0) {
+    if (!this.bandsMap[frequency]) {
+      throw new Error(`No band found for frequency ${frequency}`);
+    }
+    _webaudio_WebAudioUtils_mjs__WEBPACK_IMPORTED_MODULE_1__.WebAudioUtils.setParamValue(this.bandsMap[frequency].gain, gain);
+  }
+  /**
+   * Get gain amount on a specific frequency.
+   * @return The amount of gain set.
+   */
+  getGain(frequency) {
+    if (!this.bandsMap[frequency]) {
+      throw new Error(`No band found for frequency ${frequency}`);
+    }
+    return this.bandsMap[frequency].gain.value;
+  }
+  /**
+   * Gain at 32 Hz frequencey.
+   * @default 0
+   */
+  set f32(value) {
+    this.setGain(_EqualizerFilter.F32, value);
+  }
+  get f32() {
+    return this.getGain(_EqualizerFilter.F32);
+  }
+  /**
+   * Gain at 64 Hz frequencey.
+   * @default 0
+   */
+  set f64(value) {
+    this.setGain(_EqualizerFilter.F64, value);
+  }
+  get f64() {
+    return this.getGain(_EqualizerFilter.F64);
+  }
+  /**
+   * Gain at 125 Hz frequencey.
+   * @default 0
+   */
+  set f125(value) {
+    this.setGain(_EqualizerFilter.F125, value);
+  }
+  get f125() {
+    return this.getGain(_EqualizerFilter.F125);
+  }
+  /**
+   * Gain at 250 Hz frequencey.
+   * @default 0
+   */
+  set f250(value) {
+    this.setGain(_EqualizerFilter.F250, value);
+  }
+  get f250() {
+    return this.getGain(_EqualizerFilter.F250);
+  }
+  /**
+   * Gain at 500 Hz frequencey.
+   * @default 0
+   */
+  set f500(value) {
+    this.setGain(_EqualizerFilter.F500, value);
+  }
+  get f500() {
+    return this.getGain(_EqualizerFilter.F500);
+  }
+  /**
+   * Gain at 1 KHz frequencey.
+   * @default 0
+   */
+  set f1k(value) {
+    this.setGain(_EqualizerFilter.F1K, value);
+  }
+  get f1k() {
+    return this.getGain(_EqualizerFilter.F1K);
+  }
+  /**
+   * Gain at 2 KHz frequencey.
+   * @default 0
+   */
+  set f2k(value) {
+    this.setGain(_EqualizerFilter.F2K, value);
+  }
+  get f2k() {
+    return this.getGain(_EqualizerFilter.F2K);
+  }
+  /**
+   * Gain at 4 KHz frequencey.
+   * @default 0
+   */
+  set f4k(value) {
+    this.setGain(_EqualizerFilter.F4K, value);
+  }
+  get f4k() {
+    return this.getGain(_EqualizerFilter.F4K);
+  }
+  /**
+   * Gain at 8 KHz frequencey.
+   * @default 0
+   */
+  set f8k(value) {
+    this.setGain(_EqualizerFilter.F8K, value);
+  }
+  get f8k() {
+    return this.getGain(_EqualizerFilter.F8K);
+  }
+  /**
+   * Gain at 16 KHz frequencey.
+   * @default 0
+   */
+  set f16k(value) {
+    this.setGain(_EqualizerFilter.F16K, value);
+  }
+  get f16k() {
+    return this.getGain(_EqualizerFilter.F16K);
+  }
+  /** Reset all frequency bands to have gain of 0 */
+  reset() {
+    this.bands.forEach((band) => {
+      _webaudio_WebAudioUtils_mjs__WEBPACK_IMPORTED_MODULE_1__.WebAudioUtils.setParamValue(band.gain, 0);
+    });
+  }
+  destroy() {
+    this.bands.forEach((band) => {
+      band.disconnect();
+    });
+    this.bands = null;
+    this.bandsMap = null;
+  }
+};
+let EqualizerFilter = _EqualizerFilter;
+/**
+ * Band at 32 Hz
+ * @readonly
+ */
+EqualizerFilter.F32 = 32;
+/**
+ * Band at 64 Hz
+ * @readonly
+ */
+EqualizerFilter.F64 = 64;
+/**
+ * Band at 125 Hz
+ * @readonly
+ */
+EqualizerFilter.F125 = 125;
+/**
+ * Band at 250 Hz
+ * @readonly
+ */
+EqualizerFilter.F250 = 250;
+/**
+ * Band at 500 Hz
+ * @readonly
+ */
+EqualizerFilter.F500 = 500;
+/**
+ * Band at 1000 Hz
+ * @readonly
+ */
+EqualizerFilter.F1K = 1e3;
+/**
+ * Band at 2000 Hz
+ * @readonly
+ */
+EqualizerFilter.F2K = 2e3;
+/**
+ * Band at 4000 Hz
+ * @readonly
+ */
+EqualizerFilter.F4K = 4e3;
+/**
+ * Band at 8000 Hz
+ * @readonly
+ */
+EqualizerFilter.F8K = 8e3;
+/**
+ * Band at 16000 Hz
+ * @readonly
+ */
+EqualizerFilter.F16K = 16e3;
+
+
+//# sourceMappingURL=EqualizerFilter.mjs.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@pixi/sound/lib/filters/Filter.mjs":
+/*!*********************************************************!*\
+  !*** ./node_modules/@pixi/sound/lib/filters/Filter.mjs ***!
+  \*********************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Filter: () => (/* binding */ Filter)
+/* harmony export */ });
+class Filter {
+  /**
+   * @param {AudioNode} destination - The audio node to use as the destination for the input AudioNode
+   * @param {AudioNode} [source] - Optional output node, defaults to destination node. This is useful
+   *        when creating filters which contains multiple AudioNode elements chained together.
+   */
+  constructor(destination, source) {
+    this.init(destination, source);
+  }
+  /** Reinitialize */
+  init(destination, source) {
+    this.destination = destination;
+    this.source = source || destination;
+  }
+  /**
+   * Connect to the destination.
+   * @param {AudioNode} destination - The destination node to connect the output to
+   */
+  connect(destination) {
+    this.source?.connect(destination);
+  }
+  /** Completely disconnect filter from destination and source nodes. */
+  disconnect() {
+    this.source?.disconnect();
+  }
+  /** Destroy the filter and don't use after this. */
+  destroy() {
+    this.disconnect();
+    this.destination = null;
+    this.source = null;
+  }
+}
+
+
+//# sourceMappingURL=Filter.mjs.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@pixi/sound/lib/filters/MonoFilter.mjs":
+/*!*************************************************************!*\
+  !*** ./node_modules/@pixi/sound/lib/filters/MonoFilter.mjs ***!
+  \*************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   MonoFilter: () => (/* binding */ MonoFilter)
+/* harmony export */ });
+/* harmony import */ var _instance_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../instance.mjs */ "./node_modules/@pixi/sound/lib/instance.mjs");
+/* harmony import */ var _Filter_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Filter.mjs */ "./node_modules/@pixi/sound/lib/filters/Filter.mjs");
+
+
+
+class MonoFilter extends _Filter_mjs__WEBPACK_IMPORTED_MODULE_1__.Filter {
+  constructor() {
+    let merger;
+    let splitter;
+    if (!(0,_instance_mjs__WEBPACK_IMPORTED_MODULE_0__.getInstance)().useLegacy) {
+      const { audioContext } = (0,_instance_mjs__WEBPACK_IMPORTED_MODULE_0__.getInstance)().context;
+      splitter = audioContext.createChannelSplitter();
+      merger = audioContext.createChannelMerger();
+      merger.connect(splitter);
+    }
+    super(merger, splitter);
+    this._merger = merger;
+  }
+  destroy() {
+    this._merger?.disconnect();
+    this._merger = null;
+    super.destroy();
+  }
+}
+
+
+//# sourceMappingURL=MonoFilter.mjs.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@pixi/sound/lib/filters/ReverbFilter.mjs":
+/*!***************************************************************!*\
+  !*** ./node_modules/@pixi/sound/lib/filters/ReverbFilter.mjs ***!
+  \***************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   ReverbFilter: () => (/* binding */ ReverbFilter)
+/* harmony export */ });
+/* harmony import */ var _instance_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../instance.mjs */ "./node_modules/@pixi/sound/lib/instance.mjs");
+/* harmony import */ var _Filter_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Filter.mjs */ "./node_modules/@pixi/sound/lib/filters/Filter.mjs");
+
+
+
+class ReverbFilter extends _Filter_mjs__WEBPACK_IMPORTED_MODULE_1__.Filter {
+  /**
+   * @param seconds - Seconds for reverb
+   * @param decay - The decay length
+   * @param reverse - Reverse reverb
+   */
+  constructor(seconds = 3, decay = 2, reverse = false) {
+    super(null);
+    this._seconds = this._clamp(seconds, 1, 50);
+    this._decay = this._clamp(decay, 0, 100);
+    this._reverse = reverse;
+    this._rebuild();
+  }
+  /**
+   * Clamp a value
+   * @param value
+   * @param min - Minimum value
+   * @param max - Maximum value
+   * @return Clamped number
+   */
+  _clamp(value, min, max) {
+    return Math.min(max, Math.max(min, value));
+  }
+  /**
+   * Length of reverb in seconds from 1 to 50
+   * @default 3
+   */
+  get seconds() {
+    return this._seconds;
+  }
+  set seconds(seconds) {
+    this._seconds = this._clamp(seconds, 1, 50);
+    this._rebuild();
+  }
+  /**
+   * Decay value from 0 to 100
+   * @default 2
+   */
+  get decay() {
+    return this._decay;
+  }
+  set decay(decay) {
+    this._decay = this._clamp(decay, 0, 100);
+    this._rebuild();
+  }
+  /**
+   * Reverse value from 0 to 1
+   * @default false
+   */
+  get reverse() {
+    return this._reverse;
+  }
+  set reverse(reverse) {
+    this._reverse = reverse;
+    this._rebuild();
+  }
+  /**
+   * Utility function for building an impulse response
+   * from the module parameters.
+   */
+  _rebuild() {
+    if ((0,_instance_mjs__WEBPACK_IMPORTED_MODULE_0__.getInstance)().useLegacy) {
+      return;
+    }
+    const { audioContext } = (0,_instance_mjs__WEBPACK_IMPORTED_MODULE_0__.getInstance)().context;
+    const rate = audioContext.sampleRate;
+    const length = rate * this._seconds;
+    const impulse = audioContext.createBuffer(2, length, rate);
+    const impulseL = impulse.getChannelData(0);
+    const impulseR = impulse.getChannelData(1);
+    let n;
+    for (let i = 0; i < length; i++) {
+      n = this._reverse ? length - i : i;
+      impulseL[i] = (Math.random() * 2 - 1) * Math.pow(1 - n / length, this._decay);
+      impulseR[i] = (Math.random() * 2 - 1) * Math.pow(1 - n / length, this._decay);
+    }
+    const convolver = audioContext.createConvolver();
+    convolver.buffer = impulse;
+    this.init(convolver);
+  }
+}
+
+
+//# sourceMappingURL=ReverbFilter.mjs.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@pixi/sound/lib/filters/StereoFilter.mjs":
+/*!***************************************************************!*\
+  !*** ./node_modules/@pixi/sound/lib/filters/StereoFilter.mjs ***!
+  \***************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   StereoFilter: () => (/* binding */ StereoFilter)
+/* harmony export */ });
+/* harmony import */ var _instance_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../instance.mjs */ "./node_modules/@pixi/sound/lib/instance.mjs");
+/* harmony import */ var _webaudio_WebAudioUtils_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../webaudio/WebAudioUtils.mjs */ "./node_modules/@pixi/sound/lib/webaudio/WebAudioUtils.mjs");
+/* harmony import */ var _Filter_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Filter.mjs */ "./node_modules/@pixi/sound/lib/filters/Filter.mjs");
+
+
+
+
+class StereoFilter extends _Filter_mjs__WEBPACK_IMPORTED_MODULE_2__.Filter {
+  /** @param pan - The amount of panning, -1 is left, 1 is right, 0 is centered. */
+  constructor(pan = 0) {
+    let stereo;
+    let panner;
+    let destination;
+    if (!(0,_instance_mjs__WEBPACK_IMPORTED_MODULE_0__.getInstance)().useLegacy) {
+      const { audioContext } = (0,_instance_mjs__WEBPACK_IMPORTED_MODULE_0__.getInstance)().context;
+      if (audioContext.createStereoPanner) {
+        stereo = audioContext.createStereoPanner();
+        destination = stereo;
+      } else {
+        panner = audioContext.createPanner();
+        panner.panningModel = "equalpower";
+        destination = panner;
+      }
+    }
+    super(destination);
+    this._stereo = stereo;
+    this._panner = panner;
+    this.pan = pan;
+  }
+  /** Set the amount of panning, where -1 is left, 1 is right, and 0 is centered */
+  set pan(value) {
+    this._pan = value;
+    if (this._stereo) {
+      _webaudio_WebAudioUtils_mjs__WEBPACK_IMPORTED_MODULE_1__.WebAudioUtils.setParamValue(this._stereo.pan, value);
+    } else if (this._panner) {
+      this._panner.setPosition(value, 0, 1 - Math.abs(value));
+    }
+  }
+  get pan() {
+    return this._pan;
+  }
+  destroy() {
+    super.destroy();
+    this._stereo = null;
+    this._panner = null;
+  }
+}
+
+
+//# sourceMappingURL=StereoFilter.mjs.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@pixi/sound/lib/filters/StreamFilter.mjs":
+/*!***************************************************************!*\
+  !*** ./node_modules/@pixi/sound/lib/filters/StreamFilter.mjs ***!
+  \***************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   StreamFilter: () => (/* binding */ StreamFilter)
+/* harmony export */ });
+/* harmony import */ var _instance_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../instance.mjs */ "./node_modules/@pixi/sound/lib/instance.mjs");
+/* harmony import */ var _Filter_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Filter.mjs */ "./node_modules/@pixi/sound/lib/filters/Filter.mjs");
+
+
+
+class StreamFilter extends _Filter_mjs__WEBPACK_IMPORTED_MODULE_1__.Filter {
+  constructor() {
+    let destination;
+    let source;
+    if (!(0,_instance_mjs__WEBPACK_IMPORTED_MODULE_0__.getInstance)().useLegacy) {
+      const { audioContext } = (0,_instance_mjs__WEBPACK_IMPORTED_MODULE_0__.getInstance)().context;
+      destination = audioContext.createMediaStreamDestination();
+      source = audioContext.createMediaStreamSource(destination.stream);
+    }
+    super(destination, source);
+    this._stream = destination?.stream;
+  }
+  get stream() {
+    return this._stream;
+  }
+  destroy() {
+    this._stream = null;
+    super.destroy();
+  }
+}
+
+
+//# sourceMappingURL=StreamFilter.mjs.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@pixi/sound/lib/filters/TelephoneFilter.mjs":
+/*!******************************************************************!*\
+  !*** ./node_modules/@pixi/sound/lib/filters/TelephoneFilter.mjs ***!
+  \******************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   TelephoneFilter: () => (/* binding */ TelephoneFilter)
+/* harmony export */ });
+/* harmony import */ var _instance_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../instance.mjs */ "./node_modules/@pixi/sound/lib/instance.mjs");
+/* harmony import */ var _webaudio_WebAudioUtils_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../webaudio/WebAudioUtils.mjs */ "./node_modules/@pixi/sound/lib/webaudio/WebAudioUtils.mjs");
+/* harmony import */ var _Filter_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Filter.mjs */ "./node_modules/@pixi/sound/lib/filters/Filter.mjs");
+
+
+
+
+class TelephoneFilter extends _Filter_mjs__WEBPACK_IMPORTED_MODULE_2__.Filter {
+  constructor() {
+    let destination;
+    let source;
+    if (!(0,_instance_mjs__WEBPACK_IMPORTED_MODULE_0__.getInstance)().useLegacy) {
+      const { audioContext } = (0,_instance_mjs__WEBPACK_IMPORTED_MODULE_0__.getInstance)().context;
+      const lpf1 = audioContext.createBiquadFilter();
+      const lpf2 = audioContext.createBiquadFilter();
+      const hpf1 = audioContext.createBiquadFilter();
+      const hpf2 = audioContext.createBiquadFilter();
+      lpf1.type = "lowpass";
+      _webaudio_WebAudioUtils_mjs__WEBPACK_IMPORTED_MODULE_1__.WebAudioUtils.setParamValue(lpf1.frequency, 2e3);
+      lpf2.type = "lowpass";
+      _webaudio_WebAudioUtils_mjs__WEBPACK_IMPORTED_MODULE_1__.WebAudioUtils.setParamValue(lpf2.frequency, 2e3);
+      hpf1.type = "highpass";
+      _webaudio_WebAudioUtils_mjs__WEBPACK_IMPORTED_MODULE_1__.WebAudioUtils.setParamValue(hpf1.frequency, 500);
+      hpf2.type = "highpass";
+      _webaudio_WebAudioUtils_mjs__WEBPACK_IMPORTED_MODULE_1__.WebAudioUtils.setParamValue(hpf2.frequency, 500);
+      lpf1.connect(lpf2);
+      lpf2.connect(hpf1);
+      hpf1.connect(hpf2);
+      destination = lpf1;
+      source = hpf2;
+    }
+    super(destination, source);
+  }
+}
+
+
+//# sourceMappingURL=TelephoneFilter.mjs.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@pixi/sound/lib/filters/index.mjs":
+/*!********************************************************!*\
+  !*** ./node_modules/@pixi/sound/lib/filters/index.mjs ***!
+  \********************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   DistortionFilter: () => (/* reexport safe */ _DistortionFilter_mjs__WEBPACK_IMPORTED_MODULE_0__.DistortionFilter),
+/* harmony export */   EqualizerFilter: () => (/* reexport safe */ _EqualizerFilter_mjs__WEBPACK_IMPORTED_MODULE_1__.EqualizerFilter),
+/* harmony export */   Filter: () => (/* reexport safe */ _Filter_mjs__WEBPACK_IMPORTED_MODULE_2__.Filter),
+/* harmony export */   MonoFilter: () => (/* reexport safe */ _MonoFilter_mjs__WEBPACK_IMPORTED_MODULE_3__.MonoFilter),
+/* harmony export */   ReverbFilter: () => (/* reexport safe */ _ReverbFilter_mjs__WEBPACK_IMPORTED_MODULE_4__.ReverbFilter),
+/* harmony export */   StereoFilter: () => (/* reexport safe */ _StereoFilter_mjs__WEBPACK_IMPORTED_MODULE_5__.StereoFilter),
+/* harmony export */   StreamFilter: () => (/* reexport safe */ _StreamFilter_mjs__WEBPACK_IMPORTED_MODULE_6__.StreamFilter),
+/* harmony export */   TelephoneFilter: () => (/* reexport safe */ _TelephoneFilter_mjs__WEBPACK_IMPORTED_MODULE_7__.TelephoneFilter)
+/* harmony export */ });
+/* harmony import */ var _DistortionFilter_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DistortionFilter.mjs */ "./node_modules/@pixi/sound/lib/filters/DistortionFilter.mjs");
+/* harmony import */ var _EqualizerFilter_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./EqualizerFilter.mjs */ "./node_modules/@pixi/sound/lib/filters/EqualizerFilter.mjs");
+/* harmony import */ var _Filter_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Filter.mjs */ "./node_modules/@pixi/sound/lib/filters/Filter.mjs");
+/* harmony import */ var _MonoFilter_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./MonoFilter.mjs */ "./node_modules/@pixi/sound/lib/filters/MonoFilter.mjs");
+/* harmony import */ var _ReverbFilter_mjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ReverbFilter.mjs */ "./node_modules/@pixi/sound/lib/filters/ReverbFilter.mjs");
+/* harmony import */ var _StereoFilter_mjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./StereoFilter.mjs */ "./node_modules/@pixi/sound/lib/filters/StereoFilter.mjs");
+/* harmony import */ var _StreamFilter_mjs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./StreamFilter.mjs */ "./node_modules/@pixi/sound/lib/filters/StreamFilter.mjs");
+/* harmony import */ var _TelephoneFilter_mjs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./TelephoneFilter.mjs */ "./node_modules/@pixi/sound/lib/filters/TelephoneFilter.mjs");
+
+
+
+
+
+
+
+
+//# sourceMappingURL=index.mjs.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@pixi/sound/lib/htmlaudio/HTMLAudioContext.mjs":
+/*!*********************************************************************!*\
+  !*** ./node_modules/@pixi/sound/lib/htmlaudio/HTMLAudioContext.mjs ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   HTMLAudioContext: () => (/* binding */ HTMLAudioContext)
+/* harmony export */ });
+/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
+
+
+class HTMLAudioContext extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.EventEmitter {
+  constructor() {
+    super(...arguments);
+    /** Current global speed from 0 to 1 */
+    this.speed = 1;
+    /** Current muted status of the context */
+    this.muted = false;
+    /** Current volume from 0 to 1  */
+    this.volume = 1;
+    /** Current paused status */
+    this.paused = false;
+  }
+  /** Internal trigger when volume, mute or speed changes */
+  refresh() {
+    this.emit("refresh");
+  }
+  /** Internal trigger paused changes */
+  refreshPaused() {
+    this.emit("refreshPaused");
+  }
+  /**
+   * HTML Audio does not support filters, this is non-functional API.
+   */
+  get filters() {
+    console.warn("HTML Audio does not support filters");
+    return null;
+  }
+  set filters(_filters) {
+    console.warn("HTML Audio does not support filters");
+  }
+  /**
+   * HTML Audio does not support `audioContext`
+   * @readonly
+   * @type {AudioContext}
+   */
+  get audioContext() {
+    console.warn("HTML Audio does not support audioContext");
+    return null;
+  }
+  /**
+   * Toggles the muted state.
+   * @return The current muted state.
+   */
+  toggleMute() {
+    this.muted = !this.muted;
+    this.refresh();
+    return this.muted;
+  }
+  /**
+   * Toggles the paused state.
+   * @return The current paused state.
+   */
+  togglePause() {
+    this.paused = !this.paused;
+    this.refreshPaused();
+    return this.paused;
+  }
+  /** Destroy and don't use after this */
+  destroy() {
+    this.removeAllListeners();
+  }
+}
+
+
+//# sourceMappingURL=HTMLAudioContext.mjs.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@pixi/sound/lib/htmlaudio/HTMLAudioInstance.mjs":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@pixi/sound/lib/htmlaudio/HTMLAudioInstance.mjs ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   HTMLAudioInstance: () => (/* binding */ HTMLAudioInstance)
+/* harmony export */ });
+/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
+
+
+let id = 0;
+const _HTMLAudioInstance = class extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.EventEmitter {
+  /** @param parent - Parent element */
+  constructor(parent) {
+    super();
+    this.id = id++;
+    this.init(parent);
+  }
+  /**
+   * Set a property by name, this makes it easy to chain values
+   * @param name - Name of the property to set
+   * @param value - Value to set property to
+   */
+  set(name, value) {
+    if (this[name] === void 0) {
+      throw new Error(`Property with name ${name} does not exist.`);
+    } else {
+      switch (name) {
+        case "speed":
+          this.speed = value;
+          break;
+        case "volume":
+          this.volume = value;
+          break;
+        case "paused":
+          this.paused = value;
+          break;
+        case "loop":
+          this.loop = value;
+          break;
+        case "muted":
+          this.muted = value;
+          break;
+      }
+    }
+    return this;
+  }
+  /** The current playback progress from 0 to 1. */
+  get progress() {
+    const { currentTime } = this._source;
+    return currentTime / this._duration;
+  }
+  /** Pauses the sound. */
+  get paused() {
+    return this._paused;
+  }
+  set paused(paused) {
+    this._paused = paused;
+    this.refreshPaused();
+  }
+  /**
+   * Reference: http://stackoverflow.com/a/40370077
+   * @private
+   */
+  _onPlay() {
+    this._playing = true;
+  }
+  /**
+   * Reference: http://stackoverflow.com/a/40370077
+   * @private
+   */
+  _onPause() {
+    this._playing = false;
+  }
+  /**
+   * Initialize the instance.
+   * @param {htmlaudio.HTMLAudioMedia} media - Same as constructor
+   */
+  init(media) {
+    this._playing = false;
+    this._duration = media.source.duration;
+    const source = this._source = media.source.cloneNode(false);
+    source.src = media.parent.url;
+    source.onplay = this._onPlay.bind(this);
+    source.onpause = this._onPause.bind(this);
+    media.context.on("refresh", this.refresh, this);
+    media.context.on("refreshPaused", this.refreshPaused, this);
+    this._media = media;
+  }
+  /**
+   * Stop the sound playing
+   * @private
+   */
+  _internalStop() {
+    if (this._source && this._playing) {
+      this._source.onended = null;
+      this._source.pause();
+    }
+  }
+  /** Stop the sound playing */
+  stop() {
+    this._internalStop();
+    if (this._source) {
+      this.emit("stop");
+    }
+  }
+  /** Set the instance speed from 0 to 1 */
+  get speed() {
+    return this._speed;
+  }
+  set speed(speed) {
+    this._speed = speed;
+    this.refresh();
+  }
+  /** Get the set the volume for this instance from 0 to 1 */
+  get volume() {
+    return this._volume;
+  }
+  set volume(volume) {
+    this._volume = volume;
+    this.refresh();
+  }
+  /** If the sound instance should loop playback */
+  get loop() {
+    return this._loop;
+  }
+  set loop(loop) {
+    this._loop = loop;
+    this.refresh();
+  }
+  /** `true` if the sound is muted */
+  get muted() {
+    return this._muted;
+  }
+  set muted(muted) {
+    this._muted = muted;
+    this.refresh();
+  }
+  /**
+   * HTML Audio does not support filters, this is non-functional API.
+   */
+  get filters() {
+    console.warn("HTML Audio does not support filters");
+    return null;
+  }
+  set filters(_filters) {
+    console.warn("HTML Audio does not support filters");
+  }
+  /** Call whenever the loop, speed or volume changes */
+  refresh() {
+    const global = this._media.context;
+    const sound = this._media.parent;
+    this._source.loop = this._loop || sound.loop;
+    const globalVolume = global.volume * (global.muted ? 0 : 1);
+    const soundVolume = sound.volume * (sound.muted ? 0 : 1);
+    const instanceVolume = this._volume * (this._muted ? 0 : 1);
+    this._source.volume = instanceVolume * globalVolume * soundVolume;
+    this._source.playbackRate = this._speed * global.speed * sound.speed;
+  }
+  /** Handle changes in paused state, either globally or sound or instance */
+  refreshPaused() {
+    const global = this._media.context;
+    const sound = this._media.parent;
+    const pausedReal = this._paused || sound.paused || global.paused;
+    if (pausedReal !== this._pausedReal) {
+      this._pausedReal = pausedReal;
+      if (pausedReal) {
+        this._internalStop();
+        this.emit("paused");
+      } else {
+        this.emit("resumed");
+        this.play({
+          start: this._source.currentTime,
+          end: this._end,
+          volume: this._volume,
+          speed: this._speed,
+          loop: this._loop
+        });
+      }
+      this.emit("pause", pausedReal);
+    }
+  }
+  /** Start playing the sound/ */
+  play(options) {
+    const { start, end, speed, loop, volume, muted } = options;
+    if (end) {
+      console.assert(end > start, "End time is before start time");
+    }
+    this._speed = speed;
+    this._volume = volume;
+    this._loop = !!loop;
+    this._muted = muted;
+    this.refresh();
+    if (this.loop && end !== null) {
+      console.warn('Looping not support when specifying an "end" time');
+      this.loop = false;
+    }
+    this._start = start;
+    this._end = end || this._duration;
+    this._start = Math.max(0, this._start - _HTMLAudioInstance.PADDING);
+    this._end = Math.min(this._end + _HTMLAudioInstance.PADDING, this._duration);
+    this._source.onloadedmetadata = () => {
+      if (this._source) {
+        this._source.currentTime = start;
+        this._source.onloadedmetadata = null;
+        this.emit("progress", start / this._duration, this._duration);
+        pixi_js__WEBPACK_IMPORTED_MODULE_0__.Ticker.shared.add(this._onUpdate, this);
+      }
+    };
+    this._source.onended = this._onComplete.bind(this);
+    this._source.play();
+    this.emit("start");
+  }
+  /**
+   * Handle time update on sound.
+   * @private
+   */
+  _onUpdate() {
+    this.emit("progress", this.progress, this._duration);
+    if (this._source.currentTime >= this._end && !this._source.loop) {
+      this._onComplete();
+    }
+  }
+  /**
+   * Callback when completed.
+   * @private
+   */
+  _onComplete() {
+    pixi_js__WEBPACK_IMPORTED_MODULE_0__.Ticker.shared.remove(this._onUpdate, this);
+    this._internalStop();
+    this.emit("progress", 1, this._duration);
+    this.emit("end", this);
+  }
+  /** Don't use after this. */
+  destroy() {
+    pixi_js__WEBPACK_IMPORTED_MODULE_0__.Ticker.shared.remove(this._onUpdate, this);
+    this.removeAllListeners();
+    const source = this._source;
+    if (source) {
+      source.onended = null;
+      source.onplay = null;
+      source.onpause = null;
+      this._internalStop();
+    }
+    this._source = null;
+    this._speed = 1;
+    this._volume = 1;
+    this._loop = false;
+    this._end = null;
+    this._start = 0;
+    this._duration = 0;
+    this._playing = false;
+    this._pausedReal = false;
+    this._paused = false;
+    this._muted = false;
+    if (this._media) {
+      this._media.context.off("refresh", this.refresh, this);
+      this._media.context.off("refreshPaused", this.refreshPaused, this);
+      this._media = null;
+    }
+  }
+  /**
+   * To string method for instance.
+   * @return The string representation of instance.
+   */
+  toString() {
+    return `[HTMLAudioInstance id=${this.id}]`;
+  }
+};
+let HTMLAudioInstance = _HTMLAudioInstance;
+/** Extra padding, in seconds, to deal with low-latecy of HTMLAudio. */
+HTMLAudioInstance.PADDING = 0.1;
+
+
+//# sourceMappingURL=HTMLAudioInstance.mjs.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@pixi/sound/lib/htmlaudio/HTMLAudioMedia.mjs":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@pixi/sound/lib/htmlaudio/HTMLAudioMedia.mjs ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   HTMLAudioMedia: () => (/* binding */ HTMLAudioMedia)
+/* harmony export */ });
+/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
+/* harmony import */ var _HTMLAudioInstance_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HTMLAudioInstance.mjs */ "./node_modules/@pixi/sound/lib/htmlaudio/HTMLAudioInstance.mjs");
+
+
+
+class HTMLAudioMedia extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.EventEmitter {
+  init(parent) {
+    this.parent = parent;
+    this._source = parent.options.source || new Audio();
+    if (parent.url) {
+      this._source.src = parent.url;
+    }
+  }
+  // Implement create
+  create() {
+    return new _HTMLAudioInstance_mjs__WEBPACK_IMPORTED_MODULE_1__.HTMLAudioInstance(this);
+  }
+  /**
+   * If the audio media is playable (ready).
+   * @readonly
+   */
+  get isPlayable() {
+    return !!this._source && this._source.readyState === 4;
+  }
+  /**
+   * THe duration of the media in seconds.
+   * @readonly
+   */
+  get duration() {
+    return this._source.duration;
+  }
+  /**
+   * Reference to the context.
+   * @readonly
+   */
+  get context() {
+    return this.parent.context;
+  }
+  /** The collection of filters, does not apply to HTML Audio. */
+  get filters() {
+    return null;
+  }
+  set filters(_filters) {
+    console.warn("HTML Audio does not support filters");
+  }
+  // Override the destroy
+  destroy() {
+    this.removeAllListeners();
+    this.parent = null;
+    if (this._source) {
+      this._source.src = "";
+      this._source.load();
+      this._source = null;
+    }
+  }
+  /**
+   * Get the audio source element.
+   * @type {HTMLAudioElement}
+   * @readonly
+   */
+  get source() {
+    return this._source;
+  }
+  // Implement the method to being preloading
+  load(callback) {
+    const source = this._source;
+    const sound = this.parent;
+    if (source.readyState === 4) {
+      sound.isLoaded = true;
+      const instance = sound.autoPlayStart();
+      if (callback) {
+        setTimeout(() => {
+          callback(null, sound, instance);
+        }, 0);
+      }
+      return;
+    }
+    if (!sound.url) {
+      callback(new Error("sound.url or sound.source must be set"));
+      return;
+    }
+    source.src = sound.url;
+    const onLoad = () => {
+      removeListeners();
+      sound.isLoaded = true;
+      const instance = sound.autoPlayStart();
+      if (callback) {
+        callback(null, sound, instance);
+      }
+    };
+    const onAbort = () => {
+      removeListeners();
+      if (callback) {
+        callback(new Error("Sound loading has been aborted"));
+      }
+    };
+    const onError = () => {
+      removeListeners();
+      const message = `Failed to load audio element (code: ${source.error.code})`;
+      if (callback) {
+        callback(new Error(message));
+      } else {
+        console.error(message);
+      }
+    };
+    const removeListeners = () => {
+      source.removeEventListener("canplaythrough", onLoad);
+      source.removeEventListener("load", onLoad);
+      source.removeEventListener("abort", onAbort);
+      source.removeEventListener("error", onError);
+    };
+    source.addEventListener("canplaythrough", onLoad, false);
+    source.addEventListener("load", onLoad, false);
+    source.addEventListener("abort", onAbort, false);
+    source.addEventListener("error", onError, false);
+    source.load();
+  }
+}
+
+
+//# sourceMappingURL=HTMLAudioMedia.mjs.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@pixi/sound/lib/htmlaudio/index.mjs":
+/*!**********************************************************!*\
+  !*** ./node_modules/@pixi/sound/lib/htmlaudio/index.mjs ***!
+  \**********************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   HTMLAudioContext: () => (/* reexport safe */ _HTMLAudioContext_mjs__WEBPACK_IMPORTED_MODULE_0__.HTMLAudioContext),
+/* harmony export */   HTMLAudioInstance: () => (/* reexport safe */ _HTMLAudioInstance_mjs__WEBPACK_IMPORTED_MODULE_1__.HTMLAudioInstance),
+/* harmony export */   HTMLAudioMedia: () => (/* reexport safe */ _HTMLAudioMedia_mjs__WEBPACK_IMPORTED_MODULE_2__.HTMLAudioMedia)
+/* harmony export */ });
+/* harmony import */ var _HTMLAudioContext_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HTMLAudioContext.mjs */ "./node_modules/@pixi/sound/lib/htmlaudio/HTMLAudioContext.mjs");
+/* harmony import */ var _HTMLAudioInstance_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HTMLAudioInstance.mjs */ "./node_modules/@pixi/sound/lib/htmlaudio/HTMLAudioInstance.mjs");
+/* harmony import */ var _HTMLAudioMedia_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./HTMLAudioMedia.mjs */ "./node_modules/@pixi/sound/lib/htmlaudio/HTMLAudioMedia.mjs");
+
+
+
+//# sourceMappingURL=index.mjs.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@pixi/sound/lib/index.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/@pixi/sound/lib/index.mjs ***!
+  \************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   Filter: () => (/* reexport safe */ _filters_Filter_mjs__WEBPACK_IMPORTED_MODULE_7__.Filter),
+/* harmony export */   Filterable: () => (/* reexport safe */ _Filterable_mjs__WEBPACK_IMPORTED_MODULE_6__.Filterable),
+/* harmony export */   Sound: () => (/* reexport safe */ _Sound_mjs__WEBPACK_IMPORTED_MODULE_8__.Sound),
+/* harmony export */   SoundLibrary: () => (/* reexport safe */ _SoundLibrary_mjs__WEBPACK_IMPORTED_MODULE_3__.SoundLibrary),
+/* harmony export */   SoundSprite: () => (/* reexport safe */ _SoundSprite_mjs__WEBPACK_IMPORTED_MODULE_10__.SoundSprite),
+/* harmony export */   filters: () => (/* reexport module object */ _filters_index_mjs__WEBPACK_IMPORTED_MODULE_0__),
+/* harmony export */   htmlaudio: () => (/* reexport module object */ _htmlaudio_index_mjs__WEBPACK_IMPORTED_MODULE_1__),
+/* harmony export */   sound: () => (/* binding */ sound),
+/* harmony export */   soundAsset: () => (/* reexport safe */ _soundAsset_mjs__WEBPACK_IMPORTED_MODULE_9__.soundAsset),
+/* harmony export */   utils: () => (/* reexport module object */ _utils_index_mjs__WEBPACK_IMPORTED_MODULE_4__),
+/* harmony export */   webaudio: () => (/* reexport module object */ _webaudio_index_mjs__WEBPACK_IMPORTED_MODULE_5__)
+/* harmony export */ });
+/* harmony import */ var _filters_index_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./filters/index.mjs */ "./node_modules/@pixi/sound/lib/filters/index.mjs");
+/* harmony import */ var _htmlaudio_index_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./htmlaudio/index.mjs */ "./node_modules/@pixi/sound/lib/htmlaudio/index.mjs");
+/* harmony import */ var _instance_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./instance.mjs */ "./node_modules/@pixi/sound/lib/instance.mjs");
+/* harmony import */ var _SoundLibrary_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SoundLibrary.mjs */ "./node_modules/@pixi/sound/lib/SoundLibrary.mjs");
+/* harmony import */ var _utils_index_mjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./utils/index.mjs */ "./node_modules/@pixi/sound/lib/utils/index.mjs");
+/* harmony import */ var _webaudio_index_mjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./webaudio/index.mjs */ "./node_modules/@pixi/sound/lib/webaudio/index.mjs");
+/* harmony import */ var _Filterable_mjs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Filterable.mjs */ "./node_modules/@pixi/sound/lib/Filterable.mjs");
+/* harmony import */ var _filters_Filter_mjs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./filters/Filter.mjs */ "./node_modules/@pixi/sound/lib/filters/Filter.mjs");
+/* harmony import */ var _Sound_mjs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Sound.mjs */ "./node_modules/@pixi/sound/lib/Sound.mjs");
+/* harmony import */ var _soundAsset_mjs__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./soundAsset.mjs */ "./node_modules/@pixi/sound/lib/soundAsset.mjs");
+/* harmony import */ var _SoundSprite_mjs__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./SoundSprite.mjs */ "./node_modules/@pixi/sound/lib/SoundSprite.mjs");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const sound = (0,_instance_mjs__WEBPACK_IMPORTED_MODULE_2__.setInstance)(new _SoundLibrary_mjs__WEBPACK_IMPORTED_MODULE_3__.SoundLibrary());
+
+
+//# sourceMappingURL=index.mjs.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@pixi/sound/lib/instance.mjs":
+/*!***************************************************!*\
+  !*** ./node_modules/@pixi/sound/lib/instance.mjs ***!
+  \***************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   getInstance: () => (/* binding */ getInstance),
+/* harmony export */   instance: () => (/* binding */ instance),
+/* harmony export */   setInstance: () => (/* binding */ setInstance)
+/* harmony export */ });
+let instance;
+function setInstance(sound) {
+  instance = sound;
+  return sound;
+}
+function getInstance() {
+  return instance;
+}
+
+
+//# sourceMappingURL=instance.mjs.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@pixi/sound/lib/soundAsset.mjs":
+/*!*****************************************************!*\
+  !*** ./node_modules/@pixi/sound/lib/soundAsset.mjs ***!
+  \*****************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   soundAsset: () => (/* binding */ soundAsset)
+/* harmony export */ });
+/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
+/* harmony import */ var _instance_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./instance.mjs */ "./node_modules/@pixi/sound/lib/instance.mjs");
+/* harmony import */ var _Sound_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Sound.mjs */ "./node_modules/@pixi/sound/lib/Sound.mjs");
+/* harmony import */ var _utils_supported_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./utils/supported.mjs */ "./node_modules/@pixi/sound/lib/utils/supported.mjs");
+
+
+
+
+
+const getAlias = (asset) => {
+  const src = asset.src;
+  let alias = asset?.alias?.[0];
+  if (!alias || asset.src === alias) {
+    alias = pixi_js__WEBPACK_IMPORTED_MODULE_0__.path.basename(src, pixi_js__WEBPACK_IMPORTED_MODULE_0__.path.extname(src));
+  }
+  return alias;
+};
+const soundAsset = {
+  extension: pixi_js__WEBPACK_IMPORTED_MODULE_0__.ExtensionType.Asset,
+  detection: {
+    test: async () => true,
+    add: async (formats) => [...formats, ..._utils_supported_mjs__WEBPACK_IMPORTED_MODULE_3__.extensions.filter((ext) => _utils_supported_mjs__WEBPACK_IMPORTED_MODULE_3__.supported[ext])],
+    remove: async (formats) => formats.filter((ext) => formats.includes(ext))
+  },
+  loader: {
+    name: "sound",
+    extension: {
+      type: [pixi_js__WEBPACK_IMPORTED_MODULE_0__.ExtensionType.LoadParser],
+      priority: pixi_js__WEBPACK_IMPORTED_MODULE_0__.LoaderParserPriority.High
+    },
+    /** Should we attempt to load this file? */
+    test(url) {
+      const ext = pixi_js__WEBPACK_IMPORTED_MODULE_0__.path.extname(url).slice(1);
+      return !!_utils_supported_mjs__WEBPACK_IMPORTED_MODULE_3__.supported[ext] || _utils_supported_mjs__WEBPACK_IMPORTED_MODULE_3__.mimes.some((mime) => url.startsWith(`data:${mime}`));
+    },
+    /** Load the sound file, this is mostly handled by Sound.from() */
+    async load(url, asset) {
+      const sound = await new Promise((resolve, reject) => _Sound_mjs__WEBPACK_IMPORTED_MODULE_2__.Sound.from({
+        ...asset.data,
+        url,
+        preload: true,
+        loaded(err, sound2) {
+          if (err) {
+            reject(err);
+          } else {
+            resolve(sound2);
+          }
+          asset.data?.loaded?.(err, sound2);
+        }
+      }));
+      (0,_instance_mjs__WEBPACK_IMPORTED_MODULE_1__.getInstance)().add(getAlias(asset), sound);
+      return sound;
+    },
+    /** Remove the sound from the library */
+    async unload(_sound, asset) {
+      (0,_instance_mjs__WEBPACK_IMPORTED_MODULE_1__.getInstance)().remove(getAlias(asset));
+    }
+  }
+};
+pixi_js__WEBPACK_IMPORTED_MODULE_0__.extensions.add(soundAsset);
+
+
+//# sourceMappingURL=soundAsset.mjs.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@pixi/sound/lib/utils/index.mjs":
+/*!******************************************************!*\
+  !*** ./node_modules/@pixi/sound/lib/utils/index.mjs ***!
+  \******************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   PLAY_ID: () => (/* reexport safe */ _playOnce_mjs__WEBPACK_IMPORTED_MODULE_0__.PLAY_ID),
+/* harmony export */   extensions: () => (/* reexport safe */ _supported_mjs__WEBPACK_IMPORTED_MODULE_3__.extensions),
+/* harmony export */   mimes: () => (/* reexport safe */ _supported_mjs__WEBPACK_IMPORTED_MODULE_3__.mimes),
+/* harmony export */   playOnce: () => (/* reexport safe */ _playOnce_mjs__WEBPACK_IMPORTED_MODULE_0__.playOnce),
+/* harmony export */   render: () => (/* reexport safe */ _render_mjs__WEBPACK_IMPORTED_MODULE_1__.render),
+/* harmony export */   sineTone: () => (/* reexport safe */ _sineTone_mjs__WEBPACK_IMPORTED_MODULE_2__.sineTone),
+/* harmony export */   supported: () => (/* reexport safe */ _supported_mjs__WEBPACK_IMPORTED_MODULE_3__.supported),
+/* harmony export */   validateFormats: () => (/* reexport safe */ _supported_mjs__WEBPACK_IMPORTED_MODULE_3__.validateFormats)
+/* harmony export */ });
+/* harmony import */ var _playOnce_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./playOnce.mjs */ "./node_modules/@pixi/sound/lib/utils/playOnce.mjs");
+/* harmony import */ var _render_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./render.mjs */ "./node_modules/@pixi/sound/lib/utils/render.mjs");
+/* harmony import */ var _sineTone_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./sineTone.mjs */ "./node_modules/@pixi/sound/lib/utils/sineTone.mjs");
+/* harmony import */ var _supported_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./supported.mjs */ "./node_modules/@pixi/sound/lib/utils/supported.mjs");
+
+
+
+
+//# sourceMappingURL=index.mjs.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@pixi/sound/lib/utils/playOnce.mjs":
+/*!*********************************************************!*\
+  !*** ./node_modules/@pixi/sound/lib/utils/playOnce.mjs ***!
+  \*********************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   PLAY_ID: () => (/* binding */ PLAY_ID),
+/* harmony export */   playOnce: () => (/* binding */ playOnce)
+/* harmony export */ });
+/* harmony import */ var _instance_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../instance.mjs */ "./node_modules/@pixi/sound/lib/instance.mjs");
+
+
+let PLAY_ID = 0;
+function playOnce(url, callback) {
+  const alias = `alias${PLAY_ID++}`;
+  (0,_instance_mjs__WEBPACK_IMPORTED_MODULE_0__.getInstance)().add(alias, {
+    url,
+    preload: true,
+    autoPlay: true,
+    loaded: (err) => {
+      if (err) {
+        console.error(err);
+        (0,_instance_mjs__WEBPACK_IMPORTED_MODULE_0__.getInstance)().remove(alias);
+        if (callback) {
+          callback(err);
+        }
+      }
+    },
+    complete: () => {
+      (0,_instance_mjs__WEBPACK_IMPORTED_MODULE_0__.getInstance)().remove(alias);
+      if (callback) {
+        callback(null);
+      }
+    }
+  });
+  return alias;
+}
+
+
+//# sourceMappingURL=playOnce.mjs.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@pixi/sound/lib/utils/render.mjs":
+/*!*******************************************************!*\
+  !*** ./node_modules/@pixi/sound/lib/utils/render.mjs ***!
+  \*******************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   render: () => (/* binding */ render)
+/* harmony export */ });
+/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
+/* harmony import */ var _webaudio_WebAudioMedia_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../webaudio/WebAudioMedia.mjs */ "./node_modules/@pixi/sound/lib/webaudio/WebAudioMedia.mjs");
+
+
+
+function render(sound, options) {
+  const canvas = document.createElement("canvas");
+  options = {
+    width: 512,
+    height: 128,
+    fill: "black",
+    ...options || {}
+  };
+  canvas.width = options.width;
+  canvas.height = options.height;
+  const textureSource = new pixi_js__WEBPACK_IMPORTED_MODULE_0__.CanvasSource({
+    resource: canvas
+  });
+  if (!(sound.media instanceof _webaudio_WebAudioMedia_mjs__WEBPACK_IMPORTED_MODULE_1__.WebAudioMedia)) {
+    return textureSource;
+  }
+  const media = sound.media;
+  console.assert(!!media.buffer, "No buffer found, load first");
+  const context = canvas.getContext("2d");
+  context.fillStyle = options.fill;
+  const data = media.buffer.getChannelData(0);
+  const step = Math.ceil(data.length / options.width);
+  const amp = options.height / 2;
+  for (let i = 0; i < options.width; i++) {
+    let min = 1;
+    let max = -1;
+    for (let j = 0; j < step; j++) {
+      const datum = data[i * step + j];
+      if (datum < min) {
+        min = datum;
+      }
+      if (datum > max) {
+        max = datum;
+      }
+    }
+    context.fillRect(i, (1 + min) * amp, 1, Math.max(1, (max - min) * amp));
+  }
+  return textureSource;
+}
+
+
+//# sourceMappingURL=render.mjs.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@pixi/sound/lib/utils/sineTone.mjs":
+/*!*********************************************************!*\
+  !*** ./node_modules/@pixi/sound/lib/utils/sineTone.mjs ***!
+  \*********************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   sineTone: () => (/* binding */ sineTone)
+/* harmony export */ });
+/* harmony import */ var _Sound_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Sound.mjs */ "./node_modules/@pixi/sound/lib/Sound.mjs");
+/* harmony import */ var _webaudio_WebAudioMedia_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../webaudio/WebAudioMedia.mjs */ "./node_modules/@pixi/sound/lib/webaudio/WebAudioMedia.mjs");
+
+
+
+function sineTone(hertz = 200, seconds = 1) {
+  const sound = _Sound_mjs__WEBPACK_IMPORTED_MODULE_0__.Sound.from({
+    singleInstance: true
+  });
+  if (!(sound.media instanceof _webaudio_WebAudioMedia_mjs__WEBPACK_IMPORTED_MODULE_1__.WebAudioMedia)) {
+    return sound;
+  }
+  const media = sound.media;
+  const context = sound.context;
+  const nChannels = 1;
+  const sampleRate = 48e3;
+  const amplitude = 2;
+  const buffer = context.audioContext.createBuffer(
+    nChannels,
+    seconds * sampleRate,
+    sampleRate
+  );
+  const fArray = buffer.getChannelData(0);
+  for (let i = 0; i < fArray.length; i++) {
+    const time = i / buffer.sampleRate;
+    const angle = hertz * time * 2 * Math.PI;
+    fArray[i] = Math.sin(angle) * amplitude;
+  }
+  media.buffer = buffer;
+  sound.isLoaded = true;
+  return sound;
+}
+
+
+//# sourceMappingURL=sineTone.mjs.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@pixi/sound/lib/utils/supported.mjs":
+/*!**********************************************************!*\
+  !*** ./node_modules/@pixi/sound/lib/utils/supported.mjs ***!
+  \**********************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   extensions: () => (/* binding */ extensions),
+/* harmony export */   mimes: () => (/* binding */ mimes),
+/* harmony export */   supported: () => (/* binding */ supported),
+/* harmony export */   validateFormats: () => (/* binding */ validateFormats)
+/* harmony export */ });
+const extensions = [
+  "ogg",
+  "oga",
+  "opus",
+  "m4a",
+  "mp3",
+  "mpeg",
+  "wav",
+  "aiff",
+  "wma",
+  "mid",
+  "caf"
+];
+const mimes = [
+  "audio/mpeg",
+  "audio/ogg"
+];
+const supported = {};
+function validateFormats(typeOverrides) {
+  const overrides = {
+    m4a: "audio/mp4",
+    oga: "audio/ogg",
+    opus: 'audio/ogg; codecs="opus"',
+    caf: 'audio/x-caf; codecs="opus"',
+    ...typeOverrides || {}
+  };
+  const audio = document.createElement("audio");
+  const formats = {};
+  const no = /^no$/;
+  extensions.forEach((ext) => {
+    const canByExt = audio.canPlayType(`audio/${ext}`).replace(no, "");
+    const canByType = overrides[ext] ? audio.canPlayType(overrides[ext]).replace(no, "") : "";
+    formats[ext] = !!canByExt || !!canByType;
+  });
+  Object.assign(supported, formats);
+}
+validateFormats();
+
+
+//# sourceMappingURL=supported.mjs.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@pixi/sound/lib/webaudio/WebAudioContext.mjs":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@pixi/sound/lib/webaudio/WebAudioContext.mjs ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   WebAudioContext: () => (/* binding */ WebAudioContext)
+/* harmony export */ });
+/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
+/* harmony import */ var _Filterable_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Filterable.mjs */ "./node_modules/@pixi/sound/lib/Filterable.mjs");
+
+
+
+class WebAudioContext extends _Filterable_mjs__WEBPACK_IMPORTED_MODULE_1__.Filterable {
+  constructor() {
+    const win = window;
+    const ctx = new WebAudioContext.AudioContext();
+    const compressor = ctx.createDynamicsCompressor();
+    const analyser = ctx.createAnalyser();
+    analyser.connect(compressor);
+    compressor.connect(ctx.destination);
+    super(analyser, compressor);
+    /** Set to false ignore suspending when window is blurred */
+    this.autoPause = true;
+    this._ctx = ctx;
+    this._offlineCtx = new WebAudioContext.OfflineAudioContext(
+      1,
+      2,
+      win.OfflineAudioContext ? Math.max(8e3, Math.min(96e3, ctx.sampleRate)) : 44100
+    );
+    this.compressor = compressor;
+    this.analyser = analyser;
+    this.events = new pixi_js__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+    this.volume = 1;
+    this.speed = 1;
+    this.muted = false;
+    this.paused = false;
+    this._locked = ctx.state === "suspended" && ("ontouchstart" in globalThis || "onclick" in globalThis);
+    if (this._locked) {
+      this._unlock();
+      this._unlock = this._unlock.bind(this);
+      document.addEventListener("mousedown", this._unlock, true);
+      document.addEventListener("touchstart", this._unlock, true);
+      document.addEventListener("touchend", this._unlock, true);
+    }
+    this.onFocus = this.onFocus.bind(this);
+    this.onBlur = this.onBlur.bind(this);
+    globalThis.addEventListener("focus", this.onFocus);
+    globalThis.addEventListener("blur", this.onBlur);
+  }
+  /** Handle mobile WebAudio context resume */
+  onFocus() {
+    if (!this.autoPause) {
+      return;
+    }
+    const state = this._ctx.state;
+    if (state === "suspended" || state === "interrupted" || !this._locked) {
+      this.paused = this._pausedOnBlur;
+      this.refreshPaused();
+    }
+  }
+  /** Handle mobile WebAudio context suspend */
+  onBlur() {
+    if (!this.autoPause) {
+      return;
+    }
+    if (!this._locked) {
+      this._pausedOnBlur = this._paused;
+      this.paused = true;
+      this.refreshPaused();
+    }
+  }
+  /**
+   * Try to unlock audio on iOS. This is triggered from either WebAudio plugin setup (which will work if inside of
+   * a `mousedown` or `touchend` event stack), or the first document touchend/mousedown event. If it fails (touchend
+   * will fail if the user presses for too long, indicating a scroll event instead of a click event.
+   *
+   * Note that earlier versions of iOS supported `touchstart` for this, but iOS9 removed this functionality. Adding
+   * a `touchstart` event to support older platforms may preclude a `mousedown` even from getting fired on iOS9, so we
+   * stick with `mousedown` and `touchend`.
+   */
+  _unlock() {
+    if (!this._locked) {
+      return;
+    }
+    this.playEmptySound();
+    if (this._ctx.state === "running") {
+      document.removeEventListener("mousedown", this._unlock, true);
+      document.removeEventListener("touchend", this._unlock, true);
+      document.removeEventListener("touchstart", this._unlock, true);
+      this._locked = false;
+    }
+  }
+  /**
+   * Plays an empty sound in the web audio context.  This is used to enable web audio on iOS devices, as they
+   * require the first sound to be played inside of a user initiated event (touch/click).
+   */
+  playEmptySound() {
+    const source = this._ctx.createBufferSource();
+    source.buffer = this._ctx.createBuffer(1, 1, 22050);
+    source.connect(this._ctx.destination);
+    source.start(0, 0, 0);
+    if (source.context.state === "suspended") {
+      source.context.resume();
+    }
+  }
+  /**
+   * Get AudioContext class, if not supported returns `null`
+   * @type {AudioContext}
+   * @readonly
+   */
+  static get AudioContext() {
+    const win = window;
+    return win.AudioContext || win.webkitAudioContext || null;
+  }
+  /**
+   * Get OfflineAudioContext class, if not supported returns `null`
+   * @type {OfflineAudioContext}
+   * @readonly
+   */
+  static get OfflineAudioContext() {
+    const win = window;
+    return win.OfflineAudioContext || win.webkitOfflineAudioContext || null;
+  }
+  /** Destroy this context. */
+  destroy() {
+    super.destroy();
+    const ctx = this._ctx;
+    if (typeof ctx.close !== "undefined") {
+      ctx.close();
+    }
+    globalThis.removeEventListener("focus", this.onFocus);
+    globalThis.removeEventListener("blur", this.onBlur);
+    this.events.removeAllListeners();
+    this.analyser.disconnect();
+    this.compressor.disconnect();
+    this.analyser = null;
+    this.compressor = null;
+    this.events = null;
+    this._offlineCtx = null;
+    this._ctx = null;
+  }
+  /**
+   * The WebAudio API AudioContext object.
+   * @readonly
+   * @type {AudioContext}
+   */
+  get audioContext() {
+    return this._ctx;
+  }
+  /**
+   * The WebAudio API OfflineAudioContext object.
+   * @readonly
+   * @type {OfflineAudioContext}
+   */
+  get offlineContext() {
+    return this._offlineCtx;
+  }
+  /**
+   * Pauses all sounds, even though we handle this at the instance
+   * level, we'll also pause the audioContext so that the
+   * time used to compute progress isn't messed up.
+   * @default false
+   */
+  set paused(paused) {
+    if (paused && this._ctx.state === "running") {
+      this._ctx.suspend();
+    } else if (!paused && this._ctx.state === "suspended") {
+      this._ctx.resume();
+    }
+    this._paused = paused;
+  }
+  get paused() {
+    return this._paused;
+  }
+  /** Emit event when muted, volume or speed changes */
+  refresh() {
+    this.events.emit("refresh");
+  }
+  /** Emit event when muted, volume or speed changes */
+  refreshPaused() {
+    this.events.emit("refreshPaused");
+  }
+  /**
+   * Toggles the muted state.
+   * @return The current muted state.
+   */
+  toggleMute() {
+    this.muted = !this.muted;
+    this.refresh();
+    return this.muted;
+  }
+  /**
+   * Toggles the paused state.
+   * @return The current muted state.
+   */
+  togglePause() {
+    this.paused = !this.paused;
+    this.refreshPaused();
+    return this._paused;
+  }
+  /**
+   * Decode the audio data
+   * @param arrayBuffer - Buffer from loader
+   * @param callback - When completed, error and audioBuffer are parameters.
+   */
+  decode(arrayBuffer, callback) {
+    const handleError = (err) => {
+      callback(new Error(err?.message || "Unable to decode file"));
+    };
+    const result = this._offlineCtx.decodeAudioData(
+      arrayBuffer,
+      (buffer) => {
+        callback(null, buffer);
+      },
+      handleError
+    );
+    if (result) {
+      result.catch(handleError);
+    }
+  }
+}
+
+
+//# sourceMappingURL=WebAudioContext.mjs.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@pixi/sound/lib/webaudio/WebAudioInstance.mjs":
+/*!********************************************************************!*\
+  !*** ./node_modules/@pixi/sound/lib/webaudio/WebAudioInstance.mjs ***!
+  \********************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   WebAudioInstance: () => (/* binding */ WebAudioInstance)
+/* harmony export */ });
+/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
+/* harmony import */ var _WebAudioUtils_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./WebAudioUtils.mjs */ "./node_modules/@pixi/sound/lib/webaudio/WebAudioUtils.mjs");
+
+
+
+let id = 0;
+class WebAudioInstance extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.EventEmitter {
+  constructor(media) {
+    super();
+    this.id = id++;
+    this._media = null;
+    this._paused = false;
+    this._muted = false;
+    this._elapsed = 0;
+    this.init(media);
+  }
+  /**
+   * Set a property by name, this makes it easy to chain values
+   * @param name - Name of the property to set.
+   * @param value - Value to set property to.
+   */
+  set(name, value) {
+    if (this[name] === void 0) {
+      throw new Error(`Property with name ${name} does not exist.`);
+    } else {
+      switch (name) {
+        case "speed":
+          this.speed = value;
+          break;
+        case "volume":
+          this.volume = value;
+          break;
+        case "muted":
+          this.muted = value;
+          break;
+        case "loop":
+          this.loop = value;
+          break;
+        case "paused":
+          this.paused = value;
+          break;
+      }
+    }
+    return this;
+  }
+  /** Stops the instance, don't use after this. */
+  stop() {
+    if (this._source) {
+      this._internalStop();
+      this.emit("stop");
+    }
+  }
+  /** Set the instance speed from 0 to 1 */
+  get speed() {
+    return this._speed;
+  }
+  set speed(speed) {
+    this._speed = speed;
+    this.refresh();
+    this._update(true);
+  }
+  /** Get the set the volume for this instance from 0 to 1 */
+  get volume() {
+    return this._volume;
+  }
+  set volume(volume) {
+    this._volume = volume;
+    this.refresh();
+  }
+  /** `true` if the sound is muted */
+  get muted() {
+    return this._muted;
+  }
+  set muted(muted) {
+    this._muted = muted;
+    this.refresh();
+  }
+  /** If the sound instance should loop playback */
+  get loop() {
+    return this._loop;
+  }
+  set loop(loop) {
+    this._loop = loop;
+    this.refresh();
+  }
+  /** The collection of filters. */
+  get filters() {
+    return this._filters;
+  }
+  set filters(filters) {
+    if (this._filters) {
+      this._filters?.filter((filter) => filter).forEach((filter) => filter.disconnect());
+      this._filters = null;
+      this._source.connect(this._gain);
+    }
+    this._filters = filters?.length ? filters.slice(0) : null;
+    this.refresh();
+  }
+  /** Refresh loop, volume and speed based on changes to parent */
+  refresh() {
+    if (!this._source) {
+      return;
+    }
+    const global = this._media.context;
+    const sound = this._media.parent;
+    this._source.loop = this._loop || sound.loop;
+    const globalVolume = global.volume * (global.muted ? 0 : 1);
+    const soundVolume = sound.volume * (sound.muted ? 0 : 1);
+    const instanceVolume = this._volume * (this._muted ? 0 : 1);
+    _WebAudioUtils_mjs__WEBPACK_IMPORTED_MODULE_1__.WebAudioUtils.setParamValue(this._gain.gain, instanceVolume * soundVolume * globalVolume);
+    _WebAudioUtils_mjs__WEBPACK_IMPORTED_MODULE_1__.WebAudioUtils.setParamValue(this._source.playbackRate, this._speed * sound.speed * global.speed);
+    this.applyFilters();
+  }
+  /** Connect filters nodes to audio context */
+  applyFilters() {
+    if (this._filters?.length) {
+      this._source.disconnect();
+      let source = this._source;
+      this._filters.forEach((filter) => {
+        source.connect(filter.destination);
+        source = filter;
+      });
+      source.connect(this._gain);
+    }
+  }
+  /** Handle changes in paused state, either globally or sound or instance */
+  refreshPaused() {
+    const global = this._media.context;
+    const sound = this._media.parent;
+    const pausedReal = this._paused || sound.paused || global.paused;
+    if (pausedReal !== this._pausedReal) {
+      this._pausedReal = pausedReal;
+      if (pausedReal) {
+        this._internalStop();
+        this.emit("paused");
+      } else {
+        this.emit("resumed");
+        this.play({
+          start: this._elapsed % this._duration,
+          end: this._end,
+          speed: this._speed,
+          loop: this._loop,
+          volume: this._volume
+        });
+      }
+      this.emit("pause", pausedReal);
+    }
+  }
+  /**
+   * Plays the sound.
+   * @param options - Play options.
+   */
+  play(options) {
+    const { start, end, speed, loop, volume, muted, filters } = options;
+    if (end) {
+      console.assert(end > start, "End time is before start time");
+    }
+    this._paused = false;
+    const { source, gain } = this._media.nodes.cloneBufferSource();
+    this._source = source;
+    this._gain = gain;
+    this._speed = speed;
+    this._volume = volume;
+    this._loop = !!loop;
+    this._muted = muted;
+    this._filters = filters;
+    this.refresh();
+    const duration = this._source.buffer.duration;
+    this._duration = duration;
+    this._end = end;
+    this._lastUpdate = this._now();
+    this._elapsed = start;
+    this._source.onended = this._onComplete.bind(this);
+    if (this._loop) {
+      this._source.loopEnd = end;
+      this._source.loopStart = start;
+      this._source.start(0, start);
+    } else if (end) {
+      this._source.start(0, start, end - start);
+    } else {
+      this._source.start(0, start);
+    }
+    this.emit("start");
+    this._update(true);
+    this.enableTicker(true);
+  }
+  /** Start the update progress. */
+  enableTicker(enabled) {
+    pixi_js__WEBPACK_IMPORTED_MODULE_0__.Ticker.shared.remove(this._updateListener, this);
+    if (enabled) {
+      pixi_js__WEBPACK_IMPORTED_MODULE_0__.Ticker.shared.add(this._updateListener, this);
+    }
+  }
+  /** The current playback progress from 0 to 1. */
+  get progress() {
+    return this._progress;
+  }
+  /** Pauses the sound. */
+  get paused() {
+    return this._paused;
+  }
+  set paused(paused) {
+    this._paused = paused;
+    this.refreshPaused();
+  }
+  /** Don't use after this. */
+  destroy() {
+    this.removeAllListeners();
+    this._internalStop();
+    if (this._gain) {
+      this._gain.disconnect();
+      this._gain = null;
+    }
+    if (this._media) {
+      this._media.context.events.off("refresh", this.refresh, this);
+      this._media.context.events.off("refreshPaused", this.refreshPaused, this);
+      this._media = null;
+    }
+    this._filters?.forEach((filter) => filter.disconnect());
+    this._filters = null;
+    this._end = null;
+    this._speed = 1;
+    this._volume = 1;
+    this._loop = false;
+    this._elapsed = 0;
+    this._duration = 0;
+    this._paused = false;
+    this._muted = false;
+    this._pausedReal = false;
+  }
+  /**
+   * To string method for instance.
+   * @return The string representation of instance.
+   */
+  toString() {
+    return `[WebAudioInstance id=${this.id}]`;
+  }
+  /**
+   * Get the current time in seconds.
+   * @return Seconds since start of context
+   */
+  _now() {
+    return this._media.context.audioContext.currentTime;
+  }
+  /** Callback for update listener */
+  _updateListener() {
+    this._update();
+  }
+  /** Internal update the progress. */
+  _update(force = false) {
+    if (this._source) {
+      const now = this._now();
+      const delta = now - this._lastUpdate;
+      if (delta > 0 || force) {
+        const speed = this._source.playbackRate.value;
+        this._elapsed += delta * speed;
+        this._lastUpdate = now;
+        const duration = this._duration;
+        let progress;
+        if (this._source.loopStart) {
+          const soundLength = this._source.loopEnd - this._source.loopStart;
+          progress = (this._source.loopStart + this._elapsed % soundLength) / duration;
+        } else {
+          progress = this._elapsed % duration / duration;
+        }
+        this._progress = progress;
+        this.emit("progress", this._progress, duration);
+      }
+    }
+  }
+  /** Initializes the instance. */
+  init(media) {
+    this._media = media;
+    media.context.events.on("refresh", this.refresh, this);
+    media.context.events.on("refreshPaused", this.refreshPaused, this);
+  }
+  /** Stops the instance. */
+  _internalStop() {
+    if (this._source) {
+      this.enableTicker(false);
+      this._source.onended = null;
+      this._source.stop(0);
+      this._source.disconnect();
+      try {
+        this._source.buffer = null;
+      } catch (err) {
+        console.warn("Failed to set AudioBufferSourceNode.buffer to null:", err);
+      }
+      this._source = null;
+    }
+  }
+  /** Callback when completed. */
+  _onComplete() {
+    if (this._source) {
+      this.enableTicker(false);
+      this._source.onended = null;
+      this._source.disconnect();
+      try {
+        this._source.buffer = null;
+      } catch (err) {
+        console.warn("Failed to set AudioBufferSourceNode.buffer to null:", err);
+      }
+    }
+    this._source = null;
+    this._progress = 1;
+    this.emit("progress", 1, this._duration);
+    this.emit("end", this);
+  }
+}
+
+
+//# sourceMappingURL=WebAudioInstance.mjs.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@pixi/sound/lib/webaudio/WebAudioMedia.mjs":
+/*!*****************************************************************!*\
+  !*** ./node_modules/@pixi/sound/lib/webaudio/WebAudioMedia.mjs ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   WebAudioMedia: () => (/* binding */ WebAudioMedia)
+/* harmony export */ });
+/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
+/* harmony import */ var _WebAudioInstance_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./WebAudioInstance.mjs */ "./node_modules/@pixi/sound/lib/webaudio/WebAudioInstance.mjs");
+/* harmony import */ var _WebAudioNodes_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./WebAudioNodes.mjs */ "./node_modules/@pixi/sound/lib/webaudio/WebAudioNodes.mjs");
+
+
+
+
+class WebAudioMedia {
+  /**
+   * Re-initialize without constructing.
+   * @param parent - - Instance of parent Sound container
+   */
+  init(parent) {
+    this.parent = parent;
+    this._nodes = new _WebAudioNodes_mjs__WEBPACK_IMPORTED_MODULE_2__.WebAudioNodes(this.context);
+    this._source = this._nodes.bufferSource;
+    this.source = parent.options.source;
+  }
+  /** Destructor, safer to use `SoundLibrary.remove(alias)` to remove this sound. */
+  destroy() {
+    this.parent = null;
+    this._nodes.destroy();
+    this._nodes = null;
+    try {
+      this._source.buffer = null;
+    } catch (err) {
+      console.warn("Failed to set AudioBufferSourceNode.buffer to null:", err);
+    }
+    this._source = null;
+    this.source = null;
+  }
+  // Implement create
+  create() {
+    return new _WebAudioInstance_mjs__WEBPACK_IMPORTED_MODULE_1__.WebAudioInstance(this);
+  }
+  // Implement context
+  get context() {
+    return this.parent.context;
+  }
+  // Implement isPlayable
+  get isPlayable() {
+    return !!this._source && !!this._source.buffer;
+  }
+  // Implement filters
+  get filters() {
+    return this._nodes.filters;
+  }
+  set filters(filters) {
+    this._nodes.filters = filters;
+  }
+  // Implements duration
+  get duration() {
+    console.assert(this.isPlayable, "Sound not yet playable, no duration");
+    return this._source.buffer.duration;
+  }
+  /** Gets and sets the buffer. */
+  get buffer() {
+    return this._source.buffer;
+  }
+  set buffer(buffer) {
+    this._source.buffer = buffer;
+  }
+  /** Get the current chained nodes object */
+  get nodes() {
+    return this._nodes;
+  }
+  // Implements load
+  load(callback) {
+    if (this.source) {
+      this._decode(this.source, callback);
+    } else if (this.parent.url) {
+      this._loadUrl(callback);
+    } else if (callback) {
+      callback(new Error("sound.url or sound.source must be set"));
+    } else {
+      console.error("sound.url or sound.source must be set");
+    }
+  }
+  /** Loads a sound using XHMLHttpRequest object. */
+  async _loadUrl(callback) {
+    const url = this.parent.url;
+    const response = await pixi_js__WEBPACK_IMPORTED_MODULE_0__.DOMAdapter.get().fetch(url);
+    this._decode(await response.arrayBuffer(), callback);
+  }
+  /**
+   * Decodes the array buffer.
+   * @param arrayBuffer - From load.
+   * @param {Function} callback - Callback optional
+   */
+  _decode(arrayBuffer, callback) {
+    const audioBufferReadyFn = (err, buffer) => {
+      if (err) {
+        if (callback) {
+          callback(err);
+        }
+      } else {
+        this.parent.isLoaded = true;
+        this.buffer = buffer;
+        const instance = this.parent.autoPlayStart();
+        if (callback) {
+          callback(null, this.parent, instance);
+        }
+      }
+    };
+    if (arrayBuffer instanceof AudioBuffer) {
+      audioBufferReadyFn(null, arrayBuffer);
+    } else {
+      const context = this.parent.context;
+      context.decode(arrayBuffer, audioBufferReadyFn);
+    }
+  }
+}
+
+
+//# sourceMappingURL=WebAudioMedia.mjs.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@pixi/sound/lib/webaudio/WebAudioNodes.mjs":
+/*!*****************************************************************!*\
+  !*** ./node_modules/@pixi/sound/lib/webaudio/WebAudioNodes.mjs ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   WebAudioNodes: () => (/* binding */ WebAudioNodes)
+/* harmony export */ });
+/* harmony import */ var _Filterable_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Filterable.mjs */ "./node_modules/@pixi/sound/lib/Filterable.mjs");
+/* harmony import */ var _WebAudioUtils_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./WebAudioUtils.mjs */ "./node_modules/@pixi/sound/lib/webaudio/WebAudioUtils.mjs");
+
+
+
+const _WebAudioNodes = class extends _Filterable_mjs__WEBPACK_IMPORTED_MODULE_0__.Filterable {
+  /**
+   * @param context - The audio context.
+   */
+  constructor(context) {
+    const audioContext = context.audioContext;
+    const bufferSource = audioContext.createBufferSource();
+    const gain = audioContext.createGain();
+    const analyser = audioContext.createAnalyser();
+    bufferSource.connect(analyser);
+    analyser.connect(gain);
+    gain.connect(context.destination);
+    super(analyser, gain);
+    this.context = context;
+    this.bufferSource = bufferSource;
+    this.gain = gain;
+    this.analyser = analyser;
+  }
+  /**
+   * Get the script processor node.
+   * @readonly
+   */
+  get script() {
+    if (!this._script) {
+      this._script = this.context.audioContext.createScriptProcessor(_WebAudioNodes.BUFFER_SIZE);
+      this._script.connect(this.context.destination);
+    }
+    return this._script;
+  }
+  /** Cleans up. */
+  destroy() {
+    super.destroy();
+    this.bufferSource.disconnect();
+    if (this._script) {
+      this._script.disconnect();
+    }
+    this.gain.disconnect();
+    this.analyser.disconnect();
+    this.bufferSource = null;
+    this._script = null;
+    this.gain = null;
+    this.analyser = null;
+    this.context = null;
+  }
+  /**
+   * Clones the bufferSource. Used just before playing a sound.
+   * @returns {SourceClone} The clone AudioBufferSourceNode.
+   */
+  cloneBufferSource() {
+    const orig = this.bufferSource;
+    const source = this.context.audioContext.createBufferSource();
+    source.buffer = orig.buffer;
+    _WebAudioUtils_mjs__WEBPACK_IMPORTED_MODULE_1__.WebAudioUtils.setParamValue(source.playbackRate, orig.playbackRate.value);
+    source.loop = orig.loop;
+    const gain = this.context.audioContext.createGain();
+    source.connect(gain);
+    gain.connect(this.destination);
+    return { source, gain };
+  }
+  /**
+   * Get buffer size of `ScriptProcessorNode`.
+   * @readonly
+   */
+  get bufferSize() {
+    return this.script.bufferSize;
+  }
+};
+let WebAudioNodes = _WebAudioNodes;
+/**
+ * The buffer size for script processor, default is `0` which auto-detects. If you plan to use
+ * script node on iOS, you'll need to provide a non-zero amount.
+ * @default 0
+ */
+WebAudioNodes.BUFFER_SIZE = 0;
+
+
+//# sourceMappingURL=WebAudioNodes.mjs.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@pixi/sound/lib/webaudio/WebAudioUtils.mjs":
+/*!*****************************************************************!*\
+  !*** ./node_modules/@pixi/sound/lib/webaudio/WebAudioUtils.mjs ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   WebAudioUtils: () => (/* binding */ WebAudioUtils)
+/* harmony export */ });
+/* harmony import */ var _instance_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../instance.mjs */ "./node_modules/@pixi/sound/lib/instance.mjs");
+
+
+class WebAudioUtils {
+  /**
+   * Dezippering is removed in the future Web Audio API, instead
+   * we use the `setValueAtTime` method, however, this is not available
+   * in all environments (e.g., Android webview), so we fallback to the `value` setter.
+   * @param param - AudioNode parameter object
+   * @param value - Value to set
+   * @return The value set
+   */
+  static setParamValue(param, value) {
+    if (param.setValueAtTime) {
+      const context = (0,_instance_mjs__WEBPACK_IMPORTED_MODULE_0__.getInstance)().context;
+      param.setValueAtTime(value, context.audioContext.currentTime);
+    } else {
+      param.value = value;
+    }
+    return value;
+  }
+}
+
+
+//# sourceMappingURL=WebAudioUtils.mjs.map
+
+
+/***/ }),
+
+/***/ "./node_modules/@pixi/sound/lib/webaudio/index.mjs":
+/*!*********************************************************!*\
+  !*** ./node_modules/@pixi/sound/lib/webaudio/index.mjs ***!
+  \*********************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   WebAudioContext: () => (/* reexport safe */ _WebAudioContext_mjs__WEBPACK_IMPORTED_MODULE_0__.WebAudioContext),
+/* harmony export */   WebAudioInstance: () => (/* reexport safe */ _WebAudioInstance_mjs__WEBPACK_IMPORTED_MODULE_1__.WebAudioInstance),
+/* harmony export */   WebAudioMedia: () => (/* reexport safe */ _WebAudioMedia_mjs__WEBPACK_IMPORTED_MODULE_2__.WebAudioMedia),
+/* harmony export */   WebAudioNodes: () => (/* reexport safe */ _WebAudioNodes_mjs__WEBPACK_IMPORTED_MODULE_3__.WebAudioNodes),
+/* harmony export */   WebAudioUtils: () => (/* reexport safe */ _WebAudioUtils_mjs__WEBPACK_IMPORTED_MODULE_4__.WebAudioUtils)
+/* harmony export */ });
+/* harmony import */ var _WebAudioContext_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./WebAudioContext.mjs */ "./node_modules/@pixi/sound/lib/webaudio/WebAudioContext.mjs");
+/* harmony import */ var _WebAudioInstance_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./WebAudioInstance.mjs */ "./node_modules/@pixi/sound/lib/webaudio/WebAudioInstance.mjs");
+/* harmony import */ var _WebAudioMedia_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./WebAudioMedia.mjs */ "./node_modules/@pixi/sound/lib/webaudio/WebAudioMedia.mjs");
+/* harmony import */ var _WebAudioNodes_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./WebAudioNodes.mjs */ "./node_modules/@pixi/sound/lib/webaudio/WebAudioNodes.mjs");
+/* harmony import */ var _WebAudioUtils_mjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./WebAudioUtils.mjs */ "./node_modules/@pixi/sound/lib/webaudio/WebAudioUtils.mjs");
+
+
+
+
+
+//# sourceMappingURL=index.mjs.map
 
 
 /***/ }),
@@ -71830,12 +75728,11 @@ var __webpack_exports__ = {};
   \***********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
-/* harmony import */ var _slot_view_screens_MainGame__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./slot/view/screens/MainGame */ "./game/slot/view/screens/MainGame.ts");
-/* harmony import */ var _api_API__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./api/API */ "./game/api/API.ts");
-/* harmony import */ var _enums__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./enums */ "./game/enums.ts");
-/* harmony import */ var _pixi_components_SpriteV2__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pixi-components/SpriteV2 */ "./game/pixi-components/SpriteV2.ts");
-/* harmony import */ var _Preloader__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Preloader */ "./game/Preloader.ts");
-/* harmony import */ var _control_MainControl__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./control/MainControl */ "./game/control/MainControl.ts");
+/* harmony import */ var _Preloader__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Preloader */ "./game/Preloader.ts");
+/* harmony import */ var _control_MainControl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./control/MainControl */ "./game/control/MainControl.ts");
+/* harmony import */ var _api_API__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./api/API */ "./game/api/API.ts");
+/* harmony import */ var _enums__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./enums */ "./game/enums.ts");
+/* harmony import */ var _color_game_MainGame__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./color-game/MainGame */ "./game/color-game/MainGame.ts");
 var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -71851,13 +75748,12 @@ var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _argume
 
 
 
-
-const cssstyle = __webpack_require__(/*! ../game/core/template/css/game.css */ "./game/core/template/css/game.css");
+const cssstyle = __webpack_require__(/*! ../game/template/css/game.css */ "./game/template/css/game.css");
 (() => __awaiter(void 0, void 0, void 0, function* () {
     //initialize API
-    let api = new _api_API__WEBPACK_IMPORTED_MODULE_2__["default"]();
-    //------------------------------------
+    const api = new _api_API__WEBPACK_IMPORTED_MODULE_3__["default"]();
     const app = new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Application();
+    //------------------------------------
     yield app.init({
         background: "#000000",
         resolution: 2,
@@ -71867,26 +75763,26 @@ const cssstyle = __webpack_require__(/*! ../game/core/template/css/game.css */ "
     app.canvas.style.position = "relative";
     document.body.appendChild(app.canvas);
     // Create and add a container to the stage-----------------------------
-    const gameContainer = new _pixi_components_SpriteV2__WEBPACK_IMPORTED_MODULE_4__["default"]();
+    const gameContainer = new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite();
+    gameContainer.anchor.set(0.5);
     app.stage.addChild(gameContainer);
     //temp size
-    //console.log("sizes", app.renderer.width, app.renderer.width);
     gameContainer.scale.set(0.5);
     gameContainer.position.set(app.renderer.width * 0.5, app.renderer.height * 0.5);
     //draw preloader
-    let preloader = new _Preloader__WEBPACK_IMPORTED_MODULE_5__["default"]();
+    const preloader = new _Preloader__WEBPACK_IMPORTED_MODULE_1__["default"]();
     gameContainer.addChild(preloader);
-    preloader.on(_enums__WEBPACK_IMPORTED_MODULE_3__.Event.PRELOAD_COMPLETE, () => {
+    preloader.on(_enums__WEBPACK_IMPORTED_MODULE_4__.Event.PRELOAD_COMPLETE, () => {
         //console.log("Game Assets Loading Complete");
     });
     //load the assets
     yield pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.loadBundle("images", (e) => {
         preloader.showProgress(e);
     });
-    let mainGame = new _slot_view_screens_MainGame__WEBPACK_IMPORTED_MODULE_1__["default"](app);
+    const mainGame = new _color_game_MainGame__WEBPACK_IMPORTED_MODULE_5__["default"](app);
     gameContainer.addChild(mainGame);
     //Add all game controls-----------------------------
-    let mainControl = new _control_MainControl__WEBPACK_IMPORTED_MODULE_6__["default"](mainGame, api);
+    const mainControl = new _control_MainControl__WEBPACK_IMPORTED_MODULE_2__["default"](mainGame, api);
 }))();
 
 })();

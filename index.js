@@ -13342,34 +13342,34 @@ class Preloader extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
             //init game assets----------------------------------------------------------
             pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.addBundle("images", {
                 //load spritesheet
-                dice_a: "/game/media/images/color-game/dice_a.json",
-                dice_b: "/game/media/images/color-game/dice_b.json",
-                dice_1v: "/game/media/images/color-game/dice_1v.json",
-                dice_2v: "/game/media/images/color-game/dice_2v.json",
+                dice_a: "../game/media/images/color-game/dice_a.json",
+                dice_b: "../game/media/images/color-game/dice_b.json",
+                dice_1v: "../game/media/images/color-game/dice_1v.json",
+                dice_2v: "../game/media/images/color-game/dice_2v.json",
                 //
-                dice_bet: "/game/media/images/color-game/dice_bet2.json",
-                //btn: "/game/media/images/color-game/btn.json", // prettier-ignore
+                dice_bet: "../game/media/images/color-game/dice_bet2.json",
+                //btn: "../game/media/images/color-game/btn.json", // prettier-ignore
                 //animation
-                launcher: "/game/media/images/color-game/launcher2.json",
+                launcher: "../game/media/images/color-game/launcher2.json",
                 //images
-                color_game_bg: "/game/media/images/color-game/color-game-bg.avif",
-                olympus_bg: "/game/media/images/color-game/bg@2x.png",
-                base: "/game/media/images/color-game/base-metal.png",
-                color_list_bg: "/game/media/images/color-game/color_list_bg.png",
-                zeus: "/game/media/images/color-game/zeus.png",
+                color_game_bg: "../game/media/images/color-game/color-game-bg.avif",
+                olympus_bg: "../game/media/images/color-game/bg@2x.png",
+                base: "../game/media/images/color-game/base-metal.png",
+                color_list_bg: "../game/media/images/color-game/color_list_bg.png",
+                zeus: "../game/media/images/color-game/zeus.png",
                 //assets
-                base_game: "/game/media/images/color-game-2/base-game.json",
-                theme_1: "/game/media/images/color-game-2/theme-1.json",
-                theme_2: "/game/media/images/color-game-2/theme-2.json",
+                base_game: "../game/media/images/color-game-2/base-game.json",
+                theme_1: "../game/media/images/color-game-2/theme-1.json",
+                theme_2: "../game/media/images/color-game-2/theme-2.json",
                 //sound
-                sfx_dice_drop: "/game/media/sounds/m4a/sfx-dice-sound-triple.m4a",
-                sfx_open: "/game/media/sounds/m4a/sfx-open.m4a",
-                sfx_reveal: "/game/media/sounds/m4a/sfx-reveal.m4a",
-                sfx_heroic_win: "/game/media/sounds/m4a/sfx-heroic-win.m4a",
-                sfx_click: "/game/media/sounds/m4a/sfx-click.m4a",
-                sfx_click_short: "/game/media/sounds/m4a/sfx-click-short.m4a",
-                sfx_3_swoosh: "/game/media/sounds/m4a/sfx-3-swoosh.m4a",
-                bgm_casino2: "/game/media/sounds/m4a/bgm-casino2.m4a", // prettier-ignore
+                sfx_dice_drop: "../game/media/sounds/m4a/sfx-dice-sound-triple.m4a",
+                sfx_open: "../game/media/sounds/m4a/sfx-open.m4a",
+                sfx_reveal: "../game/media/sounds/m4a/sfx-reveal.m4a",
+                sfx_heroic_win: "../game/media/sounds/m4a/sfx-heroic-win.m4a",
+                sfx_click: "../game/media/sounds/m4a/sfx-click.m4a",
+                sfx_click_short: "../game/media/sounds/m4a/sfx-click-short.m4a",
+                sfx_3_swoosh: "../game/media/sounds/m4a/sfx-3-swoosh.m4a",
+                bgm_casino2: "../game/media/sounds/m4a/bgm-casino2.m4a", // prettier-ignore
             });
             pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.addBundle("fonts", [
                 {

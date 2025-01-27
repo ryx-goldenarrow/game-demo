@@ -13304,6 +13304,7 @@ const GAMESETTINGS = {
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+var __dirname = "/";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ Preloader)
@@ -13340,45 +13341,47 @@ class Preloader extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
     init() {
         (() => __awaiter(this, void 0, void 0, function* () {
             //init game assets----------------------------------------------------------
+            console.log("dir: ", __dirname);
+            const base = __dirname + "color-game/game/media/";
             pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.addBundle("images", {
                 //load spritesheet
-                dice_a: "../game/media/images/color-game/dice_a.json",
-                dice_b: "../game/media/images/color-game/dice_b.json",
-                dice_1v: "../game/media/images/color-game/dice_1v.json",
-                dice_2v: "../game/media/images/color-game/dice_2v.json",
+                dice_a: base + "images/color-game/dice_a.json",
+                dice_b: base + "images/color-game/dice_b.json",
+                dice_1v: base + "images/color-game/dice_1v.json",
+                dice_2v: base + "images/color-game/dice_2v.json",
                 //
-                dice_bet: "../game/media/images/color-game/dice_bet2.json",
-                //btn: "../game/media/images/color-game/btn.json", // prettier-ignore
+                dice_bet: base + "images/color-game/dice_bet2.json",
+                //btn: base + "images/color-game/btn.json", // prettier-ignore
                 //animation
-                launcher: "../game/media/images/color-game/launcher2.json",
+                launcher: base + "images/color-game/launcher2.json",
                 //images
-                color_game_bg: "../game/media/images/color-game/color-game-bg.avif",
-                olympus_bg: "../game/media/images/color-game/bg@2x.png",
-                base: "../game/media/images/color-game/base-metal.png",
-                color_list_bg: "../game/media/images/color-game/color_list_bg.png",
-                zeus: "../game/media/images/color-game/zeus.png",
+                color_game_bg: base + "images/color-game/color-game-bg.avif",
+                olympus_bg: base + "images/color-game/bg@2x.png",
+                base: base + "images/color-game/base-metal.png",
+                color_list_bg: base + "images/color-game/color_list_bg.png",
+                zeus: base + "images/color-game/zeus.png",
                 //assets
-                base_game: "../game/media/images/color-game-2/base-game.json",
-                theme_1: "../game/media/images/color-game-2/theme-1.json",
-                theme_2: "../game/media/images/color-game-2/theme-2.json",
+                base_game: base + "images/color-game-2/base-game.json",
+                theme_1: base + "images/color-game-2/theme-1.json",
+                theme_2: base + "images/color-game-2/theme-2.json",
                 //sound
-                sfx_dice_drop: "../game/media/sounds/m4a/sfx-dice-sound-triple.m4a",
-                sfx_open: "../game/media/sounds/m4a/sfx-open.m4a",
-                sfx_reveal: "../game/media/sounds/m4a/sfx-reveal.m4a",
-                sfx_heroic_win: "../game/media/sounds/m4a/sfx-heroic-win.m4a",
-                sfx_click: "../game/media/sounds/m4a/sfx-click.m4a",
-                sfx_click_short: "../game/media/sounds/m4a/sfx-click-short.m4a",
-                sfx_3_swoosh: "../game/media/sounds/m4a/sfx-3-swoosh.m4a",
-                bgm_casino2: "../game/media/sounds/m4a/bgm-casino2.m4a", // prettier-ignore
+                sfx_dice_drop: base + "sounds/m4a/sfx-dice-sound-triple.m4a",
+                sfx_open: base + "sounds/m4a/sfx-open.m4a",
+                sfx_reveal: base + "sounds/m4a/sfx-reveal.m4a",
+                sfx_heroic_win: base + "sounds/m4a/sfx-heroic-win.m4a",
+                sfx_click: base + "sounds/m4a/sfx-click.m4a",
+                sfx_click_short: base + "sounds/m4a/sfx-click-short.m4a",
+                sfx_3_swoosh: base + "sounds/m4a/sfx-3-swoosh.m4a",
+                bgm_casino2: base + "sounds/m4a/bgm-casino2.m4a", // prettier-ignore
             });
             pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.addBundle("fonts", [
                 {
                     alias: "KatahdinRound",
-                    src: "../game/media/fonts/KatahdinRound.otf",
+                    src: "fonts/KatahdinRound.otf",
                 },
                 {
                     alias: "centurygothic_bold",
-                    src: "../game/media/fonts/centurygothic_bold.ttf",
+                    src: "fonts/centurygothic_bold.ttf",
                 },
             ]);
         }))();
@@ -13755,9 +13758,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ BetTable)
 /* harmony export */ });
 /* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
+/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
 /* harmony import */ var _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../template/components/SpriteV2 */ "./game/template/components/SpriteV2.ts");
 /* harmony import */ var _utils_PixiUtils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/PixiUtils */ "./game/utils/PixiUtils.ts");
 /* harmony import */ var _enums__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../enums */ "./game/enums.ts");
+
 
 
 
@@ -13809,6 +13814,27 @@ class BetTable extends _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1_
         this.coin.position.set(-250, -220);
         this.coin.visible = false;
         //
+        this.animateInfo();
+    }
+    betHighlight() {
+        this.betButtons.forEach((btn) => {
+            gsap__WEBPACK_IMPORTED_MODULE_4__.gsap.to(btn.scale, {
+                duration: 0.1,
+                repeat: 1,
+                yoyo: true,
+                x: 1.4,
+                y: 1.4,
+            });
+        });
+    }
+    animateInfo() {
+        gsap__WEBPACK_IMPORTED_MODULE_4__.gsap.to(this.btnInfo.scale, {
+            duration: 0.25,
+            repeat: 9,
+            yoyo: true,
+            x: 2.3,
+            y: 2.3,
+        });
     }
     moveCoin(btn) {
         this.coin.visible = true;
@@ -14428,6 +14454,9 @@ class MainControl {
     play() {
         //
         if (this.gameReady == false || _api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_2__.COLORGAMEDATA.BET == -1) {
+            if (_api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_2__.COLORGAMEDATA.BET == -1) {
+                this.game.betTable.betHighlight();
+            }
             return;
         }
         _pixi_sound__WEBPACK_IMPORTED_MODULE_1__.sound.play("sfx_click");

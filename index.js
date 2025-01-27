@@ -13342,7 +13342,7 @@ class Preloader extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
         (() => __awaiter(this, void 0, void 0, function* () {
             //init game assets----------------------------------------------------------
             console.log("dir: ", __dirname);
-            const base = __dirname + "color-game/game/media/";
+            const base = __dirname + "game-demo/game/media/";
             pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.addBundle("images", {
                 //load spritesheet
                 dice_a: base + "images/color-game/dice_a.json",

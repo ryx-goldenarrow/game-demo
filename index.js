@@ -13272,7 +13272,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _enums__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./enums */ "./game/enums.ts");
 
 const GAMESETTINGS = {
-    theme: "theme_1",
+    theme: "theme-1",
     textstyle1: {
         text: "",
         style: {
@@ -13360,10 +13360,10 @@ class Preloader extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
                 base: base + "images/color-game/base-metal.png",
                 color_list_bg: base + "images/color-game/color_list_bg.png",
                 zeus: base + "images/color-game/zeus.png",
+                lightning: base + "images/color-game-2/lightning.jpg",
                 //assets
                 base_game: base + "images/color-game-2/base-game.json",
-                theme_1: base + "images/color-game-2/theme-1.json",
-                theme_2: base + "images/color-game-2/theme-2.json",
+                theme: base + "images/color-game-2/" + _GAMESETTINGS__WEBPACK_IMPORTED_MODULE_1__.GAMESETTINGS.theme + ".json",
                 //sound
                 sfx_dice_drop: base + "sounds/m4a/sfx-dice-sound-triple.m4a",
                 sfx_open: base + "sounds/m4a/sfx-open.m4a",
@@ -13372,7 +13372,11 @@ class Preloader extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
                 sfx_click: base + "sounds/m4a/sfx-click.m4a",
                 sfx_click_short: base + "sounds/m4a/sfx-click-short.m4a",
                 sfx_3_swoosh: base + "sounds/m4a/sfx-3-swoosh.m4a",
-                bgm_casino2: base + "sounds/m4a/bgm-casino2.m4a", // prettier-ignore
+                bgm_casino2: base + "sounds/m4a/bgm-casino2.m4a",
+                sfx_lightning: base + "sounds/m4a/sfx-lightning-strike.m4a",
+                sfx_spark: base + "sounds/m4a/sfx-spark.m4a",
+                sfx_big_win: base + "sounds/m4a/sfx-big-win.m4a",
+                bgm_olypmus: base + "sounds/m4a/bgm-olympus.m4a", // prettier-ignore
             });
             pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.addBundle("fonts", [
                 {
@@ -13758,10 +13762,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ BetTable)
 /* harmony export */ });
 /* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
-/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
+/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
 /* harmony import */ var _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../template/components/SpriteV2 */ "./game/template/components/SpriteV2.ts");
 /* harmony import */ var _utils_PixiUtils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/PixiUtils */ "./game/utils/PixiUtils.ts");
 /* harmony import */ var _enums__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../enums */ "./game/enums.ts");
+/* harmony import */ var _GAMESETTINGS__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../GAMESETTINGS */ "./game/GAMESETTINGS.ts");
+
 
 
 
@@ -13804,9 +13810,16 @@ class BetTable extends _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1_
         this.btnHome = this.container.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_2__.TP)("base_game", "home.png")));
         this.btnHome.scale.set(2);
         this.btnHome.position.set(-250, -220);
-        this.btnPlay = this.container.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_2__.TP)("base_game", "btn_active.png")));
+        this.btnPlay = this.container.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_2__.TP)("base_game", "btn.png")));
         this.btnPlay.scale.set(2);
         this.btnPlay.position.set(0, -220);
+        const revealLabel = this.btnPlay.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_4__.GAMESETTINGS.textstyle1));
+        revealLabel.text = "START";
+        revealLabel.style.fontSize = 35;
+        revealLabel.style.fill = 0x662200;
+        revealLabel.style.fontWeight = "bolder";
+        revealLabel.anchor.set(0.5);
+        revealLabel.position.set(0, -5);
         this.btnInfo = this.container.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_2__.TP)("base_game", "ask.png")));
         this.btnInfo.scale.set(2);
         this.btnInfo.position.set(250, -220);
@@ -13818,7 +13831,7 @@ class BetTable extends _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1_
     }
     betHighlight() {
         this.betButtons.forEach((btn) => {
-            gsap__WEBPACK_IMPORTED_MODULE_4__.gsap.to(btn.scale, {
+            gsap__WEBPACK_IMPORTED_MODULE_5__.gsap.to(btn.scale, {
                 duration: 0.1,
                 repeat: 1,
                 yoyo: true,
@@ -13828,7 +13841,7 @@ class BetTable extends _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1_
         });
     }
     animateInfo() {
-        gsap__WEBPACK_IMPORTED_MODULE_4__.gsap.to(this.btnInfo.scale, {
+        gsap__WEBPACK_IMPORTED_MODULE_5__.gsap.to(this.btnInfo.scale, {
             duration: 0.25,
             repeat: 9,
             yoyo: true,
@@ -14055,6 +14068,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
 /* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
+/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/gsap-core.js");
 /* harmony import */ var _utils_Utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/Utils */ "./game/utils/Utils.ts");
 /* harmony import */ var _ColorGameMachine__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ColorGameMachine */ "./game/color-game/ColorGameMachine.ts");
 /* harmony import */ var _BetTable__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./BetTable */ "./game/color-game/BetTable.ts");
@@ -14062,8 +14076,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _RevealResult__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./RevealResult */ "./game/color-game/RevealResult.ts");
 /* harmony import */ var _utils_PixiUtils__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utils/PixiUtils */ "./game/utils/PixiUtils.ts");
 /* harmony import */ var _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../template/components/SpriteV2 */ "./game/template/components/SpriteV2.ts");
-/* harmony import */ var _GAMESETTINGS__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../GAMESETTINGS */ "./game/GAMESETTINGS.ts");
-/* harmony import */ var _WinningFlyer__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./WinningFlyer */ "./game/color-game/WinningFlyer.ts");
+/* harmony import */ var _WinningFlyer__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./WinningFlyer */ "./game/color-game/WinningFlyer.ts");
+/* harmony import */ var _pixi_sound__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @pixi/sound */ "./node_modules/@pixi/sound/lib/index.mjs");
 
 
 
@@ -14078,16 +14092,25 @@ __webpack_require__.r(__webpack_exports__);
 class MainGame extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
     constructor(app) {
         super();
+        this.character = [];
         this.app = app;
-        this.bg = this.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_7__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_6__.TP)(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_8__.GAMESETTINGS.theme, "color_game_bg.png")));
+        this.bg = this.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_7__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_6__.TP)("theme", "color_game_bg.png")));
         this.bg.scale.set(2.25);
         this.bg.tint = 0xccccff;
         this.colorGameMachine = this.addChild(new _ColorGameMachine__WEBPACK_IMPORTED_MODULE_2__["default"](app));
         this.colorGameMachine.position.set(0, -110);
         this.colorGameMachine.scale.set(0.75);
-        this.character = this.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_7__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_6__.TP)(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_8__.GAMESETTINGS.theme, "character_1.png")));
-        this.character.scale.set(2);
-        this.character.position.set(250, -0);
+        this.character[0] = this.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_7__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_6__.TP)("theme", "character_1.png")));
+        this.character[0].scale.set(2);
+        this.character[0].position.set(-300, -0);
+        this.character[1] = this.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_7__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_6__.TP)("theme", "character_2.png")));
+        this.character[1].scale.set(2);
+        this.character[1].position.set(300, -0);
+        this.lightning = this.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_7__["default"](pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.get("lightning")));
+        this.lightning.scale.set(2);
+        this.lightning.blendMode = "add";
+        this.lightning.position.set(0, -300);
+        this.lightning.visible = false;
         this.betTable = this.addChild(new _BetTable__WEBPACK_IMPORTED_MODULE_3__["default"]());
         this.betTable.position.set(0, 560);
         this.revealResult = this.addChild(new _RevealResult__WEBPACK_IMPORTED_MODULE_5__["default"]());
@@ -14095,7 +14118,7 @@ class MainGame extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
         this.betInfoPage = this.addChild(new _BetInformationPage__WEBPACK_IMPORTED_MODULE_4__["default"]());
         this.betInfoPage.position.set(0, 0);
         this.betInfoPage.visible = false;
-        this.winningFlyer = this.addChild(new _WinningFlyer__WEBPACK_IMPORTED_MODULE_9__["default"]());
+        this.winningFlyer = this.addChild(new _WinningFlyer__WEBPACK_IMPORTED_MODULE_8__["default"]());
         this.winningFlyer.position.set(0, -250);
         gsap__WEBPACK_IMPORTED_MODULE_10__.gsap.to(this.character, {
             duration: 1,
@@ -14149,6 +14172,27 @@ class MainGame extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
             //landscape
             console.log("landscape");
         }
+    }
+    animateLightning() {
+        this.lightning.visible = true;
+        gsap__WEBPACK_IMPORTED_MODULE_10__.gsap.to(this.lightning, 0.2, {
+            alpha: 0,
+            repeat: 1,
+            yoyo: false,
+            ease: gsap__WEBPACK_IMPORTED_MODULE_11__.Sine.easeInOut,
+            startAt: { alpha: 1 },
+            repeatDelay: 0.2,
+            onStart: () => {
+                _pixi_sound__WEBPACK_IMPORTED_MODULE_9__.sound.play("sfx_spark", { volume: 0.5 });
+            },
+            onRepeat: () => {
+                _pixi_sound__WEBPACK_IMPORTED_MODULE_9__.sound.play("sfx_spark", { volume: 0.5 });
+                this.lightning.scale.x *= -1;
+            },
+            onComplete: () => {
+                this.lightning.visible = false;
+            },
+        });
     }
 }
 
@@ -14314,38 +14358,47 @@ class WinningFlyer extends _template_components_SpriteV2__WEBPACK_IMPORTED_MODUL
             "color_6.png", //"purple",
         ];
         this.prizes = ["iphone"];
-        this.bg = this.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_4__.TP)("base_game", "color_win.png")));
+        const container = this.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"]());
+        this.bg = container.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_4__.TP)("base_game", "color_win.png")));
         this.bg.scale.set(2);
         /*const whitebg: Graphics = this.bg.addChild(new Graphics());
         whitebg.roundRect(-100, -10, 200, 70, 15);
         whitebg.roundRect(-125, -80, 250, 80, 15);
         whitebg.fill(COLORS.WHITE);*/
-        const congratsLabel = this.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__.GAMESETTINGS.textstyle1));
+        const congratsLabel = container.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__.GAMESETTINGS.textstyle1));
         congratsLabel.text = "Congratulations!";
         congratsLabel.style.fontSize = 50;
         congratsLabel.style.fill = 0xffcc00; //0xffcc00
         congratsLabel.style.fontWeight = "bolder";
         congratsLabel.anchor.set(0.5);
         congratsLabel.position.set(0, -10);
-        const youwinLabel = this.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__.GAMESETTINGS.textstyle1));
+        const youwinLabel = container.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__.GAMESETTINGS.textstyle1));
         youwinLabel.text = "You Win!";
         youwinLabel.style.fontSize = 50;
         youwinLabel.style.fill = 0x662200;
         youwinLabel.style.fontWeight = "bolder";
         youwinLabel.anchor.set(0.5);
         youwinLabel.position.set(0, 60);
-        this.prizeLabel = this.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__.GAMESETTINGS.textstyle1));
+        this.prizeLabel = container.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__.GAMESETTINGS.textstyle1));
         this.prizeLabel.text = "";
         this.prizeLabel.style.fontSize = 50;
         this.prizeLabel.style.fill = 0xffffff;
         this.prizeLabel.style.fontWeight = "bolder";
         this.prizeLabel.anchor.set(0.5);
         this.prizeLabel.position.set(0, 150);
+        this.lightning = container.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"](pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.get("lightning")));
+        this.lightning.scale.set(2);
+        this.lightning.blendMode = "add";
         this.visible = false;
     }
     showResult() {
         this.visible = true;
-        _pixi_sound__WEBPACK_IMPORTED_MODULE_5__.sound.play("sfx_heroic_win");
+        if (_api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_3__.COLORGAMEDATA.WIN > 1) {
+            _pixi_sound__WEBPACK_IMPORTED_MODULE_5__.sound.play("sfx_big_win");
+        }
+        else {
+            _pixi_sound__WEBPACK_IMPORTED_MODULE_5__.sound.play("sfx_heroic_win");
+        }
         this.updateText();
         gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.to(this.scale, 0.5, {
             x: 1,
@@ -14354,6 +14407,17 @@ class WinningFlyer extends _template_components_SpriteV2__WEBPACK_IMPORTED_MODUL
             ease: gsap__WEBPACK_IMPORTED_MODULE_7__.Back.easeOut,
         });
         gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.to(this, 0.5, { alpha: 1, startAt: { alpha: 0 }, ease: gsap__WEBPACK_IMPORTED_MODULE_7__.Back.easeOut });
+        gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.to(this.lightning, 0.4, {
+            alpha: 0,
+            repeat: 4,
+            yoyo: false,
+            ease: gsap__WEBPACK_IMPORTED_MODULE_7__.Sine.easeInOut,
+            startAt: { alpha: 1 },
+            repeatDelay: 0.25,
+            onRepeat: () => {
+                this.lightning.scale.x *= -1;
+            },
+        });
         gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.delayedCall(3, () => {
             this.hideResult();
         });
@@ -14394,10 +14458,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ MainControl)
 /* harmony export */ });
 /* harmony import */ var _utils_Utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/Utils */ "./game/utils/Utils.ts");
-/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
+/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
 /* harmony import */ var _pixi_sound__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @pixi/sound */ "./node_modules/@pixi/sound/lib/index.mjs");
 /* harmony import */ var _api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../api/COLORGAMEDATA */ "./game/api/COLORGAMEDATA.ts");
-/* harmony import */ var _utils_PixiUtils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/PixiUtils */ "./game/utils/PixiUtils.ts");
+/* harmony import */ var _enums__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../enums */ "./game/enums.ts");
+/* harmony import */ var _utils_PixiUtils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utils/PixiUtils */ "./game/utils/PixiUtils.ts");
+
 
 
 
@@ -14409,7 +14475,7 @@ class MainControl {
         this.game = game;
         this.api = api;
         this.addControls();
-        _pixi_sound__WEBPACK_IMPORTED_MODULE_1__.sound.play("bgm_casino2", {
+        _pixi_sound__WEBPACK_IMPORTED_MODULE_1__.sound.play("bgm_olypmus", {
             loop: true,
             volume: 0.1,
         });
@@ -14421,8 +14487,11 @@ class MainControl {
         });
         //info show
         (0,_utils_Utils__WEBPACK_IMPORTED_MODULE_0__.addButtonEvent)(this.game.betTable.btnInfo, () => {
+            if (this.gameReady == false) {
+                return;
+            }
             this.game.betInfoPage.show();
-            (0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_3__.buttonClickEffect)(this.game.betTable.btnInfo);
+            (0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_4__.buttonClickEffect)(this.game.betTable.btnInfo);
         });
         //play
         (0,_utils_Utils__WEBPACK_IMPORTED_MODULE_0__.addButtonEvent)(this.game.betTable.btnPlay, () => {
@@ -14430,14 +14499,14 @@ class MainControl {
         });
         //home
         (0,_utils_Utils__WEBPACK_IMPORTED_MODULE_0__.addButtonEvent)(this.game.betTable.btnHome, () => {
-            (0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_3__.buttonClickEffect)(this.game.betTable.btnHome);
+            (0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_4__.buttonClickEffect)(this.game.betTable.btnHome);
         });
         //
         let i = 0;
         for (i = 0; i < 6; i++) {
             let num = i;
             (0,_utils_Utils__WEBPACK_IMPORTED_MODULE_0__.addButtonEvent)(this.game.betTable.betButtons[i], () => {
-                (0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_3__.buttonClickEffect)(this.game.betTable.betButtons[num]);
+                (0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_4__.buttonClickEffect)(this.game.betTable.betButtons[num]);
                 this.placeBet(this.game.betTable.betButtons[num], num);
             });
         }
@@ -14459,6 +14528,7 @@ class MainControl {
             }
             return;
         }
+        this.game.animateLightning();
         _pixi_sound__WEBPACK_IMPORTED_MODULE_1__.sound.play("sfx_click");
         _api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_2__.COLORGAMEDATA.WIN = 0;
         _api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_2__.COLORGAMEDATA.RESULT = [
@@ -14468,31 +14538,32 @@ class MainControl {
         ];
         this.gameReady = false;
         this.game.betTable.btnPlay.tint = 0x999999;
-        (0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_3__.buttonClickEffect)(this.game.betTable.btnPlay);
-        gsap__WEBPACK_IMPORTED_MODULE_4__.gsap.delayedCall(2, () => {
+        (0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_4__.buttonClickEffect)(this.game.betTable.btnPlay);
+        gsap__WEBPACK_IMPORTED_MODULE_5__.gsap.delayedCall(2, () => {
             this.game.colorGameMachine.bglauncher.play();
             _pixi_sound__WEBPACK_IMPORTED_MODULE_1__.sound.play("sfx_open");
         });
-        gsap__WEBPACK_IMPORTED_MODULE_4__.gsap.delayedCall(2.2, () => {
+        gsap__WEBPACK_IMPORTED_MODULE_5__.gsap.delayedCall(2.2, () => {
             _pixi_sound__WEBPACK_IMPORTED_MODULE_1__.sound.play("sfx_dice_drop");
         });
-        gsap__WEBPACK_IMPORTED_MODULE_4__.gsap.delayedCall(4, () => {
+        gsap__WEBPACK_IMPORTED_MODULE_5__.gsap.delayedCall(4, () => {
             this.game.revealResult.showResult();
             _pixi_sound__WEBPACK_IMPORTED_MODULE_1__.sound.play("sfx_reveal");
         });
-        gsap__WEBPACK_IMPORTED_MODULE_4__.gsap.delayedCall(6, () => {
+        gsap__WEBPACK_IMPORTED_MODULE_5__.gsap.delayedCall(6, () => {
             this.game.revealResult.hideResult();
             this.game.colorGameMachine.reset();
             _pixi_sound__WEBPACK_IMPORTED_MODULE_1__.sound.play("sfx_3_swoosh", { volume: 0.25 });
             if (_api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_2__.COLORGAMEDATA.WIN > 0) {
                 this.game.winningFlyer.showResult();
-                gsap__WEBPACK_IMPORTED_MODULE_4__.gsap.delayedCall(3, () => {
-                    this.game.betTable.btnPlay.tint = 0xffffff;
+                _pixi_sound__WEBPACK_IMPORTED_MODULE_1__.sound.play("sfx_lightning");
+                gsap__WEBPACK_IMPORTED_MODULE_5__.gsap.delayedCall(3, () => {
+                    this.game.betTable.btnPlay.tint = _enums__WEBPACK_IMPORTED_MODULE_3__.COLORS.WHITE;
                     this.gameReady = true;
                 });
             }
             else {
-                this.game.betTable.btnPlay.tint = 0xffffff;
+                this.game.betTable.btnPlay.tint = _enums__WEBPACK_IMPORTED_MODULE_3__.COLORS.WHITE;
                 this.gameReady = true;
             }
         });
@@ -75788,6 +75859,7 @@ const cssstyle = __webpack_require__(/*! ../game/template/css/game.css */ "./gam
         resolution: 2,
         resizeTo: window,
         antialias: false,
+        useBackBuffer: true,
     });
     app.canvas.style.position = "relative";
     document.body.appendChild(app.canvas);

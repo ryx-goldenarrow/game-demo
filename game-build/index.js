@@ -13337,10 +13337,9 @@ class Preloader extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
         this.interactive = true;
     }
     init() {
-		
         (() => __awaiter(this, void 0, void 0, function* () {
             //init game assets----------------------------------------------------------
-            const dir = "game-demo/game-build"; //html/12714995/";
+            const dir = ""; //html/12714995/";
             pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.addBundle("images", {
                 //load spritesheet
                 plinko: dir + "/game/media/images/plinko/plinko.json",

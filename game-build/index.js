@@ -13337,7 +13337,7 @@ class Preloader extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
         this.interactive = true;
     }
     init() {
-		console.log("## TEST")
+		
         (() => __awaiter(this, void 0, void 0, function* () {
             //init game assets----------------------------------------------------------
             const dir = "game-demo/game-build"; //html/12714995/";

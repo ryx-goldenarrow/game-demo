@@ -5260,10 +5260,10 @@ exports.ParseError = ParseError;
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./game/template/css/game.css":
-/*!**************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./game/template/css/game.css ***!
-  \**************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./game/core/template/css/game.css":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./game/core/template/css/game.css ***!
+  \*******************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -5271,19 +5271,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ "./node_modules/css-loader/dist/runtime/noSourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ "./node_modules/css-loader/dist/runtime/noSourceMaps.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
 // Imports
 
 
 
-var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../media/fonts/roboto-c.ttf */ "./game/media/fonts/roboto-c.ttf"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../../media/fonts/KatahdinRound.otf */ "./game/media/fonts/KatahdinRound.otf"), __webpack_require__.b);
-var ___CSS_LOADER_URL_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ../../media/fonts/centurygothic_bold.ttf */ "./game/media/fonts/centurygothic_bold.ttf"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../media/fonts/roboto-c.ttf */ "./game/media/fonts/roboto-c.ttf"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../../../media/fonts/KatahdinRound.otf */ "./game/media/fonts/KatahdinRound.otf"), __webpack_require__.b);
+var ___CSS_LOADER_URL_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ../../../media/fonts/centurygothic_bold.ttf */ "./game/media/fonts/centurygothic_bold.ttf"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
@@ -12930,10 +12930,10 @@ if (true) {
 
 /***/ }),
 
-/***/ "./game/template/css/game.css":
-/*!************************************!*\
-  !*** ./game/template/css/game.css ***!
-  \************************************/
+/***/ "./game/core/template/css/game.css":
+/*!*****************************************!*\
+  !*** ./game/core/template/css/game.css ***!
+  \*****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -12941,19 +12941,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_game_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js!./game.css */ "./node_modules/css-loader/dist/cjs.js!./game/template/css/game.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_game_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../../../node_modules/css-loader/dist/cjs.js!./game.css */ "./node_modules/css-loader/dist/cjs.js!./game/core/template/css/game.css");
 
       
       
@@ -13272,7 +13272,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _enums__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./enums */ "./game/enums.ts");
 
 const GAMESETTINGS = {
-    theme: "theme-1",
+    soundEnabled: false,
     textstyle1: {
         text: "",
         style: {
@@ -13291,7 +13291,6 @@ const GAMESETTINGS = {
             fill: _enums__WEBPACK_IMPORTED_MODULE_0__.COLORS.ORANGE,
         },
     },
-    sound_enabled: false,
 };
 
 
@@ -13304,7 +13303,6 @@ const GAMESETTINGS = {
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-var __dirname = "/";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ Preloader)
@@ -13341,53 +13339,17 @@ class Preloader extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
     init() {
         (() => __awaiter(this, void 0, void 0, function* () {
             //init game assets----------------------------------------------------------
-            console.log("dir: ", __dirname);
-            const base = __dirname + "game-demo/game/media/";
+            const dir = ""; //html/12714995/";
             pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.addBundle("images", {
                 //load spritesheet
-                dice_a: base + "images/color-game/dice_a.json",
-                dice_b: base + "images/color-game/dice_b.json",
-                dice_1v: base + "images/color-game/dice_1v.json",
-                dice_2v: base + "images/color-game/dice_2v.json",
-                //
-                dice_bet: base + "images/color-game/dice_bet2.json",
-                //btn: base + "images/color-game/btn.json", // prettier-ignore
-                //animation
-                launcher: base + "images/color-game/launcher2.json",
-                //images
-                color_game_bg: base + "images/color-game/color-game-bg.avif",
-                olympus_bg: base + "images/color-game/bg@2x.png",
-                base: base + "images/color-game/base-metal.png",
-                color_list_bg: base + "images/color-game/color_list_bg.png",
-   
-                lightning: base + "images/color-game-2/lightning.jpg",
-                //assets
-                base_game: base + "images/color-game-2/base-game.json",
-                theme: base + "images/color-game-2/" + _GAMESETTINGS__WEBPACK_IMPORTED_MODULE_1__.GAMESETTINGS.theme + ".json",
-                //sound
-                sfx_dice_drop: base + "sounds/m4a/sfx-dice-sound-triple.m4a",
-                sfx_open: base + "sounds/m4a/sfx-open.m4a",
-                sfx_reveal: base + "sounds/m4a/sfx-reveal.m4a",
-                sfx_heroic_win: base + "sounds/m4a/sfx-heroic-win.m4a",
-                sfx_click: base + "sounds/m4a/sfx-click.m4a",
-                sfx_click_short: base + "sounds/m4a/sfx-click-short.m4a",
-                sfx_3_swoosh: base + "sounds/m4a/sfx-3-swoosh.m4a",
-                bgm_casino2: base + "sounds/m4a/bgm-casino2.m4a",
-                sfx_lightning: base + "sounds/m4a/sfx-lightning-strike.m4a",
-                sfx_spark: base + "sounds/m4a/sfx-spark.m4a",
-                sfx_big_win: base + "sounds/m4a/sfx-big-win.m4a",
-                bgm_olypmus: base + "sounds/m4a/bgm-olympus.m4a", // prettier-ignore
+                plinko: dir + "/game/media/images/plinko/plinko.json",
+                pling: dir + "/game/media/sounds/m4a/sfx-pling-1.m4a",
+                beep_1: dir + "/game/media/sounds/m4a/sfx-beep-1.m4a",
+                beep_2: dir + "/game/media/sounds/m4a/sfx-beep-2.m4a",
+                beep_3: dir + "/game/media/sounds/m4a/sfx-beep-3.m4a",
+                beep_4: dir + "/game/media/sounds/m4a/sfx-beep-4.m4a",
+                score: dir + "/game/media/sounds/m4a/sfx-score.m4a",
             });
-            pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.addBundle("fonts", [
-                {
-                    alias: "KatahdinRound",
-                    src: "fonts/KatahdinRound.otf",
-                },
-                {
-                    alias: "centurygothic_bold",
-                    src: "fonts/centurygothic_bold.ttf",
-                },
-            ]);
         }))();
         this.progress_text.text = "0 %";
         //add preloader container
@@ -13436,58 +13398,45 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ API)
 /* harmony export */ });
-/* harmony import */ var _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./COLORGAMEDATA */ "./game/api/COLORGAMEDATA.ts");
-/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
-/* harmony import */ var _enums__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../enums */ "./game/enums.ts");
+/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
+/* harmony import */ var _enums__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../enums */ "./game/enums.ts");
+/* harmony import */ var _PLINKODATA__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./PLINKODATA */ "./game/api/PLINKODATA.ts");
 
 
 
 class API {
     constructor() {
-        this.event = new pixi_js__WEBPACK_IMPORTED_MODULE_1__.EventEmitter();
+        this.event = new pixi_js__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
         this.LOGIN_URL = "";
-        this.LAUNCH_GAME_URL = "";
-        this.TOKEN_LOGIN_URL = "";
-        this.INFO_URL = "";
-        this.SPIN_REQUEST_URL = "";
-        this.SETTLE_REQUEST_URL = "";
-        this.STEP_REQUEST_URL = "";
-        this.BUY_FREE_GAME_REQUEST_URL = "";
+        this.PLAY_REQUEST_URL = "";
+        this.UPDATE_BET_URL = "";
         this.addURLS(false);
     }
     addURLS(orig = true) {
-        if (orig) {
-            this.LOGIN_URL = 'https://aberuncators.com:9443/v1/ais/login'; //prettier-ignore
-            this.LAUNCH_GAME_URL = 'https://aberuncators.com:9443/v1/ais/launch-game'; //prettier-ignore
-            this.TOKEN_LOGIN_URL = 'https://aberuncators.com:20443/v1/ragnarok/loginByToken'; //prettier-ignore
-            this.INFO_URL = 'https://aberuncators.com:20443/v1/ragnarok/info'; //prettier-ignore
-            this.SPIN_REQUEST_URL = 'https://aberuncators.com:20443/v1/ragnarok/acquire'; //prettier-ignore
-            this.SETTLE_REQUEST_URL = "https://aberuncators.com:20443/v1/ragnarok/settle"; //prettier-ignore
-            this.STEP_REQUEST_URL = "https://aberuncators.com:20443/v1/ragnarok/step"; //prettier-ignore
-            this.BUY_FREE_GAME_REQUEST_URL = "https://aberuncators.com:20443/v1/ragnarok/buyfreegame"; //prettier-ignore
-        }
-        else {
-            this.LOGIN_URL = "https://ragnarok.linkcdn.cloud/v1/ragnarok/login"; //prettier-ignore
-            this.LAUNCH_GAME_URL = "https://ragnarok.linkcdn.cloud/v1/ragnarok/playGameUrl"; //prettier-ignore
-            this.TOKEN_LOGIN_URL = "https://ragnarok.linkcdn.cloud/v1/ragnarok/loginByToken"; //prettier-ignore
-            this.INFO_URL = "https://ragnarok.linkcdn.cloud/v1/ragnarok/info"; //prettier-ignore
-            this.SPIN_REQUEST_URL = "https://ragnarok.linkcdn.cloud/v1/ragnarok/acquire"; //prettier-ignore
-            this.SETTLE_REQUEST_URL = "https://ragnarok.linkcdn.cloud/v1/ragnarok/settle"; //prettier-ignore
-            this.STEP_REQUEST_URL = "https://ragnarok.linkcdn.cloud/v1/ragnarok/step"; //prettier-ignore
-            this.BUY_FREE_GAME_REQUEST_URL = "https://ragnarok.linkcdn.cloud/v1/ragnarok/buyfreegame"; //prettier-ignore
-        }
+        this.LOGIN_URL = `https://plinko-be.godigitalcorp.com/multipliers?rows=${_PLINKODATA__WEBPACK_IMPORTED_MODULE_2__.PLINKODATA.ROWS}&risk=${_PLINKODATA__WEBPACK_IMPORTED_MODULE_2__.PLINKODATA.RISK}`; //prettier-ignore
+        this.PLAY_REQUEST_URL = "https://plinko-be.godigitalcorp.com/bet";
     }
     //-----------------------------------------------------------------------------------
     // data request //-------------------------------------------------------------------
     //TEMPLATE REQUEST
-    send(url, method, body, action) {
+    post(url, body, action) {
         fetch(url, {
-            method: _enums__WEBPACK_IMPORTED_MODULE_2__.Method.POST,
+            method: _enums__WEBPACK_IMPORTED_MODULE_1__.Method.POST,
             body: JSON.stringify(body),
             headers: {
                 accept: "application/json",
                 "Content-type": "application/json; charset=UTF-8",
-                //Authorization: COLORGAMEDATA,
+            },
+        }).then((response) => {
+            action(response);
+        });
+    }
+    get(url, body, action) {
+        fetch(url, {
+            method: _enums__WEBPACK_IMPORTED_MODULE_1__.Method.GET,
+            headers: {
+                accept: "application/json",
+                "Content-type": "application/json; charset=UTF-8",
             },
         }).then((response) => {
             action(response);
@@ -13496,952 +13445,93 @@ class API {
     //-----------------------------------------------------------------------------------
     //-----------------------------------------------------------------------------------
     //LOGIN REQUEST
-    login(user) {
-        this.send(this.LOGIN_URL, "POST", { name: user.name, password: user.password }, (response) => {
+    login() {
+        this.get(this.LOGIN_URL, this.sendLoginData(), (response) => {
             //get token from login using accessToken
             response.json().then((resData) => {
-                this.saveLoginData(resData);
-                this.launchGame();
+                this.extractLoadData(resData);
+                this.event.emit(_enums__WEBPACK_IMPORTED_MODULE_1__.Event.LOGIN_COMPLETE, resData);
+                //console.log("resData", resData);
             });
         });
     }
-    //LAUNCH REQUEST
-    launchGame() {
-        //PlayGameUrl
-        this.send(this.LAUNCH_GAME_URL, "POST", this.sendLaunchData(), (response) => {
+    updateBet() {
+        this.UPDATE_BET_URL = `https://plinko-be.godigitalcorp.com/multipliers?rows=${_PLINKODATA__WEBPACK_IMPORTED_MODULE_2__.PLINKODATA.ROWS}&risk=${_PLINKODATA__WEBPACK_IMPORTED_MODULE_2__.PLINKODATA.RISK}`; //prettier-ignore
+        this.get(this.UPDATE_BET_URL, this.sendLoginData(), (response) => {
+            //get token from login using accessToken
             response.json().then((resData) => {
-                //this.saveLaunchData(resData);
-                this.loginByToken();
+                this.extractLoadData(resData);
+                this.event.emit(_enums__WEBPACK_IMPORTED_MODULE_1__.Event.LOGIN_COMPLETE, resData);
             });
         });
     }
-    //LOGIN BY TOKEN REQUEST
-    loginByToken() {
-        this.send(this.TOKEN_LOGIN_URL, "POST", this.sendTokenLoginData(), (response) => {
+    //PLAY REQUEST
+    playRequest(action) {
+        this.post(this.PLAY_REQUEST_URL, this.sendPlayData(), (response) => {
             response.json().then((resData) => {
-                this.saveLoginByTokenData(resData);
-                this.infoRequest();
-            });
-        });
-    }
-    //INFO REQUEST
-    infoRequest() {
-        this.send(this.INFO_URL, "POST", this.sendInfoRequestData(), (response) => {
-            response.json().then((resData) => {
-                //this.saveInfoData(resData);
-                this.event.emit(_enums__WEBPACK_IMPORTED_MODULE_2__.Event.INFO_RECEIVE_EVENT);
-            });
-        });
-    }
-    //SPIN REQUEST
-    acquireRequest(action) {
-        this.send(this.SPIN_REQUEST_URL, "POST", this.sendAcquireData(), (response) => {
-            response.json().then((resData) => {
-                //this.saveAcquireData(resData); //resData//dummyResponse
-                //this.extractFreeGames(resData);
-                this.event.emit(_enums__WEBPACK_IMPORTED_MODULE_2__.Event.ACQUIRE_RECEIVE_EVENT);
-                action(resData);
-            });
-        });
-    }
-    //SETTLE REQUEST
-    settleRequest() {
-        this.send(this.SETTLE_REQUEST_URL, "POST", this.sendSettleRequestData(), (response) => {
-            response.json().then((resData) => {
-                this.infoRequest();
-            });
-        });
-    }
-    //BUY FREE GAME REQUEST
-    buyfreeGame(action) {
-        this.send(this.BUY_FREE_GAME_REQUEST_URL, "POST", this.sendBuyFreeGameRequestData(), (response) => {
-            response.json().then((resData) => {
-                //this.saveAcquireData(resData); //resData//dummyResponse
-                //this.extractFreeGames(resData);
-                this.event.emit(_enums__WEBPACK_IMPORTED_MODULE_2__.Event.ACQUIRE_RECEIVE_EVENT);
+                console.log("response", resData);
+                this.extractPlayData(resData);
                 action(resData);
             });
         });
     }
     // data management //-----------------------------------------------------------------------------------
-    sendAcquireData() {
+    sendLoginData() {
         return {
-            bet: (_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.BET = _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.BETS_IDR[0]),
-            category: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.CATEGORY,
-            coinType: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.COINT_TYPE,
-            machineId: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.MACHINE_ID,
-            userId: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.USER_ID,
+            risk: _enums__WEBPACK_IMPORTED_MODULE_1__.RISKS.LOW,
+            rows: _PLINKODATA__WEBPACK_IMPORTED_MODULE_2__.PLINKODATA.ROWS,
         };
     }
-    sendLaunchData() {
+    sendPlayData() {
         return {
-            /*amount: COLORGAMEDATA.AMOUNT,
-            category: COLORGAMEDATA.CATEGORY,
-            currency: COLORGAMEDATA.CURRENCY,
-            gameId: COLORGAMEDATA.GAME_ID,
-            langx: COLORGAMEDATA.LANGUAGE,
-            username: COLORGAMEDATA.USER_NAME,*/
-            category: 0,
-            coinType: 0,
+            risk: _enums__WEBPACK_IMPORTED_MODULE_1__.RISKS.LOW,
+            rows: _PLINKODATA__WEBPACK_IMPORTED_MODULE_2__.PLINKODATA.ROWS,
+            bet: 100,
         };
     }
-    sendTokenLoginData() {
-        return {
-            token: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.TOKEN,
-        };
+    extractPlayData(data) {
+        _PLINKODATA__WEBPACK_IMPORTED_MODULE_2__.PLINKODATA.BALANCE = data.balance;
+        _PLINKODATA__WEBPACK_IMPORTED_MODULE_2__.PLINKODATA.RESULT_ROW = data.column;
+        _PLINKODATA__WEBPACK_IMPORTED_MODULE_2__.PLINKODATA.MULTIPLIER = data.multiplier;
+        _PLINKODATA__WEBPACK_IMPORTED_MODULE_2__.PLINKODATA.WON_AMOUNT = data.wonAmount;
     }
-    sendInfoRequestData() {
-        return {
-            bet: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.BET,
-            category: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.CATEGORY,
-            coinType: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.COINT_TYPE,
-            userId: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.USER_ID,
-        };
-    }
-    sendSettleRequestData() {
-        return {
-            category: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.CATEGORY,
-            coinType: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.COINT_TYPE,
-            userId: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.USER_ID,
-            machineId: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.MACHINE_ID,
-            bet: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.BET,
-        };
-    }
-    sendBuyFreeGameRequestData() {
-        return {
-            bet: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.BET,
-            buyFreeGame: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.BUY_FREE_GAME,
-            category: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.CATEGORY,
-            coinType: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.COINT_TYPE,
-            machineId: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.MACHINE_ID,
-            userId: _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.USER_ID,
-        };
-    }
-    //save data to COLORGAMEDATA----------------------------------------------
-    saveLoginData(LoginToken) {
-        _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.TOKEN = LoginToken.jwtToken;
-    }
-    saveLoginByTokenData(LoginToken) {
-        _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.TOKEN = LoginToken.jwtToken;
-        _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.USER_ID = LoginToken.userId;
-        _COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_0__.COLORGAMEDATA.USER_NAME = LoginToken.name;
+    extractLoadData(data) {
+        _PLINKODATA__WEBPACK_IMPORTED_MODULE_2__.PLINKODATA.BALANCE = data.balance;
+        _PLINKODATA__WEBPACK_IMPORTED_MODULE_2__.PLINKODATA.MULTIPLIERS_SET = data.multipliers;
+        _PLINKODATA__WEBPACK_IMPORTED_MODULE_2__.PLINKODATA.BET_SIZE = data.size;
     }
 }
 
 
 /***/ }),
 
-/***/ "./game/api/COLORGAMEDATA.ts":
-/*!***********************************!*\
-  !*** ./game/api/COLORGAMEDATA.ts ***!
-  \***********************************/
+/***/ "./game/api/PLINKODATA.ts":
+/*!********************************!*\
+  !*** ./game/api/PLINKODATA.ts ***!
+  \********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   COLORGAMEDATA: () => (/* binding */ COLORGAMEDATA)
+/* harmony export */   PLINKODATA: () => (/* binding */ PLINKODATA)
 /* harmony export */ });
 /* harmony import */ var _enums__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../enums */ "./game/enums.ts");
 
-const COLORGAMEDATA = {
-    USERLOGIN: {
-        name: "test01",
-        password: "1234567890",
-    },
-    WIN: 0,
-    BET: -1,
-    TOKEN: "",
-    CATEGORY: "6",
-    COINT_TYPE: 1,
-    USER_ID: "0",
-    GAME_ID: "6",
-    MACHINE_ID: "0",
-    CURRENCY: _enums__WEBPACK_IMPORTED_MODULE_0__.CURRENCY.IDR,
-    USER_NAME: "user0003",
-    AMOUNT: "100",
-    LANGUAGE: "en-us",
-    CREDIT: 0,
-    BUY_FREE_GAME: 0,
-    BUY_FREE_GAME_ENABLE: false,
-    RESULT: [0, 1, 2],
-    BETS_IDR: [],
-    BETS_INR: [],
-    BETS_MYR: [],
-    BETS_PHP: [],
-    BETS_THB: [],
-    BETS_TWD: [],
-    BETS_USD: [],
-    BETS_VND: [],
-    PRIZES: ["FREEBET", "IPHONE", "IDR 50k", "IDR 25k", "IDR 15k", "IDR 5k"],
+const PLINKODATA = {
+    BET: 100,
+    RISK: _enums__WEBPACK_IMPORTED_MODULE_0__.RISKS.LOW,
+    BALANCE: 0,
+    ROWS: 8,
+    CURRENCY: "PHP",
+    TOTAL_WIN: 0,
+    RESULT_ROW: 1,
+    WON_AMOUNT: 0,
+    MULTIPLIER: 0,
+    BET_SIZE: 0,
+    MULTIPLIERS_SET: [],
+    //-------------------------------
 };
-
-
-/***/ }),
-
-/***/ "./game/color-game/BetInformationPage.ts":
-/*!***********************************************!*\
-  !*** ./game/color-game/BetInformationPage.ts ***!
-  \***********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ BetInformationPage)
-/* harmony export */ });
-/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
-/* harmony import */ var _GAMESETTINGS__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../GAMESETTINGS */ "./game/GAMESETTINGS.ts");
-/* harmony import */ var _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../template/components/SpriteV2 */ "./game/template/components/SpriteV2.ts");
-/* harmony import */ var _utils_PixiUtils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/PixiUtils */ "./game/utils/PixiUtils.ts");
-/* harmony import */ var _api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../api/COLORGAMEDATA */ "./game/api/COLORGAMEDATA.ts");
-
-
-
-
-
-class BetInformationPage extends _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_2__["default"] {
-    constructor() {
-        super();
-        this.betButtons = [];
-        this.prizeLabel = [];
-        this.blackBg = this.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_2__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_3__.TP)("base_game", "modal_bg.png")));
-        this.blackBg.scale.set(2.5);
-        this.bg = this.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_2__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_3__.TP)("base_game", "color_list.png")));
-        this.bg.scale.set(2.5);
-        const betListbtn = [
-            "color_4.png",
-            "color_1.png",
-            "color_5.png",
-            "color_3.png",
-            "color_2.png",
-            "color_6.png", //"purple",
-        ];
-        let i = 0;
-        for (i = 0; i < 6; i++) {
-            this.betButtons[i] = this.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_2__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_3__.TP)("base_game", betListbtn[i])));
-            this.betButtons[i].scale.set(1.25);
-            this.betButtons[i].position.set(-200, -300 + i * 150);
-            //
-            this.prizeLabel[i] = this.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_1__.GAMESETTINGS.textstyle1));
-            this.prizeLabel[i].text = _api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_4__.COLORGAMEDATA.PRIZES[i];
-            this.prizeLabel[i].style.fontSize = 50;
-            this.prizeLabel[i].style.align = "left";
-            this.prizeLabel[i].anchor.set(0.5);
-            this.prizeLabel[i].position.set(-0, -300 + i * 150);
-        }
-        this.btnClose = this.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_2__["default"](pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.get("dice_bet").textures["btn_close0000"]));
-        this.btnClose.scale.set(1.25);
-        this.btnClose.position.set(0, 620);
-        this.btnClose.tint = 0xff3333;
-        //
-    }
-    close() {
-        this.visible = false;
-    }
-    show() {
-        this.visible = true;
-    }
-    updatePrizes() {
-        //
-    }
-}
-
-
-/***/ }),
-
-/***/ "./game/color-game/BetTable.ts":
-/*!*************************************!*\
-  !*** ./game/color-game/BetTable.ts ***!
-  \*************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ BetTable)
-/* harmony export */ });
-/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
-/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
-/* harmony import */ var _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../template/components/SpriteV2 */ "./game/template/components/SpriteV2.ts");
-/* harmony import */ var _utils_PixiUtils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/PixiUtils */ "./game/utils/PixiUtils.ts");
-/* harmony import */ var _enums__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../enums */ "./game/enums.ts");
-/* harmony import */ var _GAMESETTINGS__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../GAMESETTINGS */ "./game/GAMESETTINGS.ts");
-
-
-
-
-
-
-class BetTable extends _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"] {
-    constructor() {
-        super();
-        this.betButtons = [];
-        this.container = this.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"]());
-        this.bg = this.container.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_2__.TP)("base_game", "color_board.png")));
-        this.bg.scale.set(2, 1.5);
-        const betListbtn = [
-            "color_4.png",
-            "color_1.png",
-            "color_5.png",
-            "color_3.png",
-            "color_2.png",
-            "color_6.png", //"purple",
-        ];
-        let i = 0;
-        let x = 0;
-        let y = -80;
-        this.whitebg = this.container.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Graphics());
-        this.whitebg.roundRect(-65, -65, 130, 130, 15);
-        this.whitebg.fill(_enums__WEBPACK_IMPORTED_MODULE_3__.COLORS.WHITE);
-        this.whitebg.visible = false;
-        for (i = 0; i < 6; i++) {
-            //
-            this.betButtons[i] = this.container.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_2__.TP)("base_game", betListbtn[i])));
-            x = -180 + 180 * (i % 3);
-            if (i >= 3) {
-                y = 70;
-            }
-            this.betButtons[i].position.set(x, y);
-            this.betButtons[i].scale.set(1.25);
-        }
-        this.whitebg.position.set(this.betButtons[0].x, this.betButtons[0].y);
-        //
-        this.btnHome = this.container.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_2__.TP)("base_game", "home.png")));
-        this.btnHome.scale.set(2);
-        this.btnHome.position.set(-250, -220);
-        this.btnPlay = this.container.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_2__.TP)("base_game", "btn.png")));
-        this.btnPlay.scale.set(2);
-        this.btnPlay.position.set(0, -220);
-        const revealLabel = this.btnPlay.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_4__.GAMESETTINGS.textstyle1));
-        revealLabel.text = "START";
-        revealLabel.style.fontSize = 35;
-        revealLabel.style.fill = 0x662200;
-        revealLabel.style.fontWeight = "bolder";
-        revealLabel.anchor.set(0.5);
-        revealLabel.position.set(0, -5);
-        this.btnInfo = this.container.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_2__.TP)("base_game", "ask.png")));
-        this.btnInfo.scale.set(2);
-        this.btnInfo.position.set(250, -220);
-        this.coin = this.container.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"](pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.get("dice_bet").textures["coin0000"]));
-        this.coin.position.set(-250, -220);
-        this.coin.visible = false;
-        //
-        this.animateInfo();
-    }
-    betHighlight() {
-        this.betButtons.forEach((btn) => {
-            gsap__WEBPACK_IMPORTED_MODULE_5__.gsap.to(btn.scale, {
-                duration: 0.1,
-                repeat: 1,
-                yoyo: true,
-                x: 1.4,
-                y: 1.4,
-            });
-        });
-    }
-    animateInfo() {
-        gsap__WEBPACK_IMPORTED_MODULE_5__.gsap.to(this.btnInfo.scale, {
-            duration: 0.25,
-            repeat: 9,
-            yoyo: true,
-            x: 2.3,
-            y: 2.3,
-        });
-    }
-    moveCoin(btn) {
-        //this.coin.visible = true;
-        this.whitebg.visible = true;
-        this.coin.position.set(btn.x, btn.y - 5);
-        this.whitebg.position.set(btn.x, btn.y);
-    }
-}
-
-
-/***/ }),
-
-/***/ "./game/color-game/ColorGameMachine.ts":
-/*!*********************************************!*\
-  !*** ./game/color-game/ColorGameMachine.ts ***!
-  \*********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ ColorGameMachine)
-/* harmony export */ });
-/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
-/* harmony import */ var _template_components_AnimatedObject__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../template/components/AnimatedObject */ "./game/template/components/AnimatedObject.ts");
-/* harmony import */ var _Dice__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Dice */ "./game/color-game/Dice.ts");
-/* harmony import */ var _utils_PixiUtils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/PixiUtils */ "./game/utils/PixiUtils.ts");
-/* harmony import */ var _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../template/components/SpriteV2 */ "./game/template/components/SpriteV2.ts");
-
-
-
-
-
-class ColorGameMachine extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
-    constructor(app) {
-        super();
-        this.dice = [];
-        this.app = app;
-        const bg = this.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_4__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_3__.TP)("base_game", "color_box.png")));
-        bg.anchor.set(0.5);
-        bg.scale.set(3.25, 3.5);
-        bg.position.set(0, 100);
-        let i = 0;
-        for (i = 0; i < 3; i++) {
-            this.dice[i] = this.addChild(new _Dice__WEBPACK_IMPORTED_MODULE_2__["default"]());
-            this.dice[i].scale.set(0.9);
-            this.dice[i].position.set(-150 + i * 150, -0);
-        }
-        this.bglauncher = this.addChild(new _template_components_AnimatedObject__WEBPACK_IMPORTED_MODULE_1__["default"]("launcher", "launcher"));
-        this.bglauncher.scale.set(1.55, 1.2);
-        this.bglauncher.position.set(0, -420);
-        this.bglauncher.tint = 0x884400;
-    }
-    reset() {
-        let i = 0;
-        for (i = 0; i < 3; i++) {
-            this.dice[i].reset(i);
-        }
-    }
-}
-
-
-/***/ }),
-
-/***/ "./game/color-game/Dice.ts":
-/*!*********************************!*\
-  !*** ./game/color-game/Dice.ts ***!
-  \*********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ Dice)
-/* harmony export */ });
-/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
-/* harmony import */ var _template_components_AnimatedObject__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../template/components/AnimatedObject */ "./game/template/components/AnimatedObject.ts");
-/* harmony import */ var _utils_Utils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/Utils */ "./game/utils/Utils.ts");
-/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
-/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/gsap-core.js");
-/* harmony import */ var _api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../api/COLORGAMEDATA */ "./game/api/COLORGAMEDATA.ts");
-/* harmony import */ var _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../template/components/SpriteV2 */ "./game/template/components/SpriteV2.ts");
-
-
-
-
-
-
-class Dice extends _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_4__["default"] {
-    constructor() {
-        super();
-        this.resultId = 5;
-        this.rdm = 7;
-        this._delay = 0;
-        this.resultDiceTexture = [
-            //
-            { reveal: "dice_b", texture: "dice_b", id: 12 },
-            { reveal: "dice_a", texture: "dice_a", id: 12 },
-            { reveal: "dice_a", texture: "dice_a", id: 6 },
-            { reveal: "dice_b", texture: "dice_b", id: 0 },
-            { reveal: "dice_a", texture: "dice_a", id: 0 },
-            { reveal: "dice_a", texture: "dice_a", id: 18 },
-            //
-            { reveal: "dice_1v", texture: "dice_1v", id: 0 },
-            { reveal: "dice_1v", texture: "dice_1v", id: 6 },
-            { reveal: "dice_1v", texture: "dice_1v", id: 12 },
-            { reveal: "dice_2v", texture: "dice_2v", id: 0 },
-            { reveal: "dice_2v", texture: "dice_2v", id: 6 },
-            { reveal: "dice_2v", texture: "dice_2v", id: 12 }, //purple 5
-        ];
-        this.diceId = this.resultDiceTexture[this.resultId].texture;
-        this.diceIdReveal = this.resultDiceTexture[this.resultId].reveal;
-        this.diceContainer = this.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Container());
-        this.diceContainer.position.set(0, -420);
-        this.diceShadow = this.diceContainer.addChild(new _template_components_AnimatedObject__WEBPACK_IMPORTED_MODULE_1__["default"](this.diceId, this.diceId));
-        this.diceShadow.tint = 0x0;
-        this.diceShadow.y = 50;
-        this.diceShadow.alpha = 0.25;
-        this.dice = this.diceContainer.addChild(new _template_components_AnimatedObject__WEBPACK_IMPORTED_MODULE_1__["default"](this.diceId, this.diceId));
-        this.dice.anchor.set(0.5);
-        this.resetDiceImage();
-    }
-    getRandomNumberFromArray(arr) {
-        return arr[Math.floor(Math.random() * arr.length)];
-    }
-    animate(id = 0) {
-        const face = (0,_utils_Utils__WEBPACK_IMPORTED_MODULE_2__.generateRandom)(2);
-        this.diceShadow.y = 80;
-        this.rdm = id;
-        if (face == 1) {
-            this.dice.scale.x = -1;
-            this.diceShadow.scale.x = -1;
-        }
-        else {
-            this.dice.scale.x = 1;
-            this.diceShadow.scale.x = 1;
-        }
-        gsap__WEBPACK_IMPORTED_MODULE_5__.gsap.to(this.diceContainer, 0.5, {
-            startAt: { y: -420, x: 0 },
-            delay: this._delay,
-            y: 0,
-            x: 0,
-            ease: gsap__WEBPACK_IMPORTED_MODULE_6__.Sine.easeIn,
-            onStart: () => {
-                this.dice.play(this.diceId, this.diceId, this.rdm);
-                this.diceShadow.play(this.diceId, this.diceId, this.rdm);
-            },
-        });
-        gsap__WEBPACK_IMPORTED_MODULE_5__.gsap.to(this.diceShadow, 0.75, {
-            delay: 0.5 + this._delay,
-            startAt: { y: 120 },
-            y: 10,
-        });
-        gsap__WEBPACK_IMPORTED_MODULE_5__.gsap.to(this.diceContainer, 0.75, {
-            delay: 0.5 + this._delay,
-            y: 270 + (0,_utils_Utils__WEBPACK_IMPORTED_MODULE_2__.generateRandom)(150, 0),
-            x: -40 + (0,_utils_Utils__WEBPACK_IMPORTED_MODULE_2__.generateRandom)(40, 0),
-            ease: gsap__WEBPACK_IMPORTED_MODULE_6__.Sine.easeInOut,
-            onStart: () => {
-                this.dice.play(this.diceIdReveal, this.diceIdReveal, this.resultDiceTexture[this.resultId].id);
-                this.diceShadow.play(this.diceIdReveal, this.diceIdReveal, this.resultDiceTexture[this.resultId].id);
-            },
-        });
-        gsap__WEBPACK_IMPORTED_MODULE_5__.gsap.to(this.diceContainer.scale, 0.25, {
-            delay: 2 + this._delay,
-            y: 1.25,
-            x: 1.25,
-            ease: gsap__WEBPACK_IMPORTED_MODULE_6__.Sine.easeInOut,
-            repeat: 1,
-            yoyo: true,
-        });
-    }
-    play(id) {
-        id = _api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_3__.COLORGAMEDATA.RESULT[id];
-        gsap__WEBPACK_IMPORTED_MODULE_5__.gsap.delayedCall(2, () => {
-            this.resultId = id + ((0,_utils_Utils__WEBPACK_IMPORTED_MODULE_2__.generateRandom)(2) == 1 ? 0 : 6);
-            this.animate(id);
-            this.diceIdReveal = this.resultDiceTexture[this.resultId].reveal;
-        });
-    }
-    resetDice(dice) {
-        dice.updateFrames(this.resultDiceTexture[0].texture, this.resultDiceTexture[0].texture, this.rdm);
-    }
-    resetDiceImage() {
-        this.diceId = this.resultDiceTexture[(0,_utils_Utils__WEBPACK_IMPORTED_MODULE_2__.generateRandom)(6)].texture;
-        this.rdm = this.getRandomNumberFromArray([0, 6, 12]);
-        this.resultId = (0,_utils_Utils__WEBPACK_IMPORTED_MODULE_2__.generateRandom)(6);
-        this.diceIdReveal = this.resultDiceTexture[this.resultId].reveal;
-        this.resetDice(this.dice);
-        this.resetDice(this.diceShadow);
-    }
-    reset(id) {
-        gsap__WEBPACK_IMPORTED_MODULE_5__.gsap.to(this.diceContainer, 0.5, {
-            delay: id * 0.1,
-            y: -420,
-            x: 0,
-            ease: gsap__WEBPACK_IMPORTED_MODULE_6__.Back.easeIn,
-            onComplete: () => {
-                this.resetDiceImage();
-            },
-        });
-    }
-}
-
-
-/***/ }),
-
-/***/ "./game/color-game/MainGame.ts":
-/*!*************************************!*\
-  !*** ./game/color-game/MainGame.ts ***!
-  \*************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ MainGame)
-/* harmony export */ });
-/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
-/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
-/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/gsap-core.js");
-/* harmony import */ var _utils_Utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/Utils */ "./game/utils/Utils.ts");
-/* harmony import */ var _ColorGameMachine__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ColorGameMachine */ "./game/color-game/ColorGameMachine.ts");
-/* harmony import */ var _BetTable__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./BetTable */ "./game/color-game/BetTable.ts");
-/* harmony import */ var _BetInformationPage__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./BetInformationPage */ "./game/color-game/BetInformationPage.ts");
-/* harmony import */ var _RevealResult__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./RevealResult */ "./game/color-game/RevealResult.ts");
-/* harmony import */ var _utils_PixiUtils__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utils/PixiUtils */ "./game/utils/PixiUtils.ts");
-/* harmony import */ var _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../template/components/SpriteV2 */ "./game/template/components/SpriteV2.ts");
-/* harmony import */ var _WinningFlyer__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./WinningFlyer */ "./game/color-game/WinningFlyer.ts");
-/* harmony import */ var _pixi_sound__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @pixi/sound */ "./node_modules/@pixi/sound/lib/index.mjs");
-
-
-
-
-
-
-
-
-
-
-
-class MainGame extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
-    constructor(app) {
-        super();
-        this.character = [];
-        this.app = app;
-        this.bg = this.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_7__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_6__.TP)("theme", "color_game_bg.png")));
-        this.bg.scale.set(2.25);
-        this.bg.tint = 0xccccff;
-        this.colorGameMachine = this.addChild(new _ColorGameMachine__WEBPACK_IMPORTED_MODULE_2__["default"](app));
-        this.colorGameMachine.position.set(0, -110);
-        this.colorGameMachine.scale.set(0.75);
-        this.character[0] = this.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_7__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_6__.TP)("theme", "character_1.png")));
-        this.character[0].scale.set(2);
-        this.character[0].position.set(-300, -0);
-        this.character[1] = this.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_7__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_6__.TP)("theme", "character_2.png")));
-        this.character[1].scale.set(2);
-        this.character[1].position.set(300, -0);
-        this.lightning = this.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_7__["default"](pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.get("lightning")));
-        this.lightning.scale.set(2);
-        this.lightning.blendMode = "add";
-        this.lightning.position.set(0, -300);
-        this.lightning.visible = false;
-        this.betTable = this.addChild(new _BetTable__WEBPACK_IMPORTED_MODULE_3__["default"]());
-        this.betTable.position.set(0, 560);
-        this.revealResult = this.addChild(new _RevealResult__WEBPACK_IMPORTED_MODULE_5__["default"]());
-        this.revealResult.position.set(0, -250);
-        this.betInfoPage = this.addChild(new _BetInformationPage__WEBPACK_IMPORTED_MODULE_4__["default"]());
-        this.betInfoPage.position.set(0, 0);
-        this.betInfoPage.visible = false;
-        this.winningFlyer = this.addChild(new _WinningFlyer__WEBPACK_IMPORTED_MODULE_8__["default"]());
-        this.winningFlyer.position.set(0, -250);
-        gsap__WEBPACK_IMPORTED_MODULE_10__.gsap.to(this.character, {
-            duration: 1,
-            y: -110,
-            startAt: { y: -100 },
-            yoyo: true,
-            ease: "none",
-            repeat: -1,
-        });
-        this.init();
-    }
-    init() {
-        //play ambient sounds
-        //sound.play("sfx_ambient",{loop:true,volume:0.3});
-        this.initSize();
-        //auto detect size based on the device screen
-        this.checkScreenSize();
-        setTimeout(() => {
-            this.resizeScreen();
-        }, 1);
-    }
-    //display settings---------------------------------
-    checkScreenSize() {
-        document.body.onresize = (e) => {
-            this.resizeScreen();
-        };
-        //on load, need some delay to trigger resize event
-        setTimeout(() => {
-            this.resizeScreen();
-        }, 1000);
-    }
-    initSize() {
-        if ((0,_utils_Utils__WEBPACK_IMPORTED_MODULE_1__.isPortrait)()) {
-            //portrait
-            this.width = (this.app.canvas.width / 750) * 0.9;
-            this.height = (this.app.canvas.height / 1334) * 0.9;
-        }
-        else {
-            //landscape
-            this.width = (this.app.canvas.width / 1334) * 0.5;
-            this.height = (this.app.canvas.height / 750) * 0.5;
-        }
-    }
-    resizeScreen() {
-        //setFullscreen(true);
-        if ((0,_utils_Utils__WEBPACK_IMPORTED_MODULE_1__.isPortrait)()) {
-            //portrait
-            console.log("portrait");
-        }
-        else {
-            //landscape
-            console.log("landscape");
-        }
-    }
-    animateLightning() {
-        this.lightning.visible = true;
-        gsap__WEBPACK_IMPORTED_MODULE_10__.gsap.to(this.lightning, 0.2, {
-            alpha: 0,
-            repeat: 1,
-            yoyo: false,
-            ease: gsap__WEBPACK_IMPORTED_MODULE_11__.Sine.easeInOut,
-            startAt: { alpha: 1 },
-            repeatDelay: 0.2,
-            onStart: () => {
-                _pixi_sound__WEBPACK_IMPORTED_MODULE_9__.sound.play("sfx_spark", { volume: 0.5 });
-            },
-            onRepeat: () => {
-                _pixi_sound__WEBPACK_IMPORTED_MODULE_9__.sound.play("sfx_spark", { volume: 0.5 });
-                this.lightning.scale.x *= -1;
-            },
-            onComplete: () => {
-                this.lightning.visible = false;
-            },
-        });
-    }
-}
-
-
-/***/ }),
-
-/***/ "./game/color-game/RevealResult.ts":
-/*!*****************************************!*\
-  !*** ./game/color-game/RevealResult.ts ***!
-  \*****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ RevealResult)
-/* harmony export */ });
-/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
-/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
-/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/gsap-core.js");
-/* harmony import */ var _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../template/components/SpriteV2 */ "./game/template/components/SpriteV2.ts");
-/* harmony import */ var _GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../GAMESETTINGS */ "./game/GAMESETTINGS.ts");
-/* harmony import */ var _enums__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../enums */ "./game/enums.ts");
-/* harmony import */ var _api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../api/COLORGAMEDATA */ "./game/api/COLORGAMEDATA.ts");
-/* harmony import */ var _utils_PixiUtils__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utils/PixiUtils */ "./game/utils/PixiUtils.ts");
-
-
-
-
-
-
-
-class RevealResult extends _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"] {
-    constructor() {
-        super();
-        this.betButtons = [];
-        this.whitebg = [];
-        this.betListbtn = [
-            "color_4.png",
-            "color_1.png",
-            "color_5.png",
-            "color_3.png",
-            "color_2.png",
-            "color_6.png", //"purple",
-        ];
-        this.bg = this.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_5__.TP)("base_game", "color_board.png")));
-        this.bg.scale.set(2);
-        let i = 0;
-        let x = 0;
-        let y = 0;
-        for (i = 0; i < 3; i++) {
-            this.whitebg[i] = this.bg.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Graphics());
-            this.whitebg[i].roundRect(-31, -10, 62, 70, 15);
-            this.whitebg[i].fill(_enums__WEBPACK_IMPORTED_MODULE_3__.COLORS.WHITE);
-            this.whitebg[i].position.set(67 * i - 67, 0);
-        }
-        for (i = 0; i < 3; i++) {
-            this.betButtons[i] = this.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_5__.TP)("base_game", this.betListbtn[i])));
-            x = -135 + 135 * (i % 3);
-            y = 50;
-            this.betButtons[i].scale.set(1.25);
-            this.betButtons[i].position.set(x, y);
-        }
-        const revealLabel = this.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__.GAMESETTINGS.textstyle1));
-        revealLabel.text = "DICE RESULT";
-        revealLabel.style.fontSize = 80;
-        revealLabel.style.fill = 0x662200;
-        revealLabel.style.fontWeight = "bolder";
-        revealLabel.anchor.set(0.5);
-        revealLabel.position.set(0, -90);
-        this.visible = false;
-    }
-    showResult() {
-        this.visible = true;
-        gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.to(this.scale, 0.5, {
-            x: 1,
-            y: 1,
-            startAt: { x: 0.5, y: 0.5 },
-            ease: gsap__WEBPACK_IMPORTED_MODULE_7__.Back.easeOut,
-        });
-        gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.to(this, 0.5, { alpha: 1, startAt: { alpha: 0 }, ease: gsap__WEBPACK_IMPORTED_MODULE_7__.Back.easeOut });
-        //
-        this.updateImages();
-        this.checkWin();
-        //
-        gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.delayedCall(5, () => {
-            this.hideResult();
-        });
-    }
-    hideResult() {
-        gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.to(this.scale, 0.5, {
-            x: 0.5,
-            y: 0.5,
-            startAt: { x: 1, y: 1 },
-            ease: gsap__WEBPACK_IMPORTED_MODULE_7__.Back.easeIn,
-        });
-        gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.to(this, 0.5, {
-            alpha: 0,
-            startAt: { alpha: 1 },
-            onComplete: () => {
-                this.visible = false;
-            },
-        });
-    }
-    updateImages() {
-        const txtr = _api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_4__.COLORGAMEDATA.RESULT;
-        this.betButtons[0].texture = (0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_5__.TP)("base_game", this.betListbtn[txtr[0]]);
-        this.betButtons[1].texture = (0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_5__.TP)("base_game", this.betListbtn[txtr[1]]);
-        this.betButtons[2].texture = (0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_5__.TP)("base_game", this.betListbtn[txtr[2]]);
-    }
-    checkWin() {
-        let i = 0;
-        const txtr = _api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_4__.COLORGAMEDATA.RESULT;
-        for (i = 0; i < 3; i++) {
-            this.whitebg[i].visible = false;
-            if (txtr[i] == _api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_4__.COLORGAMEDATA.BET) {
-                this.whitebg[i].visible = true;
-                _api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_4__.COLORGAMEDATA.WIN += 1;
-            }
-        }
-    }
-}
-
-
-/***/ }),
-
-/***/ "./game/color-game/WinningFlyer.ts":
-/*!*****************************************!*\
-  !*** ./game/color-game/WinningFlyer.ts ***!
-  \*****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ WinningFlyer)
-/* harmony export */ });
-/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
-/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
-/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/gsap-core.js");
-/* harmony import */ var _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../template/components/SpriteV2 */ "./game/template/components/SpriteV2.ts");
-/* harmony import */ var _GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../GAMESETTINGS */ "./game/GAMESETTINGS.ts");
-/* harmony import */ var _api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../api/COLORGAMEDATA */ "./game/api/COLORGAMEDATA.ts");
-/* harmony import */ var _utils_PixiUtils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utils/PixiUtils */ "./game/utils/PixiUtils.ts");
-/* harmony import */ var _pixi_sound__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @pixi/sound */ "./node_modules/@pixi/sound/lib/index.mjs");
-
-
-
-
-
-
-
-class WinningFlyer extends _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"] {
-    constructor() {
-        super();
-        this.betButtons = [];
-        this.betListbtn = [
-            "color_4.png",
-            "color_1.png",
-            "color_5.png",
-            "color_3.png",
-            "color_2.png",
-            "color_6.png", //"purple",
-        ];
-        this.prizes = ["iphone"];
-        const container = this.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"]());
-        this.bg = container.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"]((0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_4__.TP)("base_game", "color_win.png")));
-        this.bg.scale.set(2);
-        /*const whitebg: Graphics = this.bg.addChild(new Graphics());
-        whitebg.roundRect(-100, -10, 200, 70, 15);
-        whitebg.roundRect(-125, -80, 250, 80, 15);
-        whitebg.fill(COLORS.WHITE);*/
-        const congratsLabel = container.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__.GAMESETTINGS.textstyle1));
-        congratsLabel.text = "Congratulations!";
-        congratsLabel.style.fontSize = 50;
-        congratsLabel.style.fill = 0xffcc00; //0xffcc00
-        congratsLabel.style.fontWeight = "bolder";
-        congratsLabel.anchor.set(0.5);
-        congratsLabel.position.set(0, -10);
-        const youwinLabel = container.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__.GAMESETTINGS.textstyle1));
-        youwinLabel.text = "You Win!";
-        youwinLabel.style.fontSize = 50;
-        youwinLabel.style.fill = 0x662200;
-        youwinLabel.style.fontWeight = "bolder";
-        youwinLabel.anchor.set(0.5);
-        youwinLabel.position.set(0, 60);
-        this.prizeLabel = container.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__.GAMESETTINGS.textstyle1));
-        this.prizeLabel.text = "";
-        this.prizeLabel.style.fontSize = 50;
-        this.prizeLabel.style.fill = 0xffffff;
-        this.prizeLabel.style.fontWeight = "bolder";
-        this.prizeLabel.anchor.set(0.5);
-        this.prizeLabel.position.set(0, 150);
-        this.lightning = container.addChild(new _template_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"](pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.get("lightning")));
-        this.lightning.scale.set(2);
-        this.lightning.blendMode = "add";
-        this.visible = false;
-    }
-    showResult() {
-        this.visible = true;
-        if (_api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_3__.COLORGAMEDATA.WIN > 1) {
-            _pixi_sound__WEBPACK_IMPORTED_MODULE_5__.sound.play("sfx_big_win");
-        }
-        else {
-            _pixi_sound__WEBPACK_IMPORTED_MODULE_5__.sound.play("sfx_heroic_win");
-        }
-        this.updateText();
-        gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.to(this.scale, 0.5, {
-            x: 1,
-            y: 1,
-            startAt: { x: 0.5, y: 0.5 },
-            ease: gsap__WEBPACK_IMPORTED_MODULE_7__.Back.easeOut,
-        });
-        gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.to(this, 0.5, { alpha: 1, startAt: { alpha: 0 }, ease: gsap__WEBPACK_IMPORTED_MODULE_7__.Back.easeOut });
-        gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.to(this.lightning, 0.4, {
-            alpha: 0,
-            repeat: 4,
-            yoyo: false,
-            ease: gsap__WEBPACK_IMPORTED_MODULE_7__.Sine.easeInOut,
-            startAt: { alpha: 1 },
-            repeatDelay: 0.25,
-            onRepeat: () => {
-                this.lightning.scale.x *= -1;
-            },
-        });
-        gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.delayedCall(3, () => {
-            this.hideResult();
-        });
-    }
-    updateText() {
-        this.prizeLabel.text =
-            _api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_3__.COLORGAMEDATA.PRIZES[_api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_3__.COLORGAMEDATA.BET] + " (" + _api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_3__.COLORGAMEDATA.WIN + "x)";
-    }
-    hideResult() {
-        gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.to(this.scale, 0.5, {
-            x: 0.5,
-            y: 0.5,
-            startAt: { x: 1, y: 1 },
-            ease: gsap__WEBPACK_IMPORTED_MODULE_7__.Back.easeIn,
-        });
-        gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.to(this, 0.5, {
-            alpha: 0,
-            startAt: { alpha: 1 },
-            onComplete: () => {
-                this.visible = false;
-            },
-        });
-    }
-}
 
 
 /***/ }),
@@ -14457,373 +13547,47 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ MainControl)
 /* harmony export */ });
-/* harmony import */ var _utils_Utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/Utils */ "./game/utils/Utils.ts");
-/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
-/* harmony import */ var _pixi_sound__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @pixi/sound */ "./node_modules/@pixi/sound/lib/index.mjs");
-/* harmony import */ var _api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../api/COLORGAMEDATA */ "./game/api/COLORGAMEDATA.ts");
-/* harmony import */ var _enums__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../enums */ "./game/enums.ts");
-/* harmony import */ var _utils_PixiUtils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utils/PixiUtils */ "./game/utils/PixiUtils.ts");
-
-
-
-
+/* harmony import */ var _core_utils_Utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/utils/Utils */ "./game/core/utils/Utils.ts");
+/* harmony import */ var _enums__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../enums */ "./game/enums.ts");
 
 
 class MainControl {
     constructor(game, api) {
-        this.gameReady = true;
         this.game = game;
         this.api = api;
-        this.addControls();
-        _pixi_sound__WEBPACK_IMPORTED_MODULE_1__.sound.play("bgm_olypmus", {
-            loop: true,
-            volume: 0.1,
-        });
-    }
-    addControls() {
-        //info close
-        (0,_utils_Utils__WEBPACK_IMPORTED_MODULE_0__.addButtonEvent)(this.game.betInfoPage, () => {
-            this.game.betInfoPage.close();
-        });
-        //info show
-        (0,_utils_Utils__WEBPACK_IMPORTED_MODULE_0__.addButtonEvent)(this.game.betTable.btnInfo, () => {
-            if (this.gameReady == false) {
-                return;
-            }
-            this.game.betInfoPage.show();
-            (0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_4__.buttonClickEffect)(this.game.betTable.btnInfo);
-        });
-        //play
-        (0,_utils_Utils__WEBPACK_IMPORTED_MODULE_0__.addButtonEvent)(this.game.betTable.btnPlay, () => {
-            this.play();
-        });
-        //home
-        (0,_utils_Utils__WEBPACK_IMPORTED_MODULE_0__.addButtonEvent)(this.game.betTable.btnHome, () => {
-            (0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_4__.buttonClickEffect)(this.game.betTable.btnHome);
-        });
-        //
-        let i = 0;
-        for (i = 0; i < 6; i++) {
-            let num = i;
-            (0,_utils_Utils__WEBPACK_IMPORTED_MODULE_0__.addButtonEvent)(this.game.betTable.betButtons[i], () => {
-                (0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_4__.buttonClickEffect)(this.game.betTable.betButtons[num]);
-                this.placeBet(this.game.betTable.betButtons[num], num);
+        //login to the server
+        api.login();
+        //api load event-------------------------------
+        api.event.on(_enums__WEBPACK_IMPORTED_MODULE_1__.Event.INFO_RECEIVE_EVENT, () => { });
+        api.event.on(_enums__WEBPACK_IMPORTED_MODULE_1__.Event.PLAY_RECEIVE_EVENT, () => { });
+        //button events--------------------------------
+        (0,_core_utils_Utils__WEBPACK_IMPORTED_MODULE_0__.addButtonEvent)(game, () => {
+            //spin
+            this.api.playRequest((data) => {
+                console.log("play", data);
+                this.game.machine.animateBall(data);
             });
-        }
-    }
-    //
-    placeBet(btn, id) {
-        if (this.gameReady == false) {
-            return;
-        }
-        _pixi_sound__WEBPACK_IMPORTED_MODULE_1__.sound.play("sfx_click_short");
-        this.game.betTable.moveCoin(btn);
-        _api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_2__.COLORGAMEDATA.BET = id;
-    }
-    play() {
-        //
-        if (this.gameReady == false || _api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_2__.COLORGAMEDATA.BET == -1) {
-            if (_api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_2__.COLORGAMEDATA.BET == -1) {
-                this.game.betTable.betHighlight();
-            }
-            return;
-        }
-        this.game.animateLightning();
-        _pixi_sound__WEBPACK_IMPORTED_MODULE_1__.sound.play("sfx_click");
-        _api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_2__.COLORGAMEDATA.WIN = 0;
-        _api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_2__.COLORGAMEDATA.RESULT = [
-            (0,_utils_Utils__WEBPACK_IMPORTED_MODULE_0__.generateRandom)(6),
-            (0,_utils_Utils__WEBPACK_IMPORTED_MODULE_0__.generateRandom)(6),
-            (0,_utils_Utils__WEBPACK_IMPORTED_MODULE_0__.generateRandom)(6),
-        ];
-        this.gameReady = false;
-        this.game.betTable.btnPlay.tint = 0x999999;
-        (0,_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_4__.buttonClickEffect)(this.game.betTable.btnPlay);
-        gsap__WEBPACK_IMPORTED_MODULE_5__.gsap.delayedCall(2, () => {
-            this.game.colorGameMachine.bglauncher.play();
-            _pixi_sound__WEBPACK_IMPORTED_MODULE_1__.sound.play("sfx_open");
         });
-        gsap__WEBPACK_IMPORTED_MODULE_5__.gsap.delayedCall(2.2, () => {
-            _pixi_sound__WEBPACK_IMPORTED_MODULE_1__.sound.play("sfx_dice_drop");
+        //keyboard shortcuts--------------------------
+        (0,_core_utils_Utils__WEBPACK_IMPORTED_MODULE_0__.addKeyboardEvent)(82, () => {
+            //spin - r
+            //this.api.infoRequest();
         });
-        gsap__WEBPACK_IMPORTED_MODULE_5__.gsap.delayedCall(4, () => {
-            this.game.revealResult.showResult();
-            _pixi_sound__WEBPACK_IMPORTED_MODULE_1__.sound.play("sfx_reveal");
-        });
-        gsap__WEBPACK_IMPORTED_MODULE_5__.gsap.delayedCall(6, () => {
-            this.game.revealResult.hideResult();
-            this.game.colorGameMachine.reset();
-            _pixi_sound__WEBPACK_IMPORTED_MODULE_1__.sound.play("sfx_3_swoosh", { volume: 0.25 });
-            if (_api_COLORGAMEDATA__WEBPACK_IMPORTED_MODULE_2__.COLORGAMEDATA.WIN > 0) {
-                this.game.winningFlyer.showResult();
-                _pixi_sound__WEBPACK_IMPORTED_MODULE_1__.sound.play("sfx_lightning");
-                gsap__WEBPACK_IMPORTED_MODULE_5__.gsap.delayedCall(3, () => {
-                    this.game.betTable.btnPlay.tint = _enums__WEBPACK_IMPORTED_MODULE_3__.COLORS.WHITE;
-                    this.gameReady = true;
-                });
-            }
-            else {
-                this.game.betTable.btnPlay.tint = _enums__WEBPACK_IMPORTED_MODULE_3__.COLORS.WHITE;
-                this.gameReady = true;
-            }
-        });
-        let i = 0;
-        for (i = 0; i < 3; i++) {
-            this.game.colorGameMachine.dice[i].play(i);
-        }
     }
 }
 
 
 /***/ }),
 
-/***/ "./game/enums.ts":
-/*!***********************!*\
-  !*** ./game/enums.ts ***!
-  \***********************/
+/***/ "./game/core/utils/Utils.ts":
+/*!**********************************!*\
+  !*** ./game/core/utils/Utils.ts ***!
+  \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   COLORS: () => (/* binding */ COLORS),
-/* harmony export */   CURRENCY: () => (/* binding */ CURRENCY),
-/* harmony export */   Event: () => (/* binding */ Event),
-/* harmony export */   Method: () => (/* binding */ Method),
-/* harmony export */   RESULTCODE: () => (/* binding */ RESULTCODE),
-/* harmony export */   STATUS_CODE: () => (/* binding */ STATUS_CODE)
-/* harmony export */ });
-var STATUS_CODE;
-(function (STATUS_CODE) {
-    STATUS_CODE[STATUS_CODE["NotFound"] = 404] = "NotFound";
-    STATUS_CODE[STATUS_CODE["Success"] = 200] = "Success";
-    STATUS_CODE[STATUS_CODE["Accepted"] = 202] = "Accepted";
-    STATUS_CODE[STATUS_CODE["BadRequest"] = 400] = "BadRequest";
-})(STATUS_CODE || (STATUS_CODE = {}));
-var RESULTCODE;
-(function (RESULTCODE) {
-    RESULTCODE["SUCCESS"] = "Success";
-    RESULTCODE["BADREQUEST"] = "BadRequest";
-})(RESULTCODE || (RESULTCODE = {}));
-var CURRENCY;
-(function (CURRENCY) {
-    CURRENCY["IDR"] = "Rp";
-    CURRENCY["USD"] = "$";
-    CURRENCY["INR"] = "\u20B9";
-    CURRENCY["MYR"] = "RM";
-    CURRENCY["PHP"] = "\u20B1";
-    CURRENCY["THB"] = "\u0E3F";
-    CURRENCY["TWD"] = "NT$";
-    CURRENCY["VND"] = "\u20AB";
-    CURRENCY["JPY"] = "\u00A5";
-})(CURRENCY || (CURRENCY = {}));
-var Event;
-(function (Event) {
-    Event["SPIN_END_EVENT"] = "spinEnd";
-    Event["INFO_RECEIVE_EVENT"] = "infoReceive";
-    Event["ACQUIRE_RECEIVE_EVENT"] = "acquireReceive";
-    Event["STEP_RECEIVE_EVENT"] = "stepReceive";
-    Event["PRELOAD_COMPLETE"] = "preloadComplete";
-})(Event || (Event = {}));
-var COLORS;
-(function (COLORS) {
-    COLORS["RED"] = "#FF0000";
-    COLORS["LIGHTRED"] = "#FF6666";
-    COLORS["GREEN"] = "#00FF00";
-    COLORS["BLUE"] = "#0000FF";
-    COLORS["BLACK"] = "#000000";
-    COLORS["WHITE"] = "#FFFFFF";
-    COLORS["ORANGE"] = "#FFCC00";
-    COLORS["DARKGRAY"] = "#666666";
-    COLORS["DARKERGRAY"] = "#333333";
-    COLORS["LIGHTGRAY"] = "#CCCCCC";
-})(COLORS || (COLORS = {}));
-var Method;
-(function (Method) {
-    Method["GET"] = "GET";
-    Method["POST"] = "POST";
-})(Method || (Method = {}));
-
-
-/***/ }),
-
-/***/ "./game/template/components/AnimatedObject.ts":
-/*!****************************************************!*\
-  !*** ./game/template/components/AnimatedObject.ts ***!
-  \****************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ AnimatedObject)
-/* harmony export */ });
-/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
-/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
-/* harmony import */ var _utils_Utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utils/Utils */ "./game/utils/Utils.ts");
-/* harmony import */ var _SpriteV2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SpriteV2 */ "./game/template/components/SpriteV2.ts");
-
-
-
-
-class AnimatedObject extends _SpriteV2__WEBPACK_IMPORTED_MODULE_2__["default"] {
-    constructor(baseTexture, textureName, playOnce = true) {
-        super();
-        this.textureName = "";
-        this.baseTexture = "";
-        this.totalFrames = 0;
-        this.currentFrame = 0;
-        //private ticker: Ticker;
-        this.tick = 0;
-        this.ctr = 0; //counter for number of played frames
-        this.anchor.set(0.5);
-        this.pivot.set(0.5);
-        this.baseTexture = baseTexture;
-        this.textureName = textureName;
-        this.updateFrames();
-        this.tw = gsap__WEBPACK_IMPORTED_MODULE_3__.gsap.to(this, 2, {
-            repeat: -1,
-            onUpdate: () => {
-                this.tick += 1;
-                if (this.tick > 1) {
-                    this.tick = 0;
-                    this.texture = pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.get(this.baseTexture).textures[this.textureName + (0,_utils_Utils__WEBPACK_IMPORTED_MODULE_1__.NumberZero)(this.currentFrame)];
-                    this.ctr += 1;
-                    this.currentFrame += 1;
-                    if (this.currentFrame >= this.totalFrames) {
-                        this.currentFrame = 0;
-                    }
-                    if (playOnce && this.ctr >= this.totalFrames) {
-                        this.tw.pause();
-                    }
-                }
-            },
-        });
-        this.tw.pause();
-    }
-    updateFrames(baseTexture = "", textureName = "", currentFrame = -1) {
-        if (baseTexture != "" && textureName != "") {
-            this.baseTexture = baseTexture;
-            this.textureName = textureName;
-        }
-        if (currentFrame !== -1) {
-            this.currentFrame = currentFrame;
-        }
-        this.texture = pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.get(this.baseTexture).textures[this.textureName + (0,_utils_Utils__WEBPACK_IMPORTED_MODULE_1__.NumberZero)(this.currentFrame)]; //prettier-ignore
-        this.totalFrames = pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.get(this.baseTexture)._frameKeys.length;
-    }
-    play(baseTexture = "", textureName = "", currentFrame = 0) {
-        if (baseTexture != "") {
-            this.baseTexture = baseTexture;
-        }
-        if (textureName != "") {
-            this.textureName = textureName;
-        }
-        this.ctr = 0;
-        this.tick = 0;
-        this.currentFrame = currentFrame;
-        this.updateFrames();
-        this.tw.restart();
-    }
-}
-
-
-/***/ }),
-
-/***/ "./game/template/components/SpriteV2.ts":
-/*!**********************************************!*\
-  !*** ./game/template/components/SpriteV2.ts ***!
-  \**********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ SpriteV2)
-/* harmony export */ });
-/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
-
-class SpriteV2 extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
-    constructor(asset) {
-        super();
-        this.anchor.set(0.5);
-        this.pivot.set(0.5);
-        if (asset != undefined) {
-            this.texture = asset;
-        }
-    }
-}
-
-
-/***/ }),
-
-/***/ "./game/utils/PixiUtils.ts":
-/*!*********************************!*\
-  !*** ./game/utils/PixiUtils.ts ***!
-  \*********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   TP: () => (/* binding */ TP),
-/* harmony export */   addTickerEvent: () => (/* binding */ addTickerEvent),
-/* harmony export */   buttonClickEffect: () => (/* binding */ buttonClickEffect),
-/* harmony export */   changeGraphicsColor: () => (/* binding */ changeGraphicsColor)
-/* harmony export */ });
-/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
-/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
-//change graphics color
-
-
-function changeGraphicsColor(gfx, color, duration = 1) {
-    gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.to(gfx, { duration: duration, pixi: { lineColor: color } });
-}
-function addTickerEvent(action) {
-    const ticker = pixi_js__WEBPACK_IMPORTED_MODULE_0__.Ticker.shared.add((deltaTime) => {
-        action(ticker);
-    });
-    ticker.stop();
-    return ticker;
-}
-function buttonClickEffect(btn) {
-    const _scale = btn.scale.x;
-    gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.to(btn.scale, {
-        duration: 0.05,
-        repeat: 1,
-        yoyo: true,
-        x: _scale - 0.05,
-        y: _scale - 0.05,
-    });
-}
-function TP(base, texture) {
-    //texture packer
-    const arr = pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.get(base)._frames;
-    let i = 0;
-    let id = 0;
-    for (i = 0; i < arr.length; i++) {
-        if (arr[i].filename == texture) {
-            id = i;
-            pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.get(base).textures[id];
-            return pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.get(base).textures[id];
-        }
-    }
-    return pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.get(base).textures[id];
-}
-
-
-/***/ }),
-
-/***/ "./game/utils/Utils.ts":
-/*!*****************************!*\
-  !*** ./game/utils/Utils.ts ***!
-  \*****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   NumberZero: () => (/* binding */ NumberZero),
 /* harmony export */   addButtonEvent: () => (/* binding */ addButtonEvent),
 /* harmony export */   addKeyboardEvent: () => (/* binding */ addKeyboardEvent),
 /* harmony export */   degToRad: () => (/* binding */ degToRad),
@@ -14925,9 +13689,519 @@ function addButtonEvent(btn, btnUpFnc) {
         btnUpFnc(e);
     });
 }
-//convert number to 4 character string, ex: 0001","0002","0003"...
-function NumberZero(num, pad = 4) {
-    return String(num).padStart(pad, "0");
+
+
+/***/ }),
+
+/***/ "./game/enums.ts":
+/*!***********************!*\
+  !*** ./game/enums.ts ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   COLORS: () => (/* binding */ COLORS),
+/* harmony export */   CURRENCY: () => (/* binding */ CURRENCY),
+/* harmony export */   Event: () => (/* binding */ Event),
+/* harmony export */   Method: () => (/* binding */ Method),
+/* harmony export */   RESULTCODE: () => (/* binding */ RESULTCODE),
+/* harmony export */   RISKS: () => (/* binding */ RISKS),
+/* harmony export */   STATUS_CODE: () => (/* binding */ STATUS_CODE)
+/* harmony export */ });
+var STATUS_CODE;
+(function (STATUS_CODE) {
+    STATUS_CODE[STATUS_CODE["NotFound"] = 404] = "NotFound";
+    STATUS_CODE[STATUS_CODE["Success"] = 200] = "Success";
+    STATUS_CODE[STATUS_CODE["Accepted"] = 202] = "Accepted";
+    STATUS_CODE[STATUS_CODE["BadRequest"] = 400] = "BadRequest";
+})(STATUS_CODE || (STATUS_CODE = {}));
+var RESULTCODE;
+(function (RESULTCODE) {
+    RESULTCODE["SUCCESS"] = "Success";
+    RESULTCODE["BADREQUEST"] = "BadRequest";
+})(RESULTCODE || (RESULTCODE = {}));
+var CURRENCY;
+(function (CURRENCY) {
+    CURRENCY["IDR"] = "Rp";
+    CURRENCY["USD"] = "$";
+    CURRENCY["INR"] = "\u20B9";
+    CURRENCY["MYR"] = "RM";
+    CURRENCY["PHP"] = "\u20B1";
+    CURRENCY["THB"] = "\u0E3F";
+    CURRENCY["TWD"] = "NT$";
+    CURRENCY["VND"] = "\u20AB";
+    CURRENCY["JPY"] = "\u00A5";
+})(CURRENCY || (CURRENCY = {}));
+var Event;
+(function (Event) {
+    Event["SPIN_END_EVENT"] = "spinEnd";
+    Event["INFO_RECEIVE_EVENT"] = "infoReceive";
+    Event["PLAY_RECEIVE_EVENT"] = "playReceive";
+    Event["STEP_RECEIVE_EVENT"] = "stepReceive";
+    Event["PRELOAD_COMPLETE"] = "preloadComplete";
+    Event["LOGIN_COMPLETE"] = "loginComplete";
+})(Event || (Event = {}));
+var COLORS;
+(function (COLORS) {
+    COLORS["RED"] = "#FF0000";
+    COLORS["LIGHTRED"] = "#FF6666";
+    COLORS["GREEN"] = "#00FF00";
+    COLORS["BLUE"] = "#0000FF";
+    COLORS["BLACK"] = "#000000";
+    COLORS["WHITE"] = "#FFFFFF";
+    COLORS["ORANGE"] = "#FFCC00";
+    COLORS["DARKGRAY"] = "#666666";
+    COLORS["DARKERGRAY"] = "#333333";
+    COLORS["LIGHTGRAY"] = "#CCCCCC";
+})(COLORS || (COLORS = {}));
+var RISKS;
+(function (RISKS) {
+    RISKS["LOW"] = "LOW";
+    RISKS["MEDIUM"] = "MEDIUM";
+    RISKS["HIGH"] = "HIGH";
+})(RISKS || (RISKS = {}));
+var Method;
+(function (Method) {
+    Method["GET"] = "GET";
+    Method["POST"] = "POST";
+})(Method || (Method = {}));
+
+
+/***/ }),
+
+/***/ "./game/pixi-components/SpriteV2.ts":
+/*!******************************************!*\
+  !*** ./game/pixi-components/SpriteV2.ts ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ SpriteV2)
+/* harmony export */ });
+/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
+
+class SpriteV2 extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
+    constructor(txtr) {
+        super();
+        this.anchor.set(0.5);
+        this.pivot.set(0.5);
+        if (txtr != undefined) {
+            this.texture = txtr;
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./game/slot/view/screens/MainGame.ts":
+/*!********************************************!*\
+  !*** ./game/slot/view/screens/MainGame.ts ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ MainGame)
+/* harmony export */ });
+/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
+/* harmony import */ var _core_utils_Utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../core/utils/Utils */ "./game/core/utils/Utils.ts");
+/* harmony import */ var _PlinkoMachine__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./PlinkoMachine */ "./game/slot/view/screens/PlinkoMachine.ts");
+
+
+
+class MainGame extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
+    constructor(app) {
+        super();
+        this.gameContainer = new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite();
+        //this.anchor.set(0.5);
+        //this.pivot.set(0.5);
+        this.app = app;
+        this.addChild(this.gameContainer);
+        this.machine = new _PlinkoMachine__WEBPACK_IMPORTED_MODULE_2__["default"](this.app);
+        //this.init();
+    }
+    init() {
+        //play ambient sounds
+        //sound.play("sfx_ambient",{loop:true,volume:0.3});
+        this.machine.init();
+        this.drawGameElements();
+        this.initSize();
+        //auto detect size based on the device screen
+        this.checkScreenSize();
+        setTimeout(() => {
+            this.resizeScreen();
+        }, 1);
+    }
+    drawGameElements() {
+        //add game background
+        const bg = this.gameContainer.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Graphics());
+        bg.rect(-640, -360, 1280, 720);
+        bg.fill(0x333333);
+        this.gameContainer.addChild(this.machine);
+        this.machine.position.set(0, 0);
+    }
+    //display settings---------------------------------
+    checkScreenSize() {
+        document.body.onresize = (e) => {
+            this.resizeScreen();
+        };
+        //on load, need some delay to trigger resize event
+    }
+    initSize() {
+        if ((0,_core_utils_Utils__WEBPACK_IMPORTED_MODULE_1__.isPortrait)()) {
+            this.width = (this.app.canvas.width / 750) * 0.87;
+            this.height = (this.app.canvas.height / 1334) * 0.87;
+        }
+        else {
+            this.width = (this.app.canvas.width / 1334) * 1;
+            this.height = (this.app.canvas.height / 750) * 1;
+        }
+    }
+    resizeScreen() {
+        //console.log("sz:", this.width, this.height, isPortrait());
+        //setFullscreen(true);
+        if ((0,_core_utils_Utils__WEBPACK_IMPORTED_MODULE_1__.isPortrait)()) {
+            //portrait
+        }
+        else {
+            //landscape
+        }
+    }
+}
+
+
+/***/ }),
+
+/***/ "./game/slot/view/screens/PlinkoMachine.ts":
+/*!*************************************************!*\
+  !*** ./game/slot/view/screens/PlinkoMachine.ts ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ PlinkoMachine)
+/* harmony export */ });
+/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
+/* harmony import */ var _pixi_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../pixi-components/SpriteV2 */ "./game/pixi-components/SpriteV2.ts");
+/* harmony import */ var _GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../GAMESETTINGS */ "./game/GAMESETTINGS.ts");
+/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
+/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/gsap-core.js");
+/* harmony import */ var _core_utils_Utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../core/utils/Utils */ "./game/core/utils/Utils.ts");
+/* harmony import */ var _api_PLINKODATA__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../api/PLINKODATA */ "./game/api/PLINKODATA.ts");
+/* harmony import */ var _pixi_sound__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @pixi/sound */ "./node_modules/@pixi/sound/lib/index.mjs");
+
+
+
+
+
+
+
+class PlinkoMachine extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
+    constructor(app) {
+        super();
+        this.container = new _pixi_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"]();
+        this.blockerContainer = new _pixi_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"]();
+        this.blockers = [];
+        this.betblocks = [];
+        this.winLabelsContainer = [];
+        this.winLabelsBG = [];
+        this.winLabels = [];
+        this.balls = [];
+        this.buttons = [];
+        this.betLabels = [];
+        this.currentBall = 0;
+        this.floorNum = 8;
+        this.bet_id = 0;
+        this.currentWinFlier = 0;
+        this.betListCount = [
+            42, 52, 63, 75, 88, 102, 117, 133, 150, 168, 207,
+        ];
+        this.maxbetlength = 17;
+        this.blockerArrayId = [];
+        this.total_balls = 50;
+        this.app = app;
+        this.addChild(this.container);
+    }
+    init() {
+        const bg = this.container.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Graphics());
+        bg.rect(-340, -340, 680, 680);
+        bg.fill(0x303030);
+        this.bet_id = _api_PLINKODATA__WEBPACK_IMPORTED_MODULE_4__.PLINKODATA.BET_SIZE - 8;
+        console.log("ss", _api_PLINKODATA__WEBPACK_IMPORTED_MODULE_4__.PLINKODATA.BET_SIZE);
+        this.container.addChild(this.blockerContainer);
+        this.blockerContainer.scale.set(0.85 - 0.05 * this.bet_id);
+        this.blockerContainer.position.set(0, -250);
+        this.drawBlockers(this.betListCount[this.bet_id]);
+        this.createBlockerId();
+        this.drawBalls();
+        this.drawBetBlocks();
+        this.drawWinLabels();
+    }
+    drawBlockers(num) {
+        let i = 0;
+        let _totalbetlist = num;
+        let _gap = 80;
+        let _base_x = -_gap;
+        let _x = -_gap;
+        let _xgap = _gap;
+        let _ygap = _gap;
+        let _y = 0;
+        let _cap_lvl = 3;
+        let _temp_lvl = 0;
+        let tints = [0x999999, 0x666666];
+        let tint_id = 0;
+        let tint_ctr = 0;
+        let betlist = this.betListCount;
+        for (i = 0; i < betlist[betlist.length - 1]; i++) {
+            //
+            this.blockers[i] = this.blockerContainer.addChild(new _pixi_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"](pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.get("plinko").textures["blocker0000"]));
+            if (_temp_lvl < _cap_lvl) {
+                _x = _base_x + _xgap * _temp_lvl;
+                this.blockers[i].position.set(_x, _y);
+                //update tint
+                _temp_lvl += 1;
+                tint_id = tint_ctr % 2;
+            }
+            else {
+                _base_x -= _xgap * 0.5;
+                _temp_lvl = 0;
+                _cap_lvl += 1;
+                _y += _ygap;
+                _x = _base_x + _xgap * _temp_lvl;
+                this.blockers[i].position.set(_x + _xgap * _temp_lvl, _y);
+                //chanage tint
+                _temp_lvl += 1;
+                tint_ctr += 1;
+                tint_id = tint_ctr % 2;
+            }
+            this.blockers[i].tint = tints[tint_id];
+            if (i >= _totalbetlist) {
+                this.blockers[i].visible = false;
+            }
+        }
+        const ballLauncher = this.blockerContainer.addChild(new _pixi_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"](pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.get("plinko").textures["blocker0000"]));
+        ballLauncher.scale.set(2);
+        ballLauncher.position.set(0, -75);
+        ballLauncher.tint = 0x0;
+    }
+    drawBalls() {
+        let i = 0;
+        for (i = 0; i < this.total_balls; i++) {
+            this.balls[i] = this.blockerContainer.addChild(new _pixi_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"](pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.get("plinko").textures["ball0000"]));
+            this.balls[i].tint = 0xff0000;
+            this.balls[i].scale.set(1.15);
+            this.balls[i].visible = false;
+        }
+    }
+    createBlockerId() {
+        let i = 0;
+        let k = 0;
+        let temp_max = 3;
+        let temp_arr = [];
+        for (i = 0; i < this.betListCount[this.betListCount.length - 1]; i++) {
+            //
+            temp_arr.push(i);
+            k += 1;
+            if (k >= temp_max) {
+                this.blockerArrayId[k - 3] = temp_arr;
+                temp_arr = [];
+                k = 0;
+                temp_max += 1;
+            }
+        }
+    }
+    drawBetBlocks() {
+        let i = 0;
+        let _gap = 80;
+        let _y = 0;
+        let _x = -_gap;
+        let _xgap = _gap;
+        let _ygap = _gap;
+        for (i = 0; i < this.maxbetlength; i++) {
+            this.betblocks[i] = this.blockerContainer.addChild(new _pixi_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"](pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.get("plinko").textures["btn30000"]));
+            _y = (this.bet_id + 7) * _ygap;
+            _x = -((this.bet_id + 7) * (_xgap * 0.5)) + _xgap * i;
+            this.betblocks[i].position.set(_x, _y);
+            if (i > this.bet_id + 7) {
+                this.betblocks[i].visible = false;
+            }
+            //add texts
+            this.betLabels[i] = this.betblocks[i].addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__.GAMESETTINGS.textstyle1));
+            this.betLabels[i].text = "0x";
+            this.betLabels[i].anchor.set(0.5);
+            this.betLabels[i].style.fill = 0x0;
+            this.betLabels[i].style.fontSize = 23;
+            this.betLabels[i].y = -3;
+        }
+        this.floorNum = this.bet_id + 8;
+        this.addBetLabels();
+        this.generatePathID(0);
+    }
+    drawWinLabels() {
+        let i = 0;
+        for (i = 0; i < 10; i++) {
+            this.winLabelsContainer[i] = this.blockerContainer.addChild(new _pixi_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"]());
+            this.winLabelsContainer[i].visible = false;
+            this.winLabelsBG[i] = this.winLabelsContainer[i].addChild(new _pixi_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"](pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.get("plinko").textures["btn30000"]));
+            this.winLabelsBG[i].tint = 0x669933;
+            this.winLabels[i] = this.winLabelsContainer[i].addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__.GAMESETTINGS.textstyle1));
+            this.winLabels[i].y = -5;
+            this.winLabels[i].anchor.set(0.5);
+            this.winLabels[i].text = "---";
+        }
+    }
+    addBetLabels() {
+        let i = 0;
+        let len = _api_PLINKODATA__WEBPACK_IMPORTED_MODULE_4__.PLINKODATA.MULTIPLIERS_SET.length;
+        for (i = 0; i < len; i++) {
+            this.betLabels[i].text = _api_PLINKODATA__WEBPACK_IMPORTED_MODULE_4__.PLINKODATA.MULTIPLIERS_SET[i] / 100 + "x";
+        }
+    }
+    animateBall(data) {
+        const winFlierId = this.currentWinFlier;
+        const betId = data.column;
+        this.updateWinFlier(data.wonAmount);
+        const path = this.generatePathID(betId);
+        this.floorNum = this.bet_id + 8;
+        const ball = this.balls[this.currentBall];
+        ball.position.set(0, -75);
+        ball.visible = true;
+        this.currentBall += 1;
+        if (this.currentBall >= this.total_balls) {
+            this.currentBall = 0;
+        }
+        const tl = gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.timeline();
+        let _gap = 80;
+        let i = 0;
+        for (i = 1; i < this.floorNum; i++) {
+            const target = this.blockers[path[i]];
+            let num = i;
+            tl.add([
+                gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.to(ball, {
+                    duration: 0.2,
+                    ease: gsap__WEBPACK_IMPORTED_MODULE_7__.Power1.easeInOut,
+                    x: target.x,
+                    onStart: () => {
+                        _pixi_sound__WEBPACK_IMPORTED_MODULE_5__.sound.play("beep_4", { volume: 0.25, speed: 1.75 });
+                    },
+                    onComplete: () => {
+                        this.bounceAnimationBlocker(target);
+                        if (num == this.floorNum - 1) {
+                            ///show win
+                            this.showWin(target, winFlierId);
+                            ball.visible = false;
+                            gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.to(this.betblocks[betId].scale, {
+                                startAt: { x: 1, y: 1 },
+                                x: 1.5,
+                                y: 1.5,
+                                duration: 0.2,
+                                repeat: 1,
+                                yoyo: true,
+                            });
+                        }
+                    },
+                }),
+                gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.to(ball, {
+                    duration: 0.2,
+                    ease: gsap__WEBPACK_IMPORTED_MODULE_7__.Back.easeIn,
+                    y: ball.x + _gap * i - 25,
+                }),
+            ]);
+        }
+    }
+    updateWinFlier(wonAmount) {
+        this.winLabels[this.currentWinFlier].text = wonAmount / 100;
+        this.currentWinFlier += 1;
+        if (this.currentWinFlier >= 10) {
+            this.currentWinFlier = 0;
+        }
+    }
+    generatePath(result) {
+        let num = result + 1;
+        let path = [];
+        let floor = this.floorNum;
+        let max = floor;
+        let i = 0;
+        path[i] = num;
+        if (num >= max) {
+            num = max;
+        }
+        for (i = 1; i < floor; i++) {
+            const rdm = (0,_core_utils_Utils__WEBPACK_IMPORTED_MODULE_3__.generateRandom)(2) == 0 ? -1 : 0;
+            num += rdm;
+            if (num <= 0) {
+                num = 1;
+            }
+            else if (num >= max) {
+                num = max - 1;
+            }
+            path[i] = num;
+            max -= 1;
+        }
+        path = path.reverse();
+        return path;
+    }
+    identifyId(floor, id) {
+        let block_id = this.blockerArrayId[floor][id];
+        return block_id;
+    }
+    bounceAnimationBlocker(target) {
+        gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.to(target.scale, {
+            duration: 0.1,
+            repeat: 3,
+            yoyo: true,
+            x: 1.5,
+            y: 1.5,
+            startAt: { x: 1, y: 1 },
+        });
+    }
+    showWin(target, id) {
+        _pixi_sound__WEBPACK_IMPORTED_MODULE_5__.sound.play("score", {
+            volume: 0.3,
+            speed: 1,
+        });
+        this.winLabelsContainer[id].visible = true;
+        this.winLabelsContainer[id].position.set(target.x, target.y);
+        gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.to(this.winLabelsContainer[id], {
+            y: target.y - 250,
+            alpha: 1,
+            duration: 1,
+            ease: gsap__WEBPACK_IMPORTED_MODULE_7__.Sine.easeOut,
+        });
+        gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.to(this.winLabelsContainer[id], {
+            alpha: 0,
+            duration: 0.5,
+            delay: 1.5,
+        });
+        gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.to(this.winLabelsContainer[id].scale, {
+            x: 1.15,
+            y: 1.15,
+            repeat: 1,
+            yoyo: true,
+            duration: 0.2,
+            delay: 1.4,
+        });
+    }
+    generatePathID(result) {
+        let i = 0;
+        let path = this.generatePath(result);
+        let blocker_id = 0;
+        let pathID = [];
+        let floor = this.floorNum;
+        for (i = 0; i < floor; i++) {
+            blocker_id = this.identifyId(i, path[i]);
+            pathID.push(blocker_id);
+        }
+        return pathID;
+    }
 }
 
 
@@ -75622,7 +74896,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "" + chunkId + ".js";
+/******/ 			return "" + chunkId + ".index.js";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -75828,11 +75102,12 @@ var __webpack_exports__ = {};
   \***********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
-/* harmony import */ var _Preloader__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Preloader */ "./game/Preloader.ts");
-/* harmony import */ var _control_MainControl__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./control/MainControl */ "./game/control/MainControl.ts");
-/* harmony import */ var _api_API__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./api/API */ "./game/api/API.ts");
-/* harmony import */ var _enums__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./enums */ "./game/enums.ts");
-/* harmony import */ var _color_game_MainGame__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./color-game/MainGame */ "./game/color-game/MainGame.ts");
+/* harmony import */ var _slot_view_screens_MainGame__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./slot/view/screens/MainGame */ "./game/slot/view/screens/MainGame.ts");
+/* harmony import */ var _api_API__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./api/API */ "./game/api/API.ts");
+/* harmony import */ var _enums__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./enums */ "./game/enums.ts");
+/* harmony import */ var _pixi_components_SpriteV2__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pixi-components/SpriteV2 */ "./game/pixi-components/SpriteV2.ts");
+/* harmony import */ var _Preloader__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Preloader */ "./game/Preloader.ts");
+/* harmony import */ var _control_MainControl__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./control/MainControl */ "./game/control/MainControl.ts");
 var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -75848,42 +75123,46 @@ var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _argume
 
 
 
-const cssstyle = __webpack_require__(/*! ../game/template/css/game.css */ "./game/template/css/game.css");
+
+const cssstyle = __webpack_require__(/*! ../game/core/template/css/game.css */ "./game/core/template/css/game.css");
 (() => __awaiter(void 0, void 0, void 0, function* () {
     //initialize API
-    const api = new _api_API__WEBPACK_IMPORTED_MODULE_3__["default"]();
-    const app = new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Application();
+    let api = new _api_API__WEBPACK_IMPORTED_MODULE_2__["default"]();
     //------------------------------------
+    const app = new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Application();
     yield app.init({
         background: "#000000",
         resolution: 2,
         resizeTo: window,
         antialias: false,
-        useBackBuffer: true,
     });
     app.canvas.style.position = "relative";
     document.body.appendChild(app.canvas);
     // Create and add a container to the stage-----------------------------
-    const gameContainer = new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite();
-    gameContainer.anchor.set(0.5);
+    const gameContainer = new _pixi_components_SpriteV2__WEBPACK_IMPORTED_MODULE_4__["default"]();
     app.stage.addChild(gameContainer);
     //temp size
+    //console.log("sizes", app.renderer.width, app.renderer.width);
     gameContainer.scale.set(0.5);
     gameContainer.position.set(app.renderer.width * 0.5, app.renderer.height * 0.5);
     //draw preloader
-    const preloader = new _Preloader__WEBPACK_IMPORTED_MODULE_1__["default"]();
+    let preloader = new _Preloader__WEBPACK_IMPORTED_MODULE_5__["default"]();
     gameContainer.addChild(preloader);
-    preloader.on(_enums__WEBPACK_IMPORTED_MODULE_4__.Event.PRELOAD_COMPLETE, () => {
+    preloader.on(_enums__WEBPACK_IMPORTED_MODULE_3__.Event.PRELOAD_COMPLETE, () => {
         //console.log("Game Assets Loading Complete");
     });
     //load the assets
     yield pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.loadBundle("images", (e) => {
         preloader.showProgress(e);
     });
-    const mainGame = new _color_game_MainGame__WEBPACK_IMPORTED_MODULE_5__["default"](app);
+    let mainGame = new _slot_view_screens_MainGame__WEBPACK_IMPORTED_MODULE_1__["default"](app);
     gameContainer.addChild(mainGame);
+    api.event.on(_enums__WEBPACK_IMPORTED_MODULE_3__.Event.LOGIN_COMPLETE, () => {
+        console.log("Login Complete");
+        mainGame.init();
+    });
     //Add all game controls-----------------------------
-    const mainControl = new _control_MainControl__WEBPACK_IMPORTED_MODULE_2__["default"](mainGame, api);
+    let mainControl = new _control_MainControl__WEBPACK_IMPORTED_MODULE_6__["default"](mainGame, api);
 }))();
 
 })();

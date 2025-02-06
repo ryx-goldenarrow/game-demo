@@ -13339,11 +13339,11 @@ class Preloader extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
     init() {
         (() => __awaiter(this, void 0, void 0, function* () {
             //init game assets----------------------------------------------------------
-            const _dir = "../../";
+            const _dir = "/";
             pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.addBundle("images", {
                 //load spritesheet
-                plinko: dir_ + "game/media/images/plinko/plinko.json",
-                pling: dir_ + "game/media/sounds/m4a/sfx-pling-1.m4a",
+                plinko: _dir + "game/media/images/plinko/plinko.json",
+                pling: _dir + "game/media/sounds/m4a/sfx-pling-1.m4a",
                 pling2: _dir + "game/media/sounds/m4a/sfx-pling-2.m4a",
                 beep_1: _dir + "game/media/sounds/m4a/sfx-beep-1.m4a",
                 beep_2: _dir + "game/media/sounds/m4a/sfx-beep-2.m4a",

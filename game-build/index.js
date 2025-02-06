@@ -13339,18 +13339,25 @@ class Preloader extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
     init() {
         (() => __awaiter(this, void 0, void 0, function* () {
             //init game assets----------------------------------------------------------
-			
-			const dir = "../game-build"; //html/12714995/";
-            console.log("TEST !@#",dir)
-			pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.addBundle("images", {
+            const dir = "game-demo/gamebuild"; //html/12714995/";
+            pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.addBundle("images", {
                 //load spritesheet
                 plinko: dir + "/game/media/images/plinko/plinko.json",
                 pling: dir + "/game/media/sounds/m4a/sfx-pling-1.m4a",
+                pling2: dir + "/game/media/sounds/m4a/sfx-pling-2.m4a",
                 beep_1: dir + "/game/media/sounds/m4a/sfx-beep-1.m4a",
                 beep_2: dir + "/game/media/sounds/m4a/sfx-beep-2.m4a",
                 beep_3: dir + "/game/media/sounds/m4a/sfx-beep-3.m4a",
                 beep_4: dir + "/game/media/sounds/m4a/sfx-beep-4.m4a",
+                beep_5: dir + "/game/media/sounds/m4a/sfx-beep-5.m4a",
                 score: dir + "/game/media/sounds/m4a/sfx-score.m4a",
+                score2: dir + "/game/media/sounds/m4a/sfx-score2.m4a",
+                click: dir + "/game/media/sounds/m4a/sfx-click.m4a",
+                btn1: dir + "/game/media/sounds/m4a/sfx-btn-1.m4a",
+                btn2: dir + "/game/media/sounds/m4a/sfx-btn-2.m4a",
+                win: dir + "/game/media/sounds/m4a/sfx-win-cute.m4a",
+                bg: dir + "/game/media/images/plinko/bg8@2x.png",
+                bgm: dir + "/game/media/sounds/m4a/bgm-plinko.m4a",
             });
         }))();
         this.progress_text.text = "0 %";
@@ -13359,7 +13366,7 @@ class Preloader extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
         //add preloader bg
         this.preloader_container.addChild(this.bg);
         this.bg.rect(-667, -375, 1334, 750);
-        this.bg.fill("#000000");
+        this.bg.fill("#14192A");
         //container
         this.preloader_container.addChild(this.bg_progress_bar);
         this.bg_progress_bar.rect(0, 0, 1000, 20);
@@ -13447,23 +13454,24 @@ class API {
     //-----------------------------------------------------------------------------------
     //-----------------------------------------------------------------------------------
     //LOGIN REQUEST
-    login() {
+    login(action) {
         this.get(this.LOGIN_URL, this.sendLoginData(), (response) => {
             //get token from login using accessToken
             response.json().then((resData) => {
                 this.extractLoadData(resData);
                 this.event.emit(_enums__WEBPACK_IMPORTED_MODULE_1__.Event.LOGIN_COMPLETE, resData);
-                //console.log("resData", resData);
+                action(resData);
             });
         });
     }
-    updateBet() {
+    updateBet(action) {
         this.UPDATE_BET_URL = `https://plinko-be.godigitalcorp.com/multipliers?rows=${_PLINKODATA__WEBPACK_IMPORTED_MODULE_2__.PLINKODATA.ROWS}&risk=${_PLINKODATA__WEBPACK_IMPORTED_MODULE_2__.PLINKODATA.RISK}`; //prettier-ignore
         this.get(this.UPDATE_BET_URL, this.sendLoginData(), (response) => {
             //get token from login using accessToken
             response.json().then((resData) => {
                 this.extractLoadData(resData);
-                this.event.emit(_enums__WEBPACK_IMPORTED_MODULE_1__.Event.LOGIN_COMPLETE, resData);
+                this.event.emit(_enums__WEBPACK_IMPORTED_MODULE_1__.Event.UPDATE_BET, resData);
+                action(resData);
             });
         });
     }
@@ -13471,7 +13479,7 @@ class API {
     playRequest(action) {
         this.post(this.PLAY_REQUEST_URL, this.sendPlayData(), (response) => {
             response.json().then((resData) => {
-                console.log("response", resData);
+                //console.log("response", resData);
                 this.extractPlayData(resData);
                 action(resData);
             });
@@ -13480,15 +13488,15 @@ class API {
     // data management //-----------------------------------------------------------------------------------
     sendLoginData() {
         return {
-            risk: _enums__WEBPACK_IMPORTED_MODULE_1__.RISKS.LOW,
+            risk: _PLINKODATA__WEBPACK_IMPORTED_MODULE_2__.PLINKODATA.RISK,
             rows: _PLINKODATA__WEBPACK_IMPORTED_MODULE_2__.PLINKODATA.ROWS,
         };
     }
     sendPlayData() {
         return {
-            risk: _enums__WEBPACK_IMPORTED_MODULE_1__.RISKS.LOW,
+            risk: _PLINKODATA__WEBPACK_IMPORTED_MODULE_2__.PLINKODATA.RISK,
             rows: _PLINKODATA__WEBPACK_IMPORTED_MODULE_2__.PLINKODATA.ROWS,
-            bet: 100,
+            bet: _PLINKODATA__WEBPACK_IMPORTED_MODULE_2__.PLINKODATA.BET,
         };
     }
     extractPlayData(data) {
@@ -13532,7 +13540,171 @@ const PLINKODATA = {
     MULTIPLIER: 0,
     BET_SIZE: 0,
     MULTIPLIERS_SET: [],
+    PLAYER_BET_LIST: [100, 200, 500, 1500, 2000, 3000, 5000, 10000],
+    CURRENT_BET_ID: 0,
     //-------------------------------
+    addBet: function () {
+        if (this.CURRENT_BET_ID < this.PLAYER_BET_LIST.length - 1) {
+            this.CURRENT_BET_ID += 1;
+        }
+        this.BET = this.PLAYER_BET_LIST[this.CURRENT_BET_ID];
+    },
+    minBet: function () {
+        if (this.CURRENT_BET_ID > 0) {
+            this.CURRENT_BET_ID -= 1;
+        }
+        this.BET = this.PLAYER_BET_LIST[this.CURRENT_BET_ID];
+    },
+    deductBet() {
+        this.BALANCE = this.BALANCE - this.BET;
+    },
+    //-------------------------------
+    BETCOLORS: [
+        [
+            //08
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.GREEN1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.GREEN1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.RED1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.GREEN1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.GREEN2,
+        ],
+        [
+            //09
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.GREEN2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.GREEN1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.RED1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.RED1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.GREEN1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.GREEN2,
+        ],
+        [
+            //10
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.GREEN2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.GREEN1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.RED2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.RED1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.RED2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.GREEN1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.GREEN2,
+        ],
+        [
+            //11
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.GREEN2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.GREEN1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.RED2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.RED1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.RED1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.RED2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.GREEN1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.GREEN2,
+        ],
+        [
+            //12
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.GREEN2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.GREEN1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.RED2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.RED1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.RED2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.GREEN1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.GREEN2,
+        ],
+        [
+            //13
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.GREEN2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.GREEN1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.RED2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.RED1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.RED1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.RED2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.GREEN1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.GREEN2,
+        ],
+        [
+            //14
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.GREEN2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.GREEN1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.RED2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.RED1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.RED2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.GREEN1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.GREEN2,
+        ],
+        [
+            //15
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.GREEN2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.GREEN1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.RED2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.RED1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.RED1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.RED2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.GREEN1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.GREEN2,
+        ],
+        [
+            //16
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.GREEN2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.GREEN1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.GREEN1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.RED2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.RED1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.RED2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.ORANGE2,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.GREEN1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.GREEN1,
+            _enums__WEBPACK_IMPORTED_MODULE_0__.BET_COLORS.GREEN2,
+        ],
+    ],
 };
 
 
@@ -13551,23 +13723,104 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _core_utils_Utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../core/utils/Utils */ "./game/core/utils/Utils.ts");
 /* harmony import */ var _enums__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../enums */ "./game/enums.ts");
+/* harmony import */ var _pixi_sound__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @pixi/sound */ "./node_modules/@pixi/sound/lib/index.mjs");
+/* harmony import */ var _core_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../core/utils/PixiUtils */ "./game/core/utils/PixiUtils.ts");
+/* harmony import */ var _api_PLINKODATA__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../api/PLINKODATA */ "./game/api/PLINKODATA.ts");
+
+
+
 
 
 class MainControl {
     constructor(game, api) {
+        this.enableChangeRiskMode = false;
+        this.ballReleased = 0;
         this.game = game;
         this.api = api;
+        _pixi_sound__WEBPACK_IMPORTED_MODULE_2__.sound.play("bgm", { volume: 0.1, loop: true });
         //login to the server
-        api.login();
+        api.login(() => {
+            console.log("login successful");
+            game.machine.betArea.updateBalance();
+            game.machine.betArea.updateBet();
+        });
         //api load event-------------------------------
         api.event.on(_enums__WEBPACK_IMPORTED_MODULE_1__.Event.INFO_RECEIVE_EVENT, () => { });
-        api.event.on(_enums__WEBPACK_IMPORTED_MODULE_1__.Event.PLAY_RECEIVE_EVENT, () => { });
+        game.machine.on(_enums__WEBPACK_IMPORTED_MODULE_1__.Event.BALL_DROP_COMPLETE, () => {
+            this.ballReleased -= 1;
+            game.machine.betArea.updateBalance();
+            this.isDisabled();
+        });
         //button events--------------------------------
-        (0,_core_utils_Utils__WEBPACK_IMPORTED_MODULE_0__.addButtonEvent)(game, () => {
-            //spin
+        (0,_core_utils_Utils__WEBPACK_IMPORTED_MODULE_0__.addButtonEvent)(game.machine.betArea.btn[5], () => {
+            //play
+            this.setDisable();
+            game.machine.betArea.updateBalance();
+            (0,_core_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_3__.buttonClickEffect)(game.machine.betArea.btn[5]);
             this.api.playRequest((data) => {
-                console.log("play", data);
+                _pixi_sound__WEBPACK_IMPORTED_MODULE_2__.sound.play("pling2", { volume: 1 });
+                this.ballReleased += 1;
                 this.game.machine.animateBall(data);
+            });
+        });
+        (0,_core_utils_Utils__WEBPACK_IMPORTED_MODULE_0__.addButtonEvent)(game.machine.betArea.btn[0], () => {
+            //add minus
+            if (this.isDisabled()) {
+                return;
+            }
+            _pixi_sound__WEBPACK_IMPORTED_MODULE_2__.sound.play("click", { volume: 0.2 });
+            (0,_core_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_3__.buttonClickEffect)(game.machine.betArea.btn[0]);
+            _api_PLINKODATA__WEBPACK_IMPORTED_MODULE_4__.PLINKODATA.minBet();
+            game.machine.betArea.updateBet();
+        });
+        (0,_core_utils_Utils__WEBPACK_IMPORTED_MODULE_0__.addButtonEvent)(game.machine.betArea.btn[1], () => {
+            //add bet
+            if (this.isDisabled()) {
+                return;
+            }
+            _pixi_sound__WEBPACK_IMPORTED_MODULE_2__.sound.play("click", { volume: 0.2 });
+            (0,_core_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_3__.buttonClickEffect)(game.machine.betArea.btn[1]);
+            _api_PLINKODATA__WEBPACK_IMPORTED_MODULE_4__.PLINKODATA.addBet();
+            game.machine.betArea.updateBet();
+        });
+        //--------------------------------------------------------
+        (0,_core_utils_Utils__WEBPACK_IMPORTED_MODULE_0__.addButtonEvent)(game.machine.betArea.btn[2], () => {
+            //low
+            if (this.isDisabled()) {
+                return;
+            }
+            _pixi_sound__WEBPACK_IMPORTED_MODULE_2__.sound.play("click", { volume: 0.2 });
+            (0,_core_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_3__.buttonClickEffect)(game.machine.betArea.btn[2]);
+            _api_PLINKODATA__WEBPACK_IMPORTED_MODULE_4__.PLINKODATA.RISK = _enums__WEBPACK_IMPORTED_MODULE_1__.RISKS.LOW;
+            game.machine.betArea.disableRiskButtons(2);
+            api.updateBet(() => {
+                game.machine.betArea.updateBet();
+            });
+        });
+        (0,_core_utils_Utils__WEBPACK_IMPORTED_MODULE_0__.addButtonEvent)(game.machine.betArea.btn[3], () => {
+            //mid
+            if (this.isDisabled()) {
+                return;
+            }
+            _pixi_sound__WEBPACK_IMPORTED_MODULE_2__.sound.play("click", { volume: 0.2 });
+            (0,_core_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_3__.buttonClickEffect)(game.machine.betArea.btn[3]);
+            _api_PLINKODATA__WEBPACK_IMPORTED_MODULE_4__.PLINKODATA.RISK = _enums__WEBPACK_IMPORTED_MODULE_1__.RISKS.MEDIUM;
+            game.machine.betArea.disableRiskButtons(3);
+            api.updateBet(() => {
+                game.machine.betArea.updateBet();
+            });
+        });
+        (0,_core_utils_Utils__WEBPACK_IMPORTED_MODULE_0__.addButtonEvent)(game.machine.betArea.btn[4], () => {
+            //high
+            if (this.isDisabled()) {
+                return;
+            }
+            _pixi_sound__WEBPACK_IMPORTED_MODULE_2__.sound.play("click", { volume: 0.2 });
+            (0,_core_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_3__.buttonClickEffect)(game.machine.betArea.btn[4]);
+            _api_PLINKODATA__WEBPACK_IMPORTED_MODULE_4__.PLINKODATA.RISK = _enums__WEBPACK_IMPORTED_MODULE_1__.RISKS.HIGH;
+            game.machine.betArea.disableRiskButtons(4);
+            api.updateBet(() => {
+                game.machine.betArea.updateBet();
             });
         });
         //keyboard shortcuts--------------------------
@@ -13576,6 +13829,77 @@ class MainControl {
             //this.api.infoRequest();
         });
     }
+    isDisabled() {
+        if (this.ballReleased > 0) {
+            console.log("ball", this.ballReleased);
+            this.game.machine.betArea.disableAbleAllButtons();
+            return true;
+        }
+        else {
+            this.game.machine.betArea.disableAbleAllButtons(false);
+            return false;
+        }
+    }
+    setDisable() {
+        this.game.machine.betArea.disableAbleAllButtons();
+    }
+}
+
+
+/***/ }),
+
+/***/ "./game/core/utils/PixiUtils.ts":
+/*!**************************************!*\
+  !*** ./game/core/utils/PixiUtils.ts ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   TP: () => (/* binding */ TP),
+/* harmony export */   addTickerEvent: () => (/* binding */ addTickerEvent),
+/* harmony export */   buttonClickEffect: () => (/* binding */ buttonClickEffect),
+/* harmony export */   changeGraphicsColor: () => (/* binding */ changeGraphicsColor)
+/* harmony export */ });
+/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
+/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
+//change graphics color
+
+
+function changeGraphicsColor(gfx, color, duration = 1) {
+    gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.to(gfx, { duration: duration, pixi: { lineColor: color } });
+}
+function addTickerEvent(action) {
+    const ticker = pixi_js__WEBPACK_IMPORTED_MODULE_0__.Ticker.shared.add((deltaTime) => {
+        action(ticker);
+    });
+    ticker.stop();
+    return ticker;
+}
+function buttonClickEffect(btn) {
+    const _scale = btn.scale.x;
+    gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.to(btn.scale, {
+        duration: 0.05,
+        repeat: 1,
+        yoyo: true,
+        x: _scale - 0.05,
+        y: _scale - 0.05,
+    });
+}
+function TP(base, texture) {
+    //texture packer
+    const arr = pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.get(base)._frames;
+    let i = 0;
+    let id = 0;
+    for (i = 0; i < arr.length; i++) {
+        if (arr[i].filename == texture) {
+            id = i;
+            pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.get(base).textures[id];
+            return pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.get(base).textures[id];
+        }
+    }
+    return pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.get(base).textures[id];
 }
 
 
@@ -13590,6 +13914,7 @@ class MainControl {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   NumberZero: () => (/* binding */ NumberZero),
 /* harmony export */   addButtonEvent: () => (/* binding */ addButtonEvent),
 /* harmony export */   addKeyboardEvent: () => (/* binding */ addKeyboardEvent),
 /* harmony export */   degToRad: () => (/* binding */ degToRad),
@@ -13670,7 +13995,7 @@ function numberComma(num, fixed = 0) {
         return "0";
     }
     else if (num >= 100000) {
-        return num.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        return num.toFixed(fixed).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
     else {
         return num.toFixed(fixed).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -13691,6 +14016,10 @@ function addButtonEvent(btn, btnUpFnc) {
         btnUpFnc(e);
     });
 }
+//convert number to 4 character string, ex: 0001","0002","0003"...
+function NumberZero(num, pad = 4) {
+    return String(num).padStart(pad, "0");
+}
 
 
 /***/ }),
@@ -13704,6 +14033,7 @@ function addButtonEvent(btn, btnUpFnc) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   BET_COLORS: () => (/* binding */ BET_COLORS),
 /* harmony export */   COLORS: () => (/* binding */ COLORS),
 /* harmony export */   CURRENCY: () => (/* binding */ CURRENCY),
 /* harmony export */   Event: () => (/* binding */ Event),
@@ -13744,6 +14074,9 @@ var Event;
     Event["STEP_RECEIVE_EVENT"] = "stepReceive";
     Event["PRELOAD_COMPLETE"] = "preloadComplete";
     Event["LOGIN_COMPLETE"] = "loginComplete";
+    Event["UPDATE_BET"] = "updateBetComplete";
+    Event["UPDATE_BALANCE"] = "updateBalance";
+    Event["BALL_DROP_COMPLETE"] = "ballDropComplete";
 })(Event || (Event = {}));
 var COLORS;
 (function (COLORS) {
@@ -13769,6 +14102,17 @@ var Method;
     Method["GET"] = "GET";
     Method["POST"] = "POST";
 })(Method || (Method = {}));
+var BET_COLORS;
+(function (BET_COLORS) {
+    BET_COLORS[BET_COLORS["RED1"] = 16737843] = "RED1";
+    BET_COLORS[BET_COLORS["RED2"] = 16737792] = "RED2";
+    BET_COLORS[BET_COLORS["ORANGE1"] = 16750848] = "ORANGE1";
+    BET_COLORS[BET_COLORS["ORANGE2"] = 16763904] = "ORANGE2";
+    BET_COLORS[BET_COLORS["YGREEN1"] = 10079232] = "YGREEN1";
+    BET_COLORS[BET_COLORS["YGREEN2"] = 6736947] = "YGREEN2";
+    BET_COLORS[BET_COLORS["GREEN1"] = 6736947] = "GREEN1";
+    BET_COLORS[BET_COLORS["GREEN2"] = 65280] = "GREEN2";
+})(BET_COLORS || (BET_COLORS = {}));
 
 
 /***/ }),
@@ -13800,6 +14144,172 @@ class SpriteV2 extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
 
 /***/ }),
 
+/***/ "./game/slot/view/screens/BetingArea.ts":
+/*!**********************************************!*\
+  !*** ./game/slot/view/screens/BetingArea.ts ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ BettingArea)
+/* harmony export */ });
+/* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
+/* harmony import */ var _enums__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../enums */ "./game/enums.ts");
+/* harmony import */ var _GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../GAMESETTINGS */ "./game/GAMESETTINGS.ts");
+/* harmony import */ var _api_PLINKODATA__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../api/PLINKODATA */ "./game/api/PLINKODATA.ts");
+/* harmony import */ var _core_utils_Utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../core/utils/Utils */ "./game/core/utils/Utils.ts");
+
+
+
+
+
+class BettingArea extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
+    constructor() {
+        super();
+        this.box = [];
+        this.btn = [];
+        this.labels = [];
+        this.fields = [];
+        this.anchor.set(0.5);
+        this.pivot.set(0.5);
+        //bg
+        this.box[0] = this.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Graphics());
+        this.box[0].roundRect(-150, -100, 300, 400, 25);
+        this.box[0].fill(0x000000, 1);
+        this.box[0].alpha = 0.75;
+        this.box[0].position.set(0, -50);
+        //this.box[0].stroke({ color: COLORS.BLACK, width: 2 });
+        //bet
+        this.box[1] = this.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Graphics());
+        this.box[1].roundRect(-60, -50, 120, 50, 10);
+        this.box[1].fill(0xffffff);
+        this.box[1].position.set(0, -50);
+        //balance
+        this.box[2] = this.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Graphics());
+        this.box[2].roundRect(-130, -50, 260, 50, 10);
+        this.box[2].fill(0xffffff);
+        this.box[2].position.set(0, 140);
+        //buttons---------------------------------------
+        //bet minus
+        this.btn[0] = this.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Graphics());
+        this.btn[0].roundRect(-30, -45, 60, 50, 10);
+        this.btn[0].fill(0x000033);
+        this.btn[0].roundRect(-30, -50, 60, 50, 10);
+        this.btn[0].fill(0x333366);
+        this.btn[0].position.set(-100, -50);
+        //bet plus
+        this.btn[1] = this.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Graphics());
+        this.btn[1].roundRect(-30, -45, 60, 50, 10);
+        this.btn[1].fill(0x000033);
+        this.btn[1].roundRect(-30, -50, 60, 50, 10);
+        this.btn[1].fill(0x333366);
+        this.btn[1].position.set(100, -50);
+        //low
+        this.btn[2] = this.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Graphics());
+        this.btn[2].roundRect(-40, -45, 80, 50, 10);
+        this.btn[2].fill(0x000033);
+        this.btn[2].roundRect(-40, -50, 80, 50, 10);
+        this.btn[2].fill(0x333366);
+        this.btn[2].position.set(-90, 50);
+        this.btn[3] = this.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Graphics());
+        this.btn[3].roundRect(-40, -45, 80, 50, 10);
+        this.btn[3].fill(0x000033);
+        this.btn[3].roundRect(-40, -50, 80, 50, 10);
+        this.btn[3].fill(0x333366);
+        this.btn[3].position.set(0, 50);
+        //center
+        this.btn[4] = this.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Graphics());
+        this.btn[4].roundRect(-40, -45, 80, 50, 10);
+        this.btn[4].fill(0x000033);
+        this.btn[4].roundRect(-40, -50, 80, 50, 10);
+        this.btn[4].fill(0x333366);
+        this.btn[4].position.set(90, 50);
+        //play
+        this.btn[5] = this.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Graphics());
+        this.btn[5].roundRect(-130, -45, 260, 50, 10);
+        this.btn[5].fill(0x55aa22);
+        this.btn[5].roundRect(-130, -50, 260, 50, 10);
+        this.btn[5].fill(0x66cc33);
+        this.btn[5].position.set(0, 230);
+        this.labels[0] = this.btn[0].addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__.GAMESETTINGS.textstyle1));
+        this.labels[0].y = -25;
+        this.labels[0].anchor.set(0.5);
+        this.labels[0].text = "-";
+        this.labels[1] = this.btn[1].addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__.GAMESETTINGS.textstyle1));
+        this.labels[1].y = -25;
+        this.labels[1].anchor.set(0.5);
+        this.labels[1].text = "+";
+        this.labels[2] = this.btn[2].addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__.GAMESETTINGS.textstyle1));
+        this.labels[2].y = -25;
+        this.labels[2].anchor.set(0.5);
+        this.labels[2].text = "LOW";
+        this.labels[3] = this.btn[3].addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__.GAMESETTINGS.textstyle1));
+        this.labels[3].y = -25;
+        this.labels[3].anchor.set(0.5);
+        this.labels[3].text = "MED";
+        this.labels[4] = this.btn[4].addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__.GAMESETTINGS.textstyle1));
+        this.labels[4].y = -25;
+        this.labels[4].anchor.set(0.5);
+        this.labels[4].text = "HIGH";
+        this.labels[5] = this.btn[5].addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__.GAMESETTINGS.textstyle1));
+        this.labels[5].y = -25;
+        this.labels[5].anchor.set(0.5);
+        this.labels[5].text = "DROP BALL";
+        //bet
+        this.labels[5] = this.btn[5].addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__.GAMESETTINGS.textstyle1));
+        this.labels[5].y = -25;
+        this.labels[5].anchor.set(0.5);
+        this.labels[5].text = "DROP BALL";
+        //dynamic text
+        this.fields[0] = this.box[1].addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__.GAMESETTINGS.textstyle1));
+        this.fields[0].y = -25;
+        this.fields[0].style.fill = 0x0;
+        this.fields[0].anchor.set(0.5);
+        this.fields[0].text = "100";
+        //balance text
+        this.fields[1] = this.box[2].addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__.GAMESETTINGS.textstyle1));
+        this.fields[1].y = -25;
+        this.fields[1].style.fill = 0x0;
+        this.fields[1].anchor.set(0.5);
+        this.fields[1].text = "0";
+        this.disableRiskButtons(2);
+    }
+    disableRiskButtons(id) {
+        this.labels[2].tint = 0x666666;
+        this.labels[3].tint = 0x666666;
+        this.labels[4].tint = 0x666666;
+        this.labels[id].tint = 0xffffff;
+    }
+    disableAbleAllButtons(id = true) {
+        if (id) {
+            this.btn[0].tint = 0x666666;
+            this.btn[1].tint = 0x666666;
+            this.btn[2].tint = 0x666666;
+            this.btn[3].tint = 0x666666;
+            this.btn[4].tint = 0x666666;
+        }
+        else {
+            this.btn[0].tint = 0xffffff;
+            this.btn[1].tint = 0xffffff;
+            this.btn[2].tint = 0xffffff;
+            this.btn[3].tint = 0xffffff;
+            this.btn[4].tint = 0xffffff;
+        }
+    }
+    updateBet() {
+        this.fields[0].text = (0,_core_utils_Utils__WEBPACK_IMPORTED_MODULE_4__.numberComma)(_api_PLINKODATA__WEBPACK_IMPORTED_MODULE_3__.PLINKODATA.BET / 100, 2);
+    }
+    updateBalance() {
+        this.fields[1].text =
+            _enums__WEBPACK_IMPORTED_MODULE_1__.CURRENCY.PHP + (0,_core_utils_Utils__WEBPACK_IMPORTED_MODULE_4__.numberComma)(_api_PLINKODATA__WEBPACK_IMPORTED_MODULE_3__.PLINKODATA.BALANCE / 100, 2);
+    }
+}
+
+
+/***/ }),
+
 /***/ "./game/slot/view/screens/MainGame.ts":
 /*!********************************************!*\
   !*** ./game/slot/view/screens/MainGame.ts ***!
@@ -13814,6 +14324,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
 /* harmony import */ var _core_utils_Utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../core/utils/Utils */ "./game/core/utils/Utils.ts");
 /* harmony import */ var _PlinkoMachine__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./PlinkoMachine */ "./game/slot/view/screens/PlinkoMachine.ts");
+/* harmony import */ var _pixi_components_SpriteV2__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../pixi-components/SpriteV2 */ "./game/pixi-components/SpriteV2.ts");
+
 
 
 
@@ -13842,9 +14354,10 @@ class MainGame extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
     }
     drawGameElements() {
         //add game background
-        const bg = this.gameContainer.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Graphics());
+        const bgSprite = this.gameContainer.addChild(new _pixi_components_SpriteV2__WEBPACK_IMPORTED_MODULE_3__["default"](pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.get("bg")));
+        /*const bg: Graphics = this.gameContainer.addChild(new Graphics());
         bg.rect(-640, -360, 1280, 720);
-        bg.fill(0x333333);
+        bg.fill(0x333333);*/
         this.gameContainer.addChild(this.machine);
         this.machine.position.set(0, 0);
     }
@@ -13894,11 +14407,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var pixi_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/index.mjs");
 /* harmony import */ var _pixi_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../pixi-components/SpriteV2 */ "./game/pixi-components/SpriteV2.ts");
 /* harmony import */ var _GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../GAMESETTINGS */ "./game/GAMESETTINGS.ts");
-/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
-/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/gsap-core.js");
+/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
+/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/gsap-core.js");
 /* harmony import */ var _core_utils_Utils__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../core/utils/Utils */ "./game/core/utils/Utils.ts");
 /* harmony import */ var _api_PLINKODATA__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../api/PLINKODATA */ "./game/api/PLINKODATA.ts");
 /* harmony import */ var _pixi_sound__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @pixi/sound */ "./node_modules/@pixi/sound/lib/index.mjs");
+/* harmony import */ var _enums__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../enums */ "./game/enums.ts");
+/* harmony import */ var _BetingArea__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./BetingArea */ "./game/slot/view/screens/BetingArea.ts");
+
+
 
 
 
@@ -13923,6 +14440,7 @@ class PlinkoMachine extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
         this.floorNum = 8;
         this.bet_id = 0;
         this.currentWinFlier = 0;
+        this.colorSetId = 0;
         this.betListCount = [
             42, 52, 63, 75, 88, 102, 117, 133, 150, 168, 207,
         ];
@@ -13931,16 +14449,15 @@ class PlinkoMachine extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
         this.total_balls = 50;
         this.app = app;
         this.addChild(this.container);
+        this.betArea = this.container.addChild(new _BetingArea__WEBPACK_IMPORTED_MODULE_7__["default"]());
+        this.betArea.position.set(500, 0);
     }
     init() {
-        const bg = this.container.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Graphics());
-        bg.rect(-340, -340, 680, 680);
-        bg.fill(0x303030);
         this.bet_id = _api_PLINKODATA__WEBPACK_IMPORTED_MODULE_4__.PLINKODATA.BET_SIZE - 8;
-        console.log("ss", _api_PLINKODATA__WEBPACK_IMPORTED_MODULE_4__.PLINKODATA.BET_SIZE);
-        this.container.addChild(this.blockerContainer);
+        this.colorSetId = this.bet_id - 1;
         this.blockerContainer.scale.set(0.85 - 0.05 * this.bet_id);
         this.blockerContainer.position.set(0, -250);
+        this.container.addChild(this.blockerContainer);
         this.drawBlockers(this.betListCount[this.bet_id]);
         this.createBlockerId();
         this.drawBalls();
@@ -13958,7 +14475,7 @@ class PlinkoMachine extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
         let _y = 0;
         let _cap_lvl = 3;
         let _temp_lvl = 0;
-        let tints = [0x999999, 0x666666];
+        let tints = [0x666666, 0x666666];
         let tint_id = 0;
         let tint_ctr = 0;
         let betlist = this.betListCount;
@@ -13979,7 +14496,7 @@ class PlinkoMachine extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
                 _y += _ygap;
                 _x = _base_x + _xgap * _temp_lvl;
                 this.blockers[i].position.set(_x + _xgap * _temp_lvl, _y);
-                //chanage tint
+                //change tint
                 _temp_lvl += 1;
                 tint_ctr += 1;
                 tint_id = tint_ctr % 2;
@@ -14009,7 +14526,6 @@ class PlinkoMachine extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
         let temp_max = 3;
         let temp_arr = [];
         for (i = 0; i < this.betListCount[this.betListCount.length - 1]; i++) {
-            //
             temp_arr.push(i);
             k += 1;
             if (k >= temp_max) {
@@ -14035,6 +14551,7 @@ class PlinkoMachine extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
             if (i > this.bet_id + 7) {
                 this.betblocks[i].visible = false;
             }
+            this.betblocks[i].tint = _api_PLINKODATA__WEBPACK_IMPORTED_MODULE_4__.PLINKODATA.BETCOLORS[this.colorSetId][i];
             //add texts
             this.betLabels[i] = this.betblocks[i].addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__.GAMESETTINGS.textstyle1));
             this.betLabels[i].text = "0x";
@@ -14070,7 +14587,7 @@ class PlinkoMachine extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
     animateBall(data) {
         const winFlierId = this.currentWinFlier;
         const betId = data.column;
-        this.updateWinFlier(data.wonAmount);
+        this.updateWinFlier(data.wonAmount, betId);
         const path = this.generatePathID(betId);
         this.floorNum = this.bet_id + 8;
         const ball = this.balls[this.currentBall];
@@ -14080,27 +14597,27 @@ class PlinkoMachine extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
         if (this.currentBall >= this.total_balls) {
             this.currentBall = 0;
         }
-        const tl = gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.timeline();
+        const tl = gsap__WEBPACK_IMPORTED_MODULE_8__.gsap.timeline();
         let _gap = 80;
         let i = 0;
         for (i = 1; i < this.floorNum; i++) {
             const target = this.blockers[path[i]];
             let num = i;
             tl.add([
-                gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.to(ball, {
+                gsap__WEBPACK_IMPORTED_MODULE_8__.gsap.to(ball, {
                     duration: 0.2,
-                    ease: gsap__WEBPACK_IMPORTED_MODULE_7__.Power1.easeInOut,
+                    ease: gsap__WEBPACK_IMPORTED_MODULE_9__.Power1.easeInOut,
                     x: target.x,
                     onStart: () => {
-                        _pixi_sound__WEBPACK_IMPORTED_MODULE_5__.sound.play("beep_4", { volume: 0.25, speed: 1.75 });
+                        _pixi_sound__WEBPACK_IMPORTED_MODULE_5__.sound.play("beep_5", { volume: 0.25, speed: 1.25 });
                     },
                     onComplete: () => {
                         this.bounceAnimationBlocker(target);
                         if (num == this.floorNum - 1) {
                             ///show win
-                            this.showWin(target, winFlierId);
+                            this.showWin(target, winFlierId, betId);
                             ball.visible = false;
-                            gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.to(this.betblocks[betId].scale, {
+                            gsap__WEBPACK_IMPORTED_MODULE_8__.gsap.to(this.betblocks[betId].scale, {
                                 startAt: { x: 1, y: 1 },
                                 x: 1.5,
                                 y: 1.5,
@@ -14111,16 +14628,18 @@ class PlinkoMachine extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
                         }
                     },
                 }),
-                gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.to(ball, {
+                gsap__WEBPACK_IMPORTED_MODULE_8__.gsap.to(ball, {
                     duration: 0.2,
-                    ease: gsap__WEBPACK_IMPORTED_MODULE_7__.Back.easeIn,
+                    ease: gsap__WEBPACK_IMPORTED_MODULE_9__.Back.easeIn,
                     y: ball.x + _gap * i - 25,
                 }),
             ]);
         }
     }
-    updateWinFlier(wonAmount) {
+    updateWinFlier(wonAmount, id) {
         this.winLabels[this.currentWinFlier].text = wonAmount / 100;
+        this.winLabelsBG[this.currentWinFlier].tint =
+            _api_PLINKODATA__WEBPACK_IMPORTED_MODULE_4__.PLINKODATA.BETCOLORS[this.colorSetId][id];
         this.currentWinFlier += 1;
         if (this.currentWinFlier >= 10) {
             this.currentWinFlier = 0;
@@ -14156,34 +14675,46 @@ class PlinkoMachine extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
         return block_id;
     }
     bounceAnimationBlocker(target) {
-        gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.to(target.scale, {
+        const color = 0x666666;
+        target.tint = 0xffffff;
+        gsap__WEBPACK_IMPORTED_MODULE_8__.gsap.to(target.scale, {
             duration: 0.1,
             repeat: 3,
             yoyo: true,
             x: 1.5,
             y: 1.5,
             startAt: { x: 1, y: 1 },
+            onComplete: () => {
+                target.tint = color;
+            },
         });
     }
-    showWin(target, id) {
-        _pixi_sound__WEBPACK_IMPORTED_MODULE_5__.sound.play("score", {
+    showWin(target, id, betId) {
+        let winFX = "score2";
+        if (betId < 2 || betId > _api_PLINKODATA__WEBPACK_IMPORTED_MODULE_4__.PLINKODATA.ROWS - 2) {
+            winFX = "win";
+        }
+        else {
+            winFX = "score2";
+        }
+        _pixi_sound__WEBPACK_IMPORTED_MODULE_5__.sound.play(winFX, {
             volume: 0.3,
             speed: 1,
         });
         this.winLabelsContainer[id].visible = true;
         this.winLabelsContainer[id].position.set(target.x, target.y);
-        gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.to(this.winLabelsContainer[id], {
+        gsap__WEBPACK_IMPORTED_MODULE_8__.gsap.to(this.winLabelsContainer[id], {
             y: target.y - 250,
             alpha: 1,
             duration: 1,
-            ease: gsap__WEBPACK_IMPORTED_MODULE_7__.Sine.easeOut,
+            ease: gsap__WEBPACK_IMPORTED_MODULE_9__.Sine.easeOut,
         });
-        gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.to(this.winLabelsContainer[id], {
+        gsap__WEBPACK_IMPORTED_MODULE_8__.gsap.to(this.winLabelsContainer[id], {
             alpha: 0,
             duration: 0.5,
             delay: 1.5,
         });
-        gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.to(this.winLabelsContainer[id].scale, {
+        gsap__WEBPACK_IMPORTED_MODULE_8__.gsap.to(this.winLabelsContainer[id].scale, {
             x: 1.15,
             y: 1.15,
             repeat: 1,
@@ -14191,6 +14722,7 @@ class PlinkoMachine extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
             duration: 0.2,
             delay: 1.4,
         });
+        this.emit(_enums__WEBPACK_IMPORTED_MODULE_6__.Event.BALL_DROP_COMPLETE);
     }
     generatePathID(result) {
         let i = 0;
@@ -75133,7 +75665,7 @@ const cssstyle = __webpack_require__(/*! ../game/core/template/css/game.css */ "
     //------------------------------------
     const app = new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Application();
     yield app.init({
-        background: "#000000",
+        background: "#14192A",
         resolution: 2,
         resizeTo: window,
         antialias: false,
@@ -75161,6 +75693,10 @@ const cssstyle = __webpack_require__(/*! ../game/core/template/css/game.css */ "
     gameContainer.addChild(mainGame);
     api.event.on(_enums__WEBPACK_IMPORTED_MODULE_3__.Event.LOGIN_COMPLETE, () => {
         console.log("Login Complete");
+        mainGame.init();
+    });
+    api.event.on(_enums__WEBPACK_IMPORTED_MODULE_3__.Event.UPDATE_BET, () => {
+        console.log("update Complete");
         mainGame.init();
     });
     //Add all game controls-----------------------------

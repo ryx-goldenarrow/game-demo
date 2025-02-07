@@ -13339,26 +13339,27 @@ class Preloader extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
     init() {
         (() => __awaiter(this, void 0, void 0, function* () {
             //init game assets----------------------------------------------------------
-			console.log("test #")
-            const _dir = "";
+            const dir = ""; //html/12714995/";
             pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.addBundle("images", {
                 //load spritesheet
-                plinko: _dir + "game/media/images/plinko/plinko.json",
-                pling: _dir + "game/media/sounds/m4a/sfx-pling-1.m4a",
-                pling2: _dir + "game/media/sounds/m4a/sfx-pling-2.m4a",
-                beep_1: _dir + "game/media/sounds/m4a/sfx-beep-1.m4a",
-                beep_2: _dir + "game/media/sounds/m4a/sfx-beep-2.m4a",
-                beep_3: _dir + "game/media/sounds/m4a/sfx-beep-3.m4a",
-                beep_4: _dir + "game/media/sounds/m4a/sfx-beep-4.m4a",
-                beep_5: _dir + "game/media/sounds/m4a/sfx-beep-5.m4a",
-                score: _dir + "game/media/sounds/m4a/sfx-score.m4a",
-                score2: _dir + "game/media/sounds/m4a/sfx-score2.m4a",
-                click: _dir + "game/media/sounds/m4a/sfx-click.m4a",
-                btn1: _dir + "game/media/sounds/m4a/sfx-btn-1.m4a",
-                btn2: _dir + "game/media/sounds/m4a/sfx-btn-2.m4a",
-                win: _dir + "game/media/sounds/m4a/sfx-win-cute.m4a",
-                bg: _dir + "game/media/images/plinko/bg8@2x.png",
-                bgm: _dir + "game/media/sounds/m4a/bgm-plinko.m4a",
+                plinko: dir + "game/media/images/plinko/plinko.json",
+                //images
+                bg: dir + "/game/media/images/plinko/bg8@2x.png",
+                //sound
+                pling1: dir + "/game/media/sounds/m4a/sfx-pling-1.m4a",
+                pling2: dir + "/game/media/sounds/m4a/sfx-pling-2.m4a",
+                beep_1: dir + "/game/media/sounds/m4a/sfx-beep-1.m4a",
+                beep_2: dir + "/game/media/sounds/m4a/sfx-beep-2.m4a",
+                beep_3: dir + "/game/media/sounds/m4a/sfx-beep-3.m4a",
+                beep_4: dir + "/game/media/sounds/m4a/sfx-beep-4.m4a",
+                beep_5: dir + "/game/media/sounds/m4a/sfx-beep-5.m4a",
+                score1: dir + "/game/media/sounds/m4a/sfx-score1.m4a",
+                score2: dir + "/game/media/sounds/m4a/sfx-score2.m4a",
+                click: dir + "/game/media/sounds/m4a/sfx-click.m4a",
+                btn1: dir + "/game/media/sounds/m4a/sfx-btn-1.m4a",
+                btn2: dir + "/game/media/sounds/m4a/sfx-btn-2.m4a",
+                win: dir + "/game/media/sounds/m4a/sfx-win-cute.m4a",
+                bgm: dir + "/game/media/sounds/m4a/bgm-plinko.m4a",
             });
         }))();
         this.progress_text.text = "0 %";
@@ -13420,9 +13421,9 @@ class API {
         this.LOGIN_URL = "";
         this.PLAY_REQUEST_URL = "";
         this.UPDATE_BET_URL = "";
-        this.addURLS(false);
+        this.addURLS();
     }
-    addURLS(orig = true) {
+    addURLS() {
         this.LOGIN_URL = `https://plinko-be.godigitalcorp.com/multipliers?rows=${_PLINKODATA__WEBPACK_IMPORTED_MODULE_2__.PLINKODATA.ROWS}&risk=${_PLINKODATA__WEBPACK_IMPORTED_MODULE_2__.PLINKODATA.RISK}`; //prettier-ignore
         this.PLAY_REQUEST_URL = "https://plinko-be.godigitalcorp.com/bet";
     }
@@ -13476,11 +13477,21 @@ class API {
             });
         });
     }
+    updateSize(action) {
+        this.UPDATE_BET_URL = `https://plinko-be.godigitalcorp.com/multipliers?rows=${_PLINKODATA__WEBPACK_IMPORTED_MODULE_2__.PLINKODATA.ROWS}&risk=${_PLINKODATA__WEBPACK_IMPORTED_MODULE_2__.PLINKODATA.RISK}`; //prettier-ignore
+        this.get(this.UPDATE_BET_URL, this.sendLoginData(), (response) => {
+            //get token from login using accessToken
+            response.json().then((resData) => {
+                this.extractLoadData(resData);
+                this.event.emit(_enums__WEBPACK_IMPORTED_MODULE_1__.Event.UPDATE_SIZE, resData);
+                action(resData);
+            });
+        });
+    }
     //PLAY REQUEST
     playRequest(action) {
         this.post(this.PLAY_REQUEST_URL, this.sendPlayData(), (response) => {
             response.json().then((resData) => {
-                //console.log("response", resData);
                 this.extractPlayData(resData);
                 action(resData);
             });
@@ -13510,6 +13521,7 @@ class API {
         _PLINKODATA__WEBPACK_IMPORTED_MODULE_2__.PLINKODATA.BALANCE = data.balance;
         _PLINKODATA__WEBPACK_IMPORTED_MODULE_2__.PLINKODATA.MULTIPLIERS_SET = data.multipliers;
         _PLINKODATA__WEBPACK_IMPORTED_MODULE_2__.PLINKODATA.BET_SIZE = data.size;
+        _PLINKODATA__WEBPACK_IMPORTED_MODULE_2__.PLINKODATA.ROWS = data.size - 1;
     }
 }
 
@@ -13534,12 +13546,12 @@ const PLINKODATA = {
     RISK: _enums__WEBPACK_IMPORTED_MODULE_0__.RISKS.LOW,
     BALANCE: 0,
     ROWS: 8,
+    BET_SIZE: 0,
     CURRENCY: "PHP",
     TOTAL_WIN: 0,
     RESULT_ROW: 1,
     WON_AMOUNT: 0,
     MULTIPLIER: 0,
-    BET_SIZE: 0,
     MULTIPLIERS_SET: [],
     PLAYER_BET_LIST: [100, 200, 500, 1500, 2000, 3000, 5000, 10000],
     CURRENT_BET_ID: 0,
@@ -13555,6 +13567,17 @@ const PLINKODATA = {
             this.CURRENT_BET_ID -= 1;
         }
         this.BET = this.PLAYER_BET_LIST[this.CURRENT_BET_ID];
+    },
+    //----
+    addSize: function () {
+        if (this.ROWS < 16) {
+            this.ROWS += 1;
+        }
+    },
+    minSize: function () {
+        if (this.ROWS > 8) {
+            this.ROWS -= 1;
+        }
     },
     deductBet() {
         this.BALANCE = this.BALANCE - this.BET;
@@ -13765,7 +13788,7 @@ class MainControl {
             });
         });
         (0,_core_utils_Utils__WEBPACK_IMPORTED_MODULE_0__.addButtonEvent)(game.machine.betArea.btn[0], () => {
-            //add minus
+            // minus bet
             if (this.isDisabled()) {
                 return;
             }
@@ -13822,6 +13845,40 @@ class MainControl {
             game.machine.betArea.disableRiskButtons(4);
             api.updateBet(() => {
                 game.machine.betArea.updateBet();
+            });
+        });
+        //--------------------------------------------------------
+        (0,_core_utils_Utils__WEBPACK_IMPORTED_MODULE_0__.addButtonEvent)(game.machine.betArea.btn[6], () => {
+            //min size
+            if (this.isDisabled()) {
+                return;
+            }
+            if (_api_PLINKODATA__WEBPACK_IMPORTED_MODULE_4__.PLINKODATA.ROWS < 9) {
+                return;
+            }
+            console.log("aa", _api_PLINKODATA__WEBPACK_IMPORTED_MODULE_4__.PLINKODATA.BET_SIZE);
+            _pixi_sound__WEBPACK_IMPORTED_MODULE_2__.sound.play("click", { volume: 0.2 });
+            (0,_core_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_3__.buttonClickEffect)(game.machine.betArea.btn[6]);
+            api.updateSize(() => {
+                _api_PLINKODATA__WEBPACK_IMPORTED_MODULE_4__.PLINKODATA.minSize();
+                game.machine.betArea.updateSize();
+                this.game.machine.updateSize();
+            });
+        });
+        (0,_core_utils_Utils__WEBPACK_IMPORTED_MODULE_0__.addButtonEvent)(game.machine.betArea.btn[7], () => {
+            //add size
+            if (this.isDisabled()) {
+                return;
+            }
+            if (_api_PLINKODATA__WEBPACK_IMPORTED_MODULE_4__.PLINKODATA.ROWS > 15) {
+                return;
+            }
+            _pixi_sound__WEBPACK_IMPORTED_MODULE_2__.sound.play("click", { volume: 0.2 });
+            (0,_core_utils_PixiUtils__WEBPACK_IMPORTED_MODULE_3__.buttonClickEffect)(game.machine.betArea.btn[7]);
+            api.updateSize(() => {
+                _api_PLINKODATA__WEBPACK_IMPORTED_MODULE_4__.PLINKODATA.addSize();
+                game.machine.betArea.updateSize();
+                this.game.machine.updateSize();
             });
         });
         //keyboard shortcuts--------------------------
@@ -14076,6 +14133,7 @@ var Event;
     Event["PRELOAD_COMPLETE"] = "preloadComplete";
     Event["LOGIN_COMPLETE"] = "loginComplete";
     Event["UPDATE_BET"] = "updateBetComplete";
+    Event["UPDATE_SIZE"] = "updateSizeComplete";
     Event["UPDATE_BALANCE"] = "updateBalance";
     Event["BALL_DROP_COMPLETE"] = "ballDropComplete";
 })(Event || (Event = {}));
@@ -14177,21 +14235,25 @@ class BettingArea extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
         this.pivot.set(0.5);
         //bg
         this.box[0] = this.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Graphics());
-        this.box[0].roundRect(-150, -100, 300, 400, 25);
+        this.box[0].roundRect(-150, -125, 300, 370, 25);
         this.box[0].fill(0x000000, 1);
         this.box[0].alpha = 0.75;
-        this.box[0].position.set(0, -50);
-        //this.box[0].stroke({ color: COLORS.BLACK, width: 2 });
+        this.box[0].position.set(0, -100);
         //bet
         this.box[1] = this.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Graphics());
         this.box[1].roundRect(-60, -50, 120, 50, 10);
         this.box[1].fill(0xffffff);
-        this.box[1].position.set(0, -50);
-        //balance
+        this.box[1].position.set(0, -140);
+        //size
         this.box[2] = this.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Graphics());
-        this.box[2].roundRect(-130, -50, 260, 50, 10);
+        this.box[2].roundRect(-60, -50, 120, 50, 10);
         this.box[2].fill(0xffffff);
-        this.box[2].position.set(0, 140);
+        this.box[2].position.set(0, -60);
+        //balance
+        this.box[3] = this.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Graphics());
+        this.box[3].roundRect(-130, -50, 260, 50, 10);
+        this.box[3].fill(0xffffff);
+        this.box[3].position.set(0, 130);
         //buttons---------------------------------------
         //bet minus
         this.btn[0] = this.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Graphics());
@@ -14199,41 +14261,57 @@ class BettingArea extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
         this.btn[0].fill(0x000033);
         this.btn[0].roundRect(-30, -50, 60, 50, 10);
         this.btn[0].fill(0x333366);
-        this.btn[0].position.set(-100, -50);
+        this.btn[0].position.set(-100, -140);
         //bet plus
         this.btn[1] = this.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Graphics());
         this.btn[1].roundRect(-30, -45, 60, 50, 10);
         this.btn[1].fill(0x000033);
         this.btn[1].roundRect(-30, -50, 60, 50, 10);
         this.btn[1].fill(0x333366);
-        this.btn[1].position.set(100, -50);
+        this.btn[1].position.set(100, -140);
         //low
         this.btn[2] = this.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Graphics());
         this.btn[2].roundRect(-40, -45, 80, 50, 10);
         this.btn[2].fill(0x000033);
         this.btn[2].roundRect(-40, -50, 80, 50, 10);
         this.btn[2].fill(0x333366);
-        this.btn[2].position.set(-90, 50);
+        this.btn[2].position.set(-90, 20);
+        //med
         this.btn[3] = this.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Graphics());
         this.btn[3].roundRect(-40, -45, 80, 50, 10);
         this.btn[3].fill(0x000033);
         this.btn[3].roundRect(-40, -50, 80, 50, 10);
         this.btn[3].fill(0x333366);
-        this.btn[3].position.set(0, 50);
-        //center
+        this.btn[3].position.set(0, 20);
+        //high
         this.btn[4] = this.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Graphics());
         this.btn[4].roundRect(-40, -45, 80, 50, 10);
         this.btn[4].fill(0x000033);
         this.btn[4].roundRect(-40, -50, 80, 50, 10);
         this.btn[4].fill(0x333366);
-        this.btn[4].position.set(90, 50);
+        this.btn[4].position.set(90, 20);
         //play
         this.btn[5] = this.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Graphics());
         this.btn[5].roundRect(-130, -45, 260, 50, 10);
         this.btn[5].fill(0x55aa22);
         this.btn[5].roundRect(-130, -50, 260, 50, 10);
         this.btn[5].fill(0x66cc33);
-        this.btn[5].position.set(0, 230);
+        this.btn[5].position.set(0, 210);
+        //size minus
+        this.btn[6] = this.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Graphics());
+        this.btn[6].roundRect(-30, -45, 60, 50, 10);
+        this.btn[6].fill(0x000033);
+        this.btn[6].roundRect(-30, -50, 60, 50, 10);
+        this.btn[6].fill(0x333366);
+        this.btn[6].position.set(-100, -60);
+        //size plus
+        this.btn[7] = this.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Graphics());
+        this.btn[7].roundRect(-30, -45, 60, 50, 10);
+        this.btn[7].fill(0x000033);
+        this.btn[7].roundRect(-30, -50, 60, 50, 10);
+        this.btn[7].fill(0x333366);
+        this.btn[7].position.set(100, -60);
+        //
         this.labels[0] = this.btn[0].addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__.GAMESETTINGS.textstyle1));
         this.labels[0].y = -25;
         this.labels[0].anchor.set(0.5);
@@ -14258,24 +14336,59 @@ class BettingArea extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
         this.labels[5].y = -25;
         this.labels[5].anchor.set(0.5);
         this.labels[5].text = "DROP BALL";
-        //bet
+        //play label
         this.labels[5] = this.btn[5].addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__.GAMESETTINGS.textstyle1));
         this.labels[5].y = -25;
         this.labels[5].anchor.set(0.5);
         this.labels[5].text = "DROP BALL";
-        //dynamic text
+        this.labels[6] = this.btn[6].addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__.GAMESETTINGS.textstyle1));
+        this.labels[6].y = -25;
+        this.labels[6].anchor.set(0.5);
+        this.labels[6].text = "-";
+        this.labels[7] = this.btn[7].addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__.GAMESETTINGS.textstyle1));
+        this.labels[7].y = -25;
+        this.labels[7].anchor.set(0.5);
+        this.labels[7].text = "+";
+        this.labels[8] = this.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__.GAMESETTINGS.textstyle1));
+        this.labels[8].y = -200;
+        this.labels[8].style.fontSize = 20;
+        this.labels[8].anchor.set(0.5);
+        this.labels[8].text = "BET";
+        this.labels[9] = this.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__.GAMESETTINGS.textstyle1));
+        this.labels[9].y = -120;
+        this.labels[9].style.fontSize = 20;
+        this.labels[9].anchor.set(0.5);
+        this.labels[9].text = "SIZE";
+        this.labels[10] = this.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__.GAMESETTINGS.textstyle1));
+        this.labels[10].y = -40;
+        this.labels[10].style.fontSize = 20;
+        this.labels[10].anchor.set(0.5);
+        this.labels[10].text = "RISK";
+        this.labels[11] = this.addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__.GAMESETTINGS.textstyle1));
+        this.labels[11].y = 60;
+        this.labels[11].style.fontSize = 20;
+        this.labels[11].anchor.set(0.5);
+        this.labels[11].text = "BALANCE";
+        //bet text
         this.fields[0] = this.box[1].addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__.GAMESETTINGS.textstyle1));
         this.fields[0].y = -25;
         this.fields[0].style.fill = 0x0;
         this.fields[0].anchor.set(0.5);
-        this.fields[0].text = "100";
-        //balance text
+        this.fields[0].text = "0";
+        //size text
         this.fields[1] = this.box[2].addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__.GAMESETTINGS.textstyle1));
         this.fields[1].y = -25;
         this.fields[1].style.fill = 0x0;
         this.fields[1].anchor.set(0.5);
         this.fields[1].text = "0";
+        //balance text
+        this.fields[2] = this.box[3].addChild(new pixi_js__WEBPACK_IMPORTED_MODULE_0__.Text(_GAMESETTINGS__WEBPACK_IMPORTED_MODULE_2__.GAMESETTINGS.textstyle1));
+        this.fields[2].y = -25;
+        this.fields[2].style.fill = 0x0;
+        this.fields[2].anchor.set(0.5);
+        this.fields[2].text = "0";
         this.disableRiskButtons(2);
+        this.updateSize();
     }
     disableRiskButtons(id) {
         this.labels[2].tint = 0x666666;
@@ -14290,6 +14403,8 @@ class BettingArea extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
             this.btn[2].tint = 0x666666;
             this.btn[3].tint = 0x666666;
             this.btn[4].tint = 0x666666;
+            this.btn[6].tint = 0x666666;
+            this.btn[7].tint = 0x666666;
         }
         else {
             this.btn[0].tint = 0xffffff;
@@ -14297,13 +14412,18 @@ class BettingArea extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
             this.btn[2].tint = 0xffffff;
             this.btn[3].tint = 0xffffff;
             this.btn[4].tint = 0xffffff;
+            this.btn[6].tint = 0xffffff;
+            this.btn[7].tint = 0xffffff;
         }
     }
     updateBet() {
         this.fields[0].text = (0,_core_utils_Utils__WEBPACK_IMPORTED_MODULE_4__.numberComma)(_api_PLINKODATA__WEBPACK_IMPORTED_MODULE_3__.PLINKODATA.BET / 100, 2);
     }
+    updateSize() {
+        this.fields[1].text = _api_PLINKODATA__WEBPACK_IMPORTED_MODULE_3__.PLINKODATA.ROWS;
+    }
     updateBalance() {
-        this.fields[1].text =
+        this.fields[2].text =
             _enums__WEBPACK_IMPORTED_MODULE_1__.CURRENCY.PHP + (0,_core_utils_Utils__WEBPACK_IMPORTED_MODULE_4__.numberComma)(_api_PLINKODATA__WEBPACK_IMPORTED_MODULE_3__.PLINKODATA.BALANCE / 100, 2);
     }
 }
@@ -14428,6 +14548,7 @@ class PlinkoMachine extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
     constructor(app) {
         super();
         this.container = new _pixi_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"]();
+        this.containerUpper = new _pixi_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"]();
         this.blockerContainer = new _pixi_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"]();
         this.blockers = [];
         this.betblocks = [];
@@ -14435,7 +14556,6 @@ class PlinkoMachine extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
         this.winLabelsBG = [];
         this.winLabels = [];
         this.balls = [];
-        this.buttons = [];
         this.betLabels = [];
         this.currentBall = 0;
         this.floorNum = 8;
@@ -14465,6 +14585,22 @@ class PlinkoMachine extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
         this.drawBetBlocks();
         this.drawWinLabels();
     }
+    updateBet() {
+        //
+    }
+    updateSize() {
+        //
+        this.bet_id = _api_PLINKODATA__WEBPACK_IMPORTED_MODULE_4__.PLINKODATA.BET_SIZE - 8;
+        this.colorSetId = this.bet_id - 1;
+        this.blockerContainer.scale.set(0.85 - 0.05 * this.bet_id);
+        this.blockerContainer.position.set(0, -250);
+        this.container.addChild(this.blockerContainer);
+        this.drawBlockers(this.betListCount[this.bet_id]);
+        this.createBlockerId();
+        this.drawBalls();
+        this.drawBetBlocks();
+        this.drawWinLabels();
+    }
     drawBlockers(num) {
         let i = 0;
         let _totalbetlist = num;
@@ -14480,8 +14616,12 @@ class PlinkoMachine extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
         let tint_id = 0;
         let tint_ctr = 0;
         let betlist = this.betListCount;
+        for (i = 0; i < this.blockers.length; i++) {
+            this.blockers[i].visible = false;
+            this.blockers[i].destroy();
+        }
+        this.blockers = [];
         for (i = 0; i < betlist[betlist.length - 1]; i++) {
-            //
             this.blockers[i] = this.blockerContainer.addChild(new _pixi_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"](pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.get("plinko").textures["blocker0000"]));
             if (_temp_lvl < _cap_lvl) {
                 _x = _base_x + _xgap * _temp_lvl;
@@ -14514,6 +14654,11 @@ class PlinkoMachine extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
     }
     drawBalls() {
         let i = 0;
+        for (i = 0; i < this.balls.length; i++) {
+            this.balls[i].visible = false;
+            this.balls[i].destroy();
+        }
+        this.balls = [];
         for (i = 0; i < this.total_balls; i++) {
             this.balls[i] = this.blockerContainer.addChild(new _pixi_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"](pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.get("plinko").textures["ball0000"]));
             this.balls[i].tint = 0xff0000;
@@ -14544,6 +14689,11 @@ class PlinkoMachine extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
         let _x = -_gap;
         let _xgap = _gap;
         let _ygap = _gap;
+        for (i = 0; i < this.betblocks.length; i++) {
+            this.betblocks[i].visible = false;
+            this.betblocks[i].destroy();
+        }
+        this.betblocks = [];
         for (i = 0; i < this.maxbetlength; i++) {
             this.betblocks[i] = this.blockerContainer.addChild(new _pixi_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"](pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.get("plinko").textures["btn30000"]));
             _y = (this.bet_id + 7) * _ygap;
@@ -14567,7 +14717,12 @@ class PlinkoMachine extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
     }
     drawWinLabels() {
         let i = 0;
-        for (i = 0; i < 10; i++) {
+        for (i = 0; i < this.winLabelsContainer.length; i++) {
+            this.winLabelsContainer[i].visible = false;
+            this.winLabelsContainer[i].destroy();
+        }
+        this.winLabelsContainer = [];
+        for (i = 0; i < 50; i++) {
             this.winLabelsContainer[i] = this.blockerContainer.addChild(new _pixi_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"]());
             this.winLabelsContainer[i].visible = false;
             this.winLabelsBG[i] = this.winLabelsContainer[i].addChild(new _pixi_components_SpriteV2__WEBPACK_IMPORTED_MODULE_1__["default"](pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.get("plinko").textures["btn30000"]));
@@ -14692,7 +14847,7 @@ class PlinkoMachine extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
     }
     showWin(target, id, betId) {
         let winFX = "score2";
-        if (betId < 2 || betId > _api_PLINKODATA__WEBPACK_IMPORTED_MODULE_4__.PLINKODATA.ROWS - 2) {
+        if (betId < 2 || betId > _api_PLINKODATA__WEBPACK_IMPORTED_MODULE_4__.PLINKODATA.BET_SIZE - 2) {
             winFX = "win";
         }
         else {
@@ -14723,7 +14878,9 @@ class PlinkoMachine extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
             duration: 0.2,
             delay: 1.4,
         });
-        this.emit(_enums__WEBPACK_IMPORTED_MODULE_6__.Event.BALL_DROP_COMPLETE);
+        gsap__WEBPACK_IMPORTED_MODULE_8__.gsap.delayedCall(1.5, () => {
+            this.emit(_enums__WEBPACK_IMPORTED_MODULE_6__.Event.BALL_DROP_COMPLETE);
+        });
     }
     generatePathID(result) {
         let i = 0;

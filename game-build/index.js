@@ -13339,27 +13339,27 @@ class Preloader extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
     init() {
         (() => __awaiter(this, void 0, void 0, function* () {
             //init game assets----------------------------------------------------------
-            const dir = "../"; //html/12714995/";
+            const dir = ""; //html/12714995/";
             pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.addBundle("images", {
                 //load spritesheet
                 plinko: dir + "game/media/images/plinko/plinko.json",
                 //images
-                bg: dir + "/game/media/images/plinko/bg8@2x.png",
+                bg: dir + "game/media/images/plinko/bg8@2x.png",
                 //sound
-                pling1: dir + "/game/media/sounds/m4a/sfx-pling-1.m4a",
-                pling2: dir + "/game/media/sounds/m4a/sfx-pling-2.m4a",
-                beep_1: dir + "/game/media/sounds/m4a/sfx-beep-1.m4a",
-                beep_2: dir + "/game/media/sounds/m4a/sfx-beep-2.m4a",
-                beep_3: dir + "/game/media/sounds/m4a/sfx-beep-3.m4a",
-                beep_4: dir + "/game/media/sounds/m4a/sfx-beep-4.m4a",
-                beep_5: dir + "/game/media/sounds/m4a/sfx-beep-5.m4a",
-                score1: dir + "/game/media/sounds/m4a/sfx-score1.m4a",
-                score2: dir + "/game/media/sounds/m4a/sfx-score2.m4a",
-                click: dir + "/game/media/sounds/m4a/sfx-click.m4a",
-                btn1: dir + "/game/media/sounds/m4a/sfx-btn-1.m4a",
-                btn2: dir + "/game/media/sounds/m4a/sfx-btn-2.m4a",
-                win: dir + "/game/media/sounds/m4a/sfx-win-cute.m4a",
-                bgm: dir + "/game/media/sounds/m4a/bgm-plinko.m4a",
+                pling1: dir + "game/media/sounds/m4a/sfx-pling-1.m4a",
+                pling2: dir + "game/media/sounds/m4a/sfx-pling-2.m4a",
+                beep_1: dir + "game/media/sounds/m4a/sfx-beep-1.m4a",
+                beep_2: dir + "game/media/sounds/m4a/sfx-beep-2.m4a",
+                beep_3: dir + "game/media/sounds/m4a/sfx-beep-3.m4a",
+                beep_4: dir + "game/media/sounds/m4a/sfx-beep-4.m4a",
+                beep_5: dir + "game/media/sounds/m4a/sfx-beep-5.m4a",
+                score1: dir + "game/media/sounds/m4a/sfx-score1.m4a",
+                score2: dir + "game/media/sounds/m4a/sfx-score2.m4a",
+                click: dir + "game/media/sounds/m4a/sfx-click.m4a",
+                btn1: dir + "game/media/sounds/m4a/sfx-btn-1.m4a",
+                btn2: dir + "game/media/sounds/m4a/sfx-btn-2.m4a",
+                win: dir + "game/media/sounds/m4a/sfx-win-cute.m4a",
+                bgm: dir + "game/media/sounds/m4a/bgm-plinko.m4a",
             });
         }))();
         this.progress_text.text = "0 %";

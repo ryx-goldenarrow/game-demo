@@ -2,20 +2,20 @@
 
 {
 	"filename": "character_1.png",
-	"frame": {"x":5,"y":676,"w":100,"h":131},
+	"frame": {"x":143,"y":676,"w":111,"h":145},
 	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":100,"h":131},
-	"sourceSize": {"w":100,"h":131},
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":0,"w":111,"h":145},
+	"sourceSize": {"w":150,"h":150},
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
 	"filename": "character_2.png",
-	"frame": {"x":111,"y":676,"w":99,"h":128},
+	"frame": {"x":5,"y":676,"w":132,"h":138},
 	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":99,"h":128},
-	"sourceSize": {"w":99,"h":128},
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":5,"w":132,"h":138},
+	"sourceSize": {"w":150,"h":150},
 	"pivot": {"x":0.5,"y":0.5}
 },
 {
@@ -32,8 +32,8 @@
 	"version": "1.0",
 	"image": "theme-1.png",
 	"format": "RGBA8888",
-	"size": {"w":385,"h":812},
+	"size": {"w":385,"h":826},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:107be35141672cdd4a76b4c3ad3fdedc:a9a88edb5893c34ae4459053ebf12827:42a702e872b3b48d2b99c663995d1434$"
+	"smartupdate": "$TexturePacker:SmartUpdate:a4145a99c1be1f0d3fa8ab8b523de6fa:51b555c03d658ee03e72a1fb66b15d42:42a702e872b3b48d2b99c663995d1434$"
 }
 }

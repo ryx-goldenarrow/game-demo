@@ -13311,7 +13311,6 @@ const GAMESETTINGS = {
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-var __dirname = "/";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ Preloader)
@@ -13348,8 +13347,7 @@ class Preloader extends pixi_js__WEBPACK_IMPORTED_MODULE_0__.Sprite {
     init() {
         (() => __awaiter(this, void 0, void 0, function* () {
             //init game assets----------------------------------------------------------
-            console.log("dir: ", __dirname);
-            const base = __dirname + "game/media/";
+            const base = "game/media/";
             pixi_js__WEBPACK_IMPORTED_MODULE_0__.Assets.addBundle("images", {
                 //load spritesheet
                 dice_a: base + "images/color-game/dice_a.json",

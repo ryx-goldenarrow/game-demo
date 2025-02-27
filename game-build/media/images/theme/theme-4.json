@@ -1,0 +1,39 @@
+{"frames": [
+
+{
+	"filename": "character_1.png",
+	"frame": {"x":153,"y":676,"w":132,"h":144},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":0,"w":132,"h":144},
+	"sourceSize": {"w":150,"h":150},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "character_2.png",
+	"frame": {"x":5,"y":676,"w":142,"h":142},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":7,"y":2,"w":142,"h":142},
+	"sourceSize": {"w":150,"h":150},
+	"pivot": {"x":0.5,"y":0.5}
+},
+{
+	"filename": "color_game_bg.png",
+	"frame": {"x":5,"y":5,"w":375,"h":665},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":375,"h":665},
+	"sourceSize": {"w":375,"h":665},
+	"pivot": {"x":0.5,"y":0.5}
+}],
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "theme-4.png",
+	"format": "RGBA8888",
+	"size": {"w":385,"h":825},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:42eca44efe71d295334de4448c9fee18:64156afd89819068dc4186a26f4381ff:0a338a6085514f8d77b04af66c7d2a2b$"
+}
+}

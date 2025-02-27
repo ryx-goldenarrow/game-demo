@@ -1,0 +1,35 @@
+﻿{"frames": {
+
+"dice_mode_10000":
+{
+	"frame": {"x":0,"y":0,"w":88,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":88,"h":82},
+	"sourceSize": {"w":88,"h":82}
+},
+"dice_mode_20000":
+{
+	"frame": {"x":88,"y":0,"w":87,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":87,"h":82},
+	"sourceSize": {"w":87,"h":82}
+},
+"dice_mode_30000":
+{
+	"frame": {"x":0,"y":82,"w":88,"h":82},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":88,"h":82},
+	"sourceSize": {"w":88,"h":82}
+}},
+"meta": {
+	"app": "Adobe Animate",
+	"version": "22.0.3.179",
+	"image": "dice-mode.png",
+	"format": "RGBA8888",
+	"size": {"w":256,"h":256},
+	"scale": "1"
+}
+}
